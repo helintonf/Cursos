@@ -1,0 +1,27 @@
+3 arvores
+
+01 Working Directory
+
+02 Index/tage Area
+
+03 Head
+
+sistema de controle de versão distribuido
+
+Gerencia de Configuração de Software
+
+* queremos saber
+-oque mudou e quando?
+porque mudou
+quem fez a mudança?
+podemos reproduzir a mudança
+
+_Identificação
+_Documentação
+_Controle
+_Auditoria
+
+Artefatos
+codigo fonte
+documentação
+manual de usuario
