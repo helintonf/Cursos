@@ -1,0 +1,24 @@
+Comandos:
+
+01)git help <command> = documentação do comand.
+
+02)git init = cria um repositorio git.
+
+03)git add <arquivo> <.>. 
+
+04)git commit [-m "mensagem"]
+	-01)git config --global core.editor gedit <configurar editor de mensagem do commit>   
+
+05)git status = estado do repositorio.
+
+06)git log = historico do commit.
+
+07)git remote add origin git@gitghub.com:endereco.
+
+08)git push origin"destino" master"branch" / <remote> <branch>
+
+09)git checkout --<arquivo> remover arquivo para ultima alteração
+
+10)git diff [path] = diferença entre comits e branchs
+	-01)git diff HEAD~1
+
