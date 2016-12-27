@@ -14,6 +14,8 @@ Comandos:
 06)git log = historico do commit.
 
 07)git remote add origin git@gitghub.com:endereco.
+	-01)git remote -v
+		-mostrar os as configurações dos repositorios remotos
 
 08)git push origin"destino" master"branch" / <remote> <branch>
 
@@ -22,3 +24,13 @@ Comandos:
 10)git diff [path] = diferença entre comits e branchs
 	-01)git diff HEAD~1
 
+// AULA 03
+
+11)git clone <URL>
+	-Baixar o repositorio remoto
+	-outra forma de criar um repositorio local.
+	-ja vem com o remote configurado.
+
+12)git pull
+	-baixa as alterações do repositorio remoto.
+	-mantem o repositorio sincronizado com os ultimos commits de uma branch.
