@@ -49,4 +49,15 @@ Comandos:
 		-02)git checkout HEAD -- <path_file>
 			-Desfazer as alterações desde o ultimo commit incluindo o Stage.
 
+14)git revert <commit>
+	-irá criar um novo commit que desfaz as alterações do commit especificado.
+	-Util par desfazer um commit antigo.
+	-faz um commit ao contrario, desfaz o commit mas volta.
 
+15)git reset <commit>
+	-Reseta o repositorio para um determinado commit.
+	-01)git reset --hard <commit>
+		-resetar e remover todas as alterações.
+		-CUIDADO AO USAR! NÃO USAR SE JÁ ESTIVER PUBLICADO.
+		-Util para desfazer ultimos commmits.
+	-02)git reset HEAD~<n commits atras>
