@@ -74,10 +74,7 @@ Comandos:
 	-02)git reset HEAD~<n commits atras>
 
 
-	<--------CONFLITOS---------->
-
-<<<<<<< HEAD
-<-----#A04 - BRACHING----->
+<-----#A04 - BRACHING, MERGE----->
 
 BRANCH: 
 	-É uma lista de commits.
@@ -102,32 +99,11 @@ BRANCH:
 
 
 
+==== BASE ====
 		Fim Branch
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- >-----Branch-----<
->>>>>>> #AE04, Fim branch
+MERGE:
+	-Apliar os commits de uma branch na branch atual.
+	-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
+	-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+	
+17)git merge <branch>
