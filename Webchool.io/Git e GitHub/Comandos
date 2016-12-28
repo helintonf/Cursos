@@ -24,7 +24,7 @@ Comandos:
 10)git diff [path] = diferença entre comits e branchs
 	-01)git diff HEAD~1
 
-// AULA 003
+// AULA 3
 
 11)git clone <URL>
 	-Baixar o repositorio remoto
@@ -34,3 +34,19 @@ Comandos:
 12)git pull
 	-baixa as alterações do repositorio remoto.
 	-mantem o repositorio sincronizado com os ultimos commits de uma branch.
+
+13)git checkout 
+	-(01)Navegar no historico:
+		-01)git checkout <commit> <file>
+			-Permite ver como um arquivo ou todo o repositorio estava em um determinado commit.		
+			-Altera o repositorio para o estado daquele commit.
+			-é util para fazer teste antes e depois de alterações.
+		-02)git checkout master = <branch>
+			-para voltar o repositorio no ultimo commit
+	-(02)Desfazendo alterações:
+		-01)git checkout -- <path_or_file>
+			-Irá desfazer todas as alterações que não estejam no Stage desde o ultimo commit.
+		-02)git checkout HEAD -- <path_file>
+			-Desfazer as alterações desde o ultimo commit incluindo o Stage.
+
+
