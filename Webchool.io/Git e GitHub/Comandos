@@ -35,7 +35,7 @@ Comandos:
 	-diferença entre comits, branchs e (arquivos ?)
 	-01)git diff HEAD~1
 
-// AULA 3
+<-----#A03 - HISTORICO, ALTERAÇÕES E CONFLITOS----->
 
 11)git clone <URL>
 	-Baixar o repositorio remoto
@@ -73,31 +73,37 @@ Comandos:
 		-Util para desfazer ultimos commmits.
 	-02)git reset HEAD~<n commits atras>
 
-	<--------CONFLITOS---------->
+>-----CONFLITOS-----<
 
+<-----#A04 - BRACHING, MERGE----->
 
+BRANCH: 
+	-É uma lista de commits.
+	-Representa ramificações no repositório.
+	-Muito útil para trabalhos colaborativos.
+	-Branchs de desenvolvimento facilitam o controle.
+	-Branch master é a padrão.
 
+16)git branch
+	-Ver todas as branchs do repositorio.
+	-01)git branch <nova_branch>
+		-Criar uma nova branch.
+	-02)git branch -d <branch>
+		-Exclui uma branch.
+	-03)git checkout <branch>
+		-Muda para a e de branch.
+		-Seu repositorio passa a ter os commits que a branch possui e novos commits serão adicionados a ela.
+	-04)git push --set-upstream <origin> <nova_branch>
+		-setar no repositorio remoto uma nova branch com seus commits.
+		-01)git push -u <origin> <nova_branch>
+			-Abreviação do comando anterio.
 
+>-----BRANCH-----<
 
+MERGE:
+	-Apliar os commits de uma branch na branch atual.
+	-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
+	-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+	
+17)git merge <branch>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- >-----Branch-----<

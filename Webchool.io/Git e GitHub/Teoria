@@ -25,3 +25,21 @@ Artefatos
 codigo fonte
 documentação
 manual de usuario
+
+
+<-----BRACHING----->
+Criando ramificações do repositorio.
+
+Oque são?
+Ramificações do repositorio
+
+BRANCH:
+	-É uma lista de commits.
+	-Representa ramificações no repositório.
+	-Muito útil para trabalhos colaborativos.
+	-Branchs de desenvolvimento facilitam o controle.
+	-Branch master é a padrão.
+
+
+
+
