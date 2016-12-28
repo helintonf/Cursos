@@ -76,6 +76,7 @@ Comandos:
 
 	<--------CONFLITOS---------->
 
+<<<<<<< HEAD
 <-----#A04 - BRACHING----->
 
 BRANCH: 
@@ -102,3 +103,31 @@ BRANCH:
 
 
 		Fim Branch
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ >-----Branch-----<
+>>>>>>> #AE04, Fim branch
