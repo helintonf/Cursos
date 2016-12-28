@@ -93,7 +93,10 @@ BRANCH:
 	-03)git checkout <branch>
 		-Muda para a e de branch.
 		-Seu repositorio passa a ter os commits que a branch possui e novos commits serão adicionados a ela.
-
+	-04)git push --set-upstream <origin> <nova_branch>
+		-setar no repositorio remoto uma nova branch com seus commits.
+		-01)git push -u <origin> <nova_branch>
+			-Abreviação do comando anterio.
 
 
 
