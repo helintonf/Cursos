@@ -64,4 +64,6 @@ Comandos:
 		-Util para desfazer ultimos commmits.
 	-02)git reset HEAD~<n commits atras>
 
---------COnflitos----------
+
+	<--------CONFLITOS---------->
+
