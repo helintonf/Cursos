@@ -61,3 +61,5 @@ Comandos:
 		-CUIDADO AO USAR! NÃO USAR SE JÁ ESTIVER PUBLICADO.
 		-Util para desfazer ultimos commmits.
 	-02)git reset HEAD~<n commits atras>
+
+	<--------CONFLITOS---------->
