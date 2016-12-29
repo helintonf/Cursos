@@ -126,3 +126,12 @@ REBASE:
 	-Exemplo Rebase:
 		0---0-|---|-0 	= 	0---0---O---O---°0
 			 `O---O
+
+>-----MERGE - REBASE-----<
+
+19)git fetch
+	-Baixa as atualizações do remote porém não aplica elas no repositório.
+	-Permite fazer o rebase de uma branch em vez de fazer o merge.
+	-Pull = Fetch + Merge.
+	-Fetch + Rebase é melhor para manter histórico do desenvolvimento.
+
