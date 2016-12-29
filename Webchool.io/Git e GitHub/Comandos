@@ -78,7 +78,9 @@ Comandos:
 	-02)git reset HEAD~<n commits atras>
 
 
-<-----#A04 - BRACHING, MERGE----->
+>-----#A03 - CLONE, PULL, CHECKOUT, REVERT, RESET-----<
+
+<-----#A04 - BRACHING, MERGE, REBASE, FETCH, TAG----->
 
 BRANCH: 
 	-É uma lista de commits.
@@ -136,3 +138,13 @@ REBASE:
 	-Pull = Fetch + Merge.
 	-Fetch + Rebase é melhor para manter histórico do desenvolvimento.
 
+20)git tag [nome da tag]
+	-Útil para definir versões estáveis do projeto.
+	-Semelhante a Branch porém não recebe mais commits.
+	-Guarda um estado do repositório.
+	-01)git push <remote> <tag>
+		-Enviar a tag para o repositorio remoto.
+
+>-----FETCH - TAG-----<
+
+>-----#A04 - BRACHING, MERGE, REBASE, FETCH, TAG-----<
