@@ -59,5 +59,7 @@ REBASE:
 		0---0-|---|-0 	= 	0---0---O---O---°0
 			 `O---O
 
-
+TAG:
+	-Porque usar branch a tag?
+		para commitar na branch com o hotfix.
 
