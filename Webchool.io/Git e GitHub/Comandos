@@ -106,4 +106,19 @@ MERGE:
 	-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
 	
 17)git merge <branch>
+	-CUIDADO SOMENTE USAR SE TEM MUITOS CONFLITOS.
+	-USAR COM MUITAS MODIFICAÇÕES.
 
+REBASE:
+	-Semelhante ao Merge porem é diferente na ordem de aplicar os commits.
+	-No Rebase, os seus commits na frente da base são removidos temporiariamente, os commits de outra branch são aplicados na sua branch e por fim seus commits são aplicados um a um.
+	-Pode acontecer conflitos que serão resolvidos para cada commit.
+
+18)git rebase <branch>
+	-USAR COM POUCAS MODIFICAÇÃO E ADICIONADO NOVOS ARQUIVOS AO REPOSITORIO.
+	-Exemplo Merge:
+		0---0-----0---O---O---°0
+			 `O---O-----------´
+	-Exemplo Rebase:
+		0---0-|---|-0 	= 	0---0---O---O---°0
+			 `O---O
