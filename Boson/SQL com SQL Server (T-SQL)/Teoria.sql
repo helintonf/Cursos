@@ -171,3 +171,13 @@
 	sp_help <NOME_TABELA>
 		-informa os índices, chaves, campos atributos, tipos de atributos de uma tabela.
 		-Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
+
+#A06
+
+	AUTO INCREMENT (IDENTITY)
+		-Permite que um número único seja gerado quando um novo registro é inserido em uma tabela.
+		-SQL SERVER é IDENTITY(identidade), cujo valor inicial padrão é 1, e se incremeta em 1.
+		-Para que o valor de IDENTITY inicie em 100 e se incremente de 2 em 2, use IDENTITY(100,2).
+		-SOMENTE PODE SER USADO NA CRIAÇÃO DA COLUNA!
+		-SOMENTE PODE USAR UMA COLUNA IDENTITY POR TABELA.
+

@@ -16,3 +16,4 @@
 	05)sp_help <NOME_TABELA>
 			-informa os índices, chaves, campos atributos, tipos de atributos de uma tabela.
 			-Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
+

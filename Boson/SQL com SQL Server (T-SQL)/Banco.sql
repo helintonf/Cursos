@@ -34,3 +34,19 @@
 		ID_Editora SMALLINT PRIMARY KEY IDENTITY,
 		Nome_Editora VARCHAR(50) NOT NULL
 		)
+
+--#A06 Testando IDENTITY, Auto incremento de valores em colunas
+	
+	USE db_Biblioteca
+
+	CREATE TABLE tbl_teste_identidade(
+		ID_Teste SMALLINT PRIMARY KEY IDENTITY,
+		Valor SMALLINT NOT NULL
+		)
+
+	INSERT INTO tbl_teste_identidade (Valor) VALUES (10);
+	INSERT INTO tbl_teste_identidade (Valor) VALUES (20);
+	INSERT INTO tbl_teste_identidade (Valor) VALUES (30);
+	INSERT INTO tbl_teste_identidade (Valor) VALUES (40);
+
+	SELECT * FROM tbl_teste_identidade
