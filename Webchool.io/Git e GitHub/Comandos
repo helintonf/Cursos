@@ -20,6 +20,10 @@ Comandos:
 
 06)git log
 	-historico do commit.
+	-01)git log --decorate
+		-estiliza o log para ficar melhor a visibilidade.
+	-02)git log --oneline
+		-exibe o log em apenas uma linha.
 
 07)git remote add origin git@gitghub.com:endereco.
 	-01)git remote -v
