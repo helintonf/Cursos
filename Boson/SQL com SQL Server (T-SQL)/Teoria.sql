@@ -1,6 +1,7 @@
 --Teoria
 
 #A01
+
 	SQL: Structured Query Language
 		-Linguagem de Consulta Estruturada padrão para acesso a Banco de Dados.
 		-Usada em inpumeros sistemas, como MySQL, SQL Server, Oracle, Sybase, Access, DB2, PostgreSQL, etc.
@@ -38,7 +39,9 @@
 			-DQL = Data Query Language
 				-SELECT
 					-Obtém registros especificados de uma ou mais tabelas atraves de consultas.
+
 #A02
+
 	SGBDR:
 		-Sistema Gerenciador de Banco de Dados Relacional.
 		-Trata-se de um sistema de gerenciamento de bancos de dados baseado no modelo relacional introduzido por E.F.Codd.
@@ -102,5 +105,23 @@
 			money
 				-Dados monetários de -922,337,203,685,477.5808 até 922,337,203,685,477.5807.
 				-8 bytes.
-				
+
+#A03
+
+	01)Criando Banco de Dados:
+		CREATE DATABASE db_Biblioteca ON PRIMARY (
+			NAME = db_Biblioteca,
+			FILENAME = 'C:\Users\helinton.fioramonte\Pessoal\GitHub\teste\SQL\db_Biblioteca.MDF',
+			SIZE = 6MB,
+			MAXSIZE = 20MB,
+			FILEGROWTH = 10%
+			)
+
+	02)USE banco_de_dados
+		-Comando USE instrui o SGBDR a utilizar o banco de dados especificado para rodar os comandos.
+
+	03)sp_helpdb Banco_de_Dados
+		-informa o tamanho, taxa de crescimento, e local do banco de dados.
+
+
 
