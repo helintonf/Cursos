@@ -108,8 +108,8 @@
 
 #A03
 
-	01)Criando Banco de Dados:
-		CREATE DATABASE <NOME_BANCO> ON PRIMARY (
+	Criando Banco de Dados:
+		CREATE DATABASE NOME_BANCO ON PRIMARY (
 			NAME = <NOME_BANCO>,
 			FILENAME = <'CAMINHO'>,
 			SIZE = <TAMANHO_MB_KB>,
@@ -117,10 +117,10 @@
 			FILEGROWTH = <TAMANHO_CRESCIMENTO_MB_%>
 			)
 
-	02)USE <BANCO_DE_DADOS>
+	USE <BANCO_DE_DADOS>
 		-Comando USE instrui o SGBDR a utilizar o banco de dados especificado para rodar os comandos.
 
-	03)sp_helpdb <BANCO_DE_DADOS>
+	sp_helpdb <BANCO_DE_DADOS>
 		-informa o tamanho, taxa de crescimento, e local do banco de dados.
 
 #A04
@@ -160,4 +160,14 @@
 			-É usada para inserir um valor padrão em uma coluna.
 			-O valor padrão será adicionado a todos os novos registros caso nenhum outro valor seja especificado.
 
+		IDENTITY(n<INICIAR_SEQUENCIA>,n<INCREMENTO>)
+			-Deixa o campo com auto incremento.
 
+#A05
+	
+	Criar Tabela
+		CREATE TABLE NOME_TABELA(CAMPOS_TIPOS_CONSTRAINTS);
+
+	sp_help <NOME_TABELA>
+		-informa os índices, chaves, campos atributos, tipos de atributos de uma tabela.
+		-Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
