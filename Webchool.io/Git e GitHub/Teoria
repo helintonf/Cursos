@@ -41,5 +41,17 @@ BRANCH:
 	-Branch master é a padrão.
 
 
+<-----MERGE E REBASE----->
+
+MERGE:
+	-Apliar os commits de uma branch na branch atual.
+	-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
+	-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+
+REBASE:
+	-Semelhante ao Merge porem é diferente na ordem de aplicar os commits.
+	-No Rebase, os seus commits na frente da base são removidos temporiariamente, os commits de outra branch são aplicados na sua branch e por fim seus commits são aplicados um a um.
+	-Pode acontecer conflitos que serão resolvidos para cada commit.
+
 
 
