@@ -1,5 +1,5 @@
 # Cursos
-exemplos e exercícios das aulas.
+Exemplos e Exercícios das Aulas.
 
 ### Webchool.io:
 - Git e GitHub [:link:](https://www.youtube.com/playlist?list=PL77JVjKTJT2h4aACrIx1ECmr8h9esjh16)
