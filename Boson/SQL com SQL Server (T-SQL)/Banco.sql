@@ -50,3 +50,28 @@
 	INSERT INTO tbl_teste_identidade (Valor) VALUES (40);
 
 	SELECT * FROM tbl_teste_identidade
+
+--#A07 ALTER e DROP TABLE - Alterar e Excluir Tabelas e Colunas
+	
+	--DROP
+		ALTER TABLE tbl_Livro
+			DROP COLUMN ID_Autor
+
+		DROP TABLE tbl_teste_identidade
+
+	--ADD
+		ALTER TABLE tbl_Livro
+			ADD ID_Autor SMALLINT NOT NULL
+			CONSTRAINT fk_ID_Autor FOREIGN KEY (ID_Autor)
+			REFERENCES tbl_autores
+
+		ALTER TABLE tbl_Livro
+			ADD ID_Editora SMALLINT NOT NULL
+			CONSTRAINT fk_id_editora FOREIGN KEY (ID_Editora)
+			REFERENCES tbl_editoras
+
+	--ALTER
+		ALTER TABLE tbl_Livro
+			ALTER COLUMN ID_Autor
+				SMALLINT
+
