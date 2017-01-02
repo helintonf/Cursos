@@ -181,3 +181,38 @@
 		-SOMENTE PODE SER USADO NA CRIAÇÃO DA COLUNA!
 		-SOMENTE PODE USAR UMA COLUNA IDENTITY POR TABELA.
 
+#A07
+
+	Alterar Tabelas
+		-É possível alterar a estrutura de uma tabela após ter sido criada, acrescentando ou excluindo atributos (campos).
+
+	ALTER TABLE - DROP
+		-ALTER TABLE <nome_tabela>	--DELETAR COLUNA
+			-DROP COLUMN <nome_coluna>
+
+		Excluir uma constraint:
+			-ALTER TABLE <nome_tabela>	--DELETAR CONSTRAINT
+				-DROP CONSTRAINT <nome_constraint>
+
+	ALTER TABLE - ADD 
+		-ALTER TABLE <nome_tabela>	--ADICIONAR COLUNA
+			-ADD <nome_coluna_tipos_constraints>
+			CONSTRAINT <chaves PK, FK, etc.>
+			REFERENCES <nome_tabela_referencia_chave>
+
+		ALTER TABLE <nome_tabela>	--ADICIONAR CONSTRAINT
+			-ADD PRIMARY KEY (<coluna_constraints>)
+
+			-A coluna deve existir antes de ser transformada em chave primária.
+
+	ALTER TABLE - ALTER --ALTERAR
+		-ALTER TABLE <nome_tabela>
+			-ALTER COLUMN <nome_coluna>
+				-<tipo_dados> SMALLINT
+
+		-Alterar antes de inserir dados.
+
+	DROP TABLE 	--Excluir tabela
+		-DROP TABLE <nome_tabela>
+
+		
