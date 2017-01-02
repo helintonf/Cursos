@@ -39,7 +39,8 @@ Comandos:
 	-diferença entre comits, branchs e (arquivos ?)
 	-01)git diff HEAD~1
 
-<-----#A03 - HISTORICO, ALTERAÇÕES E CONFLITOS----->
+#A03 - CLONE, PULL, CHECKOUT, REVERT, RESET.
+	-HISTORICO, ALTERAÇÕES E CONFLITOS.
 
 11)git clone <URL>
 	-Baixar o repositorio remoto
@@ -77,6 +78,7 @@ Comandos:
 		-Util para desfazer ultimos commmits.
 	-02)git reset HEAD~<n commits atras>
 
+	>-----CONFLITOS-----<
 
 >-----#A03 - CLONE, PULL, CHECKOUT, REVERT, RESET-----<
 
@@ -103,48 +105,83 @@ BRANCH:
 		-01)git push -u <origin> <nova_branch>
 			-Abreviação do comando anterio.
 
+	MERGE:
+		-Apliar os commits de uma branch na branch atual.
+		-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
+		-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+		
+	17)git merge <branch>
+		-CUIDADO SOMENTE USAR SE TEM MUITOS CONFLITOS.
+		-USAR COM MUITAS MODIFICAÇÕES.
 
+	REBASE:
+		-Semelhante ao Merge porem é diferente na ordem de aplicar os commits.
+		-No Rebase, os seus commits na frente da base são removidos temporiariamente, os commits de outra branch são aplicados na sua branch e por fim seus commits são aplicados um a um.
+		-Pode acontecer conflitos que serão resolvidos para cada commit.
 
-==== BASE ====
-		Fim Branch
-MERGE:
-	-Apliar os commits de uma branch na branch atual.
-	-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
-	-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+	18)git rebase <branch>
+		-USAR COM POUCAS MODIFICAÇÃO E ADICIONADO NOVOS ARQUIVOS AO REPOSITORIO.
+		-Exemplo Merge:
+			0---0-----0---O---O---°0
+				 `O---O-----------´
+		-Exemplo Rebase:
+			0---0-|---|-0 	= 	0---0---O---O---°0
+				 `O---O
+
+	>-----MERGE - REBASE-----<
+
+	19)git fetch
+		-Baixa as atualizações do remote porém não aplica elas no repositório.
+		-Permite fazer o rebase de uma branch em vez de fazer o merge.
+		-Pull = Fetch + Merge.
+		-Fetch + Rebase é melhor para manter histórico do desenvolvimento.
+
+	20)git tag [nome da tag]
+		-Útil para definir versões estáveis do projeto.
+		-Semelhante a Branch porém não recebe mais commits.
+		-Guarda um estado do repositório.
+		-01)git push <remote> <tag>
+			-Enviar a tag para o repositorio remoto.
+
+	>-----FETCH - TAG-----<
+
+#A05
 	
-17)git merge <branch>
-	-CUIDADO SOMENTE USAR SE TEM MUITOS CONFLITOS.
-	-USAR COM MUITAS MODIFICAÇÕES.
+	Interfaces Gráficas GUI
+		-Pelo terminal se faz tudo.
+		-Interfaces gráficas ajudam na visualização e auxiliam em algumas tarefas.
 
-REBASE:
-	-Semelhante ao Merge porem é diferente na ordem de aplicar os commits.
-	-No Rebase, os seus commits na frente da base são removidos temporiariamente, os commits de outra branch são aplicados na sua branch e por fim seus commits são aplicados um a um.
-	-Pode acontecer conflitos que serão resolvidos para cada commit.
+		Recomendadas:
+			-Egit = Plugin para Eclipse.
+			-GitEye = Linux, Windows e Mac.
 
-18)git rebase <branch>
-	-USAR COM POUCAS MODIFICAÇÃO E ADICIONADO NOVOS ARQUIVOS AO REPOSITORIO.
-	-Exemplo Merge:
-		0---0-----0---O---O---°0
-			 `O---O-----------´
-	-Exemplo Rebase:
-		0---0-|---|-0 	= 	0---0---O---O---°0
-			 `O---O
+		Não Recomendado: 
+			-GitHub for Windows.
 
->-----MERGE - REBASE-----<
+	GitHub
 
-19)git fetch
-	-Baixa as atualizações do remote porém não aplica elas no repositório.
-	-Permite fazer o rebase de uma branch em vez de fazer o merge.
-	-Pull = Fetch + Merge.
-	-Fetch + Rebase é melhor para manter histórico do desenvolvimento.
+		Fork:
+			-Copia um repositório de outro usuário para seu usuáriono GitHub.
+			-É assim que começa a contribuição para outros projetos.
+			-Você teria uma cópia idependente do repositório original, podendo fazer quaisquer alterações.
 
-20)git tag [nome da tag]
-	-Útil para definir versões estáveis do projeto.
-	-Semelhante a Branch porém não recebe mais commits.
-	-Guarda um estado do repositório.
-	-01)git push <remote> <tag>
-		-Enviar a tag para o repositorio remoto.
+		Issues:
+			-Tradução: Questões.
+			-Reportar bugs.
+			-Organizar tarefas a serem feitas.
+			-Permite discussão entre os usuários.
+			-Pode ser referenciado por commits.
+				-Commit: "Closes #3"
 
->-----FETCH - TAG-----<
+		Pull Request:
+			-O grande simbolo de colaboração.
+			-É quando você solicita qe sua alterações sejam unidas a uma branch no mesmo repositório ou a um repositorio que sofreu o fork.
+			-Igual uma Issue porém com uma branch associada.
+			-Muito útil para o trabalho colaborativo.
 
->-----#A04 - BRACHING, MERGE, REBASE, FETCH, TAG-----<
+		Fluxo do GitHub:
+			-https://guides.github.com/introduction/flow/
+
+		Checkout em Pull Request:
+			-git fetch origin pull/<ID>/head:<BRANCH>
+			-Cria uma branch com os commits do pull request.
