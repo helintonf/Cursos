@@ -145,7 +145,7 @@ BRANCH:
 
 	>-----FETCH - TAG-----<
 
-#A05
+#A05 - Interfaces Gráficas e GitHub
 	
 	Interfaces Gráficas GUI
 		-Pelo terminal se faz tudo.
@@ -184,4 +184,25 @@ BRANCH:
 
 		Checkout em Pull Request:
 			-git fetch origin pull/<ID>/head:<BRANCH>
+==== BASE ====
 			-Cria uma branch com os commits do pull request.
+
+#A06 - .gitignore, git commit --amend
+
+	.gitignore:
+		-Configurar arquivos que devem ser ignorados.
+		-Contém arquivos, caminhos e patterns.
+
+		.project
+
+		node_modules/
+
+		bower_components/
+
+		**/*.css
+	
+	21)git commit --amend
+		-Altera o último commit.
+		-Mensagem de commit.
+		-Adiciona arquivos.
+
