@@ -186,7 +186,7 @@ Comandos:
 			-git fetch origin pull/<ID>/head:<BRANCH>
 			-Cria uma branch com os commits do pull request.
 
-#A06 - .gitignore, git commit --amend
+#A06 - .gitignore, git commit --amend, git stash
 
 	.gitignore:
 		-Configurar arquivos que devem ser ignorados.
@@ -204,4 +204,14 @@ Comandos:
 		-Altera o último commit.
 		-Mensagem de commit.
 		-Adiciona arquivos.
+
+	22)git stash
+		-Guarda as alterações do Working Directory.
+		-Permite fazer rebase, merge trocar de branch sem a necessidade de fazer um commit.
+
+		-01)git stash list
+			-lista todos as modificações colocadas na pilha do stash.
+		-02)git stash pop
+			-Aplica o ultimo stash armazenado no Working directory.
+
 
