@@ -215,4 +215,9 @@
 	DROP TABLE 	--Excluir tabela
 		-DROP TABLE <nome_tabela>
 
-		
+#A08
+
+	Inserir Dados
+		-inserir dados em uma tabela:
+			INSERT INTO nome_tabela(coluna01,coluna02,...)
+				VALUES (valor01,valor02,...)

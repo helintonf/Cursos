@@ -75,3 +75,4 @@
 			ALTER COLUMN ID_Autor
 				SMALLINT
 
+--#A08 INSERT INTO ... VALUES - Inserrir dados nas Tabelas
