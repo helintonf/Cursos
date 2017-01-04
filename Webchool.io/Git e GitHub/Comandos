@@ -145,7 +145,7 @@ Comandos:
 
 	>-----FETCH - TAG-----<
 
-#A05 - Interfaces Gráficas e GitHub
+#A05 - Interfaces Gráficas e GitHub.
 	
 	Interfaces Gráficas GUI
 		-Pelo terminal se faz tudo.
@@ -186,7 +186,7 @@ Comandos:
 			-git fetch origin pull/<ID>/head:<BRANCH>
 			-Cria uma branch com os commits do pull request.
 
-#A06 - .gitignore, git commit --amend, git stash
+#A06 - .gitignore, git commit --amend, git stash.
 
 	.gitignore:
 		-Configurar arquivos que devem ser ignorados.
@@ -214,4 +214,50 @@ Comandos:
 		-02)git stash pop
 			-Aplica o ultimo stash armazenado no Working directory.
 
+	23)git cherry-pick <commit>
+		-Aplica as alterações de um commit na branch atual.
+		-Cria um novo commit.
+		-Replicar commit.
+		-Útil para recuperar histórico
 
+	24)git blame
+		-Mostra as alterações feitas em um arquivo por linha.
+		-Mostra o autor e o commit que foi feito aquela linha.
+		-Útil para verificar quando as alterações foram feitas, por que e por quem.
+
+	25)git bisect
+		-Permite fazer uma busca binária nos commits para encontrar uma alteração.
+		-Útil para alterações que modificaram o comportamento e não podem ser identificadas por código facilmente.
+		-Quando a alteração pode ser bastante antiga.
+
+		-01)git bisect start
+			-iniciar a busca.
+
+		-02)git bisect bad <commit> <last>
+			-Informar o commit com erro.
+
+		-03)git bisect good <commit>
+			-Informar o commit certo.
+
+	GitHub Pages
+		-Hospedagem de website estático.
+		-Site para usuários, organizações e repositórios.
+		-Branch    especial 'gh-pages'.
+		-Deve conter um index.html.
+		-gerador de páginas do GitHub.
+
+	GitHub Milestones
+		-Grupo de Issues associado a um objetivo.
+		-Possui uma data.
+		-Permite acompanhar a % de issues resolvidas.
+		-Existe em outros servidores Git.
+
+	Hooks e Serviços
+		-Permite integrar eventos do repositório com outras aplicações.
+		-Possui alguns serviços já compatíveis.
+		-Exemplo: travis-CI, Slack.
+
+	GIT KRAKEN
+	
+	GIT GAME
+		-Série de desafios para resolver com git.
