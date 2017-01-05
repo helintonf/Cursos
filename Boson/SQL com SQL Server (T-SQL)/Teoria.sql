@@ -223,13 +223,25 @@
 				VALUES (valor01,valor02,...)
 
 
-#A32 Cláusula WITH TIES
+#A32 - Cláusula WITH TIES
 	-Alguns valores deixam de ser exibidos princialmente quando tem o mesmo valor do ultimo da lista retornada.
 	-Verifica se existe algum item como mesmo valor do ultimo do TOP
 	-A lista tem que esta ordenada e depois do TOP.
 
 	SELECT TOP (3) WITH TIES nome_time , pontos FROM tbl_times
 	ORDER BY pontos DESC
+
+#A35 - 	CTE Commom Table Expression (SubConsultas)
+	-Subconsultas e CTE com Tabelas Derivadas.
+
+	CTE:
+		-Commom Table Expression
+		-Expressão de tabela comum.
+
+		-Variação de uma subconsulta, similar a uma exibição (VIEW).
+		-Pode ser acessada múltiplas vezes dentro da consulta principal, como se fosse uma exibição ou tabela.
+
+
 
 #A36 - Variáveis
 
