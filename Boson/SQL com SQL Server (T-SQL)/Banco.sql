@@ -150,3 +150,9 @@
 
 		SELECT 'O aluno '+@nome+'está '+@resultado+' com média '+ CAST(@media AS VARCHAR);
 
+--#AE01 - Exists
+	SELECT * FROM aluno a
+	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
+			WHERE ti.codigoaluno = a.codigo)
+
+	
