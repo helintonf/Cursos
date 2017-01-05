@@ -221,3 +221,38 @@
 		-inserir dados em uma tabela:
 			INSERT INTO nome_tabela(coluna01,coluna02,...)
 				VALUES (valor01,valor02,...)
+
+
+
+#A36 - Variáveis
+
+	Variáveis
+		-Podem ser declaradas no corpo de um batch ou procedimento.
+		-Pode-se atribuir-lhes valores usando-se:
+			-SET.
+			-SELECT.
+		-Vairáveis são iniciadas por padrão com NULL.
+
+	Declaração de Variáveis
+		-DECLARE @nome_var <tipo>
+
+		-Usar palavra DECLARE apenas uma vez para todas as variáveis.
+		-Dar para agrupalas por tipo na declaração.
+
+	Atribuir valores:
+		-01)Com SET
+			-SET nome_var = valor_var
+
+			-Valor especifico que não vem da tabela de dados.
+			-Atribuir SET um pra cada variável.
+
+		-02)Com SELECT
+			-SELECT nome_var = coluna FROM tabela WHERE condição
+
+			-Usado para pegar um valor do banco de dados para atribuir na variavel.
+			-Exibe apenas 1 registro, ou o ultimo registro da coluna.
+
+	Exibir os valores(consulta)
+		-SELECT nomes_var AS aliases
+
+
