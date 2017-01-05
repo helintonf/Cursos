@@ -279,3 +279,9 @@
 				END;
 
 
+#AE01 - Exists
+	-Faz um sub SELECT para testar alguma confição.
+	-Trazer todos os alnos que não estão em turmas:
+		SELECT * FROM aluno a
+		WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
+				WHERE ti.codigoaluno = a.codigo)
