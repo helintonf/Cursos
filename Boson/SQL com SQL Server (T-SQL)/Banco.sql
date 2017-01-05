@@ -76,3 +76,35 @@
 				SMALLINT
 
 --#A08 INSERT INTO ... VALUES - Inserrir dados nas Tabelas
+
+
+
+--#36 VARIÁVEIS - Declaração e atribuição
+	
+	--Ex. Declaração:
+		DECLARE @idade INT,
+				@nome VARCHAR(40),
+				@data_nasc DATE,
+				@valor MONEY;
+
+	--Ex. Atribuição SET:
+		SET @idade = 27
+		SET @nome = 'Helinton'
+		SET @data_nasc = GETDATE()
+
+	--Ex. Atribuição SELECT:
+		DECLARE @livro VARCHAR(30)
+		SELECT @livro = nome_livro FROM tbl_livro WHERE ID_Livro = 101
+		SELECT @livro AS 'Nome do Livro'
+
+	--Ex. Consulta:
+		SELECT @idade AS Idade, @nome AS Nome, @data_nasc AS 'Data de Nascimento', @valor AS Salário
+
+	--Ex. Cáculo:
+		DECLARE @preco MONEY, @quantidade INT, @nome VARCHAR(30)
+
+		SET @quantidade = 5
+
+		SELECT @preco = Preco_Livro, @nome = Nome_Livro FROM tbl_Livro WHERE ID_Livro = 103
+
+		SELECT @nome AS 'Nome do Livro', @preco AS 'Valor Unitario',@quantidade AS 'Quantidade', @preco * @quantidade AS 'Valor Total'
