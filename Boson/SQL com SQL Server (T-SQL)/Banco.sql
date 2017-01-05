@@ -78,10 +78,33 @@
 --#A08 INSERT INTO ... VALUES - Inserrir dados nas Tabelas
 
 
---#A32 Cláusula WITH TIES
+--#A32 - Cláusula WITH TIES
 
 	SELECT TOP (3) WITH TIES nome_time , pontos FROM tbl_times
 	ORDER BY pontos DESC
+
+--#A35 - CTE Commom Table Expression (SubConsultas)
+
+	--Ex. Loja - Totalizar todos os produtos comprados por cliente:
+		SELECT CL.Nome_Cliente AS Cliente,
+		PR.Preco_Produto * CO.Quantidade AS Total
+		FROM Clientes AS CL
+		INNER JOIN Compras AS CO ON CL.ID_Cliente = CO.ID_Cliente
+		INNER JOIN Produtos AS PR ON CO.ID_Produto = PR.ID_Produto
+		--GROUP BY CL.Nome_Cliente
+
+	--Ex. Loja com CTE
+		WITH ConsultaCTE (Cliente,Total)
+		AS (SELECT CL.Nome_Cliente AS Cliente, 
+			PR.Preco_Produto * CO.Quantidade AS Total
+			FROM Clientes AS CL
+			INNER JOIN Compras AS CO ON CL.ID_Cliente = CO.ID_Cliente
+			INNER JOIN Produtos AS PR ON CO.ID_Produto = PR.ID_Produto)
+		
+		SELECT Cliente, SUM(Total) AS ValorTotal
+		FROM ConsultaCTE
+		GROUP BY Cliente
+		ORDER BY ValorTotal
 
 --#A36 VARIÁVEIS - Declaração e atribuição
 	
