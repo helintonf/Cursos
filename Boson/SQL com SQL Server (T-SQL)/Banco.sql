@@ -78,7 +78,6 @@
 --#A08 INSERT INTO ... VALUES - Inserrir dados nas Tabelas
 
 
-
 --#36 VARIÁVEIS - Declaração e atribuição
 	
 	--Ex. Declaração:
@@ -108,3 +107,46 @@
 		SELECT @preco = Preco_Livro, @nome = Nome_Livro FROM tbl_Livro WHERE ID_Livro = 103
 
 		SELECT @nome AS 'Nome do Livro', @preco AS 'Valor Unitario',@quantidade AS 'Quantidade', @preco * @quantidade AS 'Valor Total'
+
+
+--#A38 - IF/ELSE - Estrutura de decisão
+	--Ex. Condição
+		DECLARE @numero INT,
+				@texto VARCHAR(10)
+
+		SET @numero = 20
+		SET @texto = 'Helinton'
+
+		IF @numero = 20
+			SELECT 'Número correto!'
+		IF @texto = 'Helinton'
+			BEGIN
+				SET @numero = 30
+				SELECT @numero
+			END;
+		ELSE
+			BEGIN
+				SET @numero = 40
+				SELECT 'Número incorreto!'
+			END;
+
+	--Ex. Aluno:
+		DECLARE @nome VARCHAR(30),
+				@media REAL,
+				@resultado VARCHAR(10)
+
+		SELECT @nome = nome_aluno,
+			   @media = (tbl_alunos.nota1 + tbl_alunos.nota2 + tbl_alunos.nota3 + tbl_alunos.nota4)/4.00
+		FROM tbl_alunos
+		WHERE nome_aluno = 'helinton'			   
+			IF @media >= 7.00
+				BEGIN
+					SELECT @resultado = 'Aprovado';
+				END;
+			ELSE
+				BEGIN
+					SELECT @resultado = 'Reprovado';
+				END;
+
+		SELECT 'O aluno '+@nome+'está '+@resultado+' com média '+ CAST(@media AS VARCHAR);
+

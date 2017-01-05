@@ -256,3 +256,26 @@
 		-SELECT nomes_var AS aliases
 
 
+
+
+#A38 - IF/ELSE 
+
+	Condicional IF/ELSE
+		-É possível realizar teste condicionais em declarações SQL usando-se a estrutura IF/ELSE
+		-É possivel somente uma linha de comando uma declaração.
+		-Apenas uma linha de código é executada após os comandos:
+			IF Condição
+				Declaração
+
+			IF Condição
+				Declaração
+			ELSE
+				Declaração
+
+		-Para executar blocos de código, use as palavras BEGIN e END:
+			IF condição 
+				BEGIN
+					Bloco de códigos
+				END;
+
+
