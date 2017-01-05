@@ -1,43 +1,57 @@
-Comandos:
+--Comandos
 
-01)git help <command>. 
-	-documentação dos comandos do git.
+#A01
 
-02)git init.
-	-cria um repositorio git.
+	| Tags |0.1||0.2| |1.0|				--Nome das versões
+			 |    |     | 
+	|Master| O--->O---->O 				--Principal, usuario final.
+	|Hotfix|  \`0´		|				--Correções dos erros e falhas.
+	|Release|  \ \		0				--Lançamento de Versões finais do produto com grande mudanças, fim de um ciclo de desenvolvimento.
+	|Develop|   O-0-->O´--->O 			--Desenvolvimento versões não enstaveis.
+	|Feature|	 `0-0´		 `0--->0 	--Versões de desenvolvimento de funções do sistema.
 
-03)git add <arquivo> 
-	-Adicionar arquivos a Stage Area.
-	-Adicionar arquivos a area de montagem dos commits
-	-01)git add <.>
-		-Adiciona todos aquivos e diretorios.
+#A02 - HELP, INIT, ADD, STATUS, LOG, REMOTE, PUSH, CHECKOUT, DIFF.
 
-04)git commit [-m "mensagem"]
-	-01)git config --global core.editor gedit <configurar editor de mensagem do commit>   
+	01)git help <command>. 
+		-documentação dos comandos do git.
 
-05)git status
-	-estado do repositorio.
+	02)git init.
+		-cria um repositorio git.
 
-06)git log
-	-historico do commit.
-	-01)git log --decorate
-		-estiliza o log para ficar melhor a visibilidade.
-	-02)git log --oneline
-		-exibe o log em apenas uma linha.
+	03)git add <arquivo> 
+		-Adicionar arquivos a Stage Area.
+		-Adicionar arquivos a area de montagem dos commits
+		-01)git add <.>
+			-Adiciona todos aquivos e diretorios.
 
-07)git remote add origin git@gitghub.com:endereco.
-	-01)git remote -v
-		-mostrar os as configurações dos repositorios remotos
+	04)git commit [-m "mensagem"]
+		-01)git config --global core.editor gedit <configurar editor de mensagem do commit>.   
 
-08)git push origin"destino" master"branch" / <remote> <branch>
-	-enviar commits para o repositorio remoto.
+	05)git status
+		-estado do repositorio.
 
-09)git checkout --<arquivo> 
-	-remover arquivo para ultima alteração.
+	06)git log
+		-historico do commit.
+		-01)git log --decorate
+			-estiliza o log para ficar melhor a visibilidade.
+		-02)git log --oneline
+			-exibe o log em apenas uma linha.
 
-10)git diff [path]
-	-diferença entre comits, branchs e (arquivos ?)
-	-01)git diff HEAD~1
+	07)git remote add origin git@gitghub.com:endereco.
+		-01)git remote -v
+			-mostrar os as configurações dos repositorios remotos
+
+	08)git push origin"destino" master"branch" / <remote> <branch>
+		-enviar commits para o repositorio remoto.
+		-01)git push -u origin master
+			-A primeira vez.
+
+	09)git checkout --<arquivo> 
+		-remover arquivo para ultima alteração.
+
+	10)git diff [path]
+		-diferença entre comits, branchs e (arquivos ?)
+		-01)git diff HEAD~1
 
 #A03 - CLONE, PULL, CHECKOUT, REVERT, RESET.
 	-HISTORICO, ALTERAÇÕES E CONFLITOS.

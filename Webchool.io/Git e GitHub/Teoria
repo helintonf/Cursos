@@ -1,32 +1,76 @@
-3 arvores
+--Teoria
 
-01 Working Directory
-
-02 Index/tage Area
-
-03 Head
-
-sistema de controle de versão distribuido
-
-Gerencia de Configuração de Software
-
-* queremos saber
--oque mudou e quando?
-porque mudou
-quem fez a mudança?
-podemos reproduzir a mudança
-
-_Identificação
-_Documentação
-_Controle
-_Auditoria
-
-Artefatos
-codigo fonte
-documentação
-manual de usuario
+#A01
+	
+	O que é Git-SCM
+		-Sistema de controle de versão distribuido.
+		-SCM -> Source Control Management.
+		-Criado por Linus Torvalds(2005).
+		-Auxiliar no Desenvolvimento do Linux.
 
 
+	Gerencia de Configuração de Software
+		-Identificação
+		-Documentação
+		-Controle
+		-Auditoria
+
+		-queremos saber
+		-oque mudou e quando?
+		-porque mudou
+		-quem fez a mudança?
+		-podemos reproduzir a mudança
+
+
+
+	Artefatos
+		-Codigo fonte
+		-Documentação
+		-Manual de usuario
+
+	Ferramentas de Controle de Versão
+		-Subversion (SVN).
+		-Mercurial.
+		-CVS -Concurrent Versioning System.
+		-Bazaar.
+		-Git é o mais rápido e eficiente.
+
+	O que é GitHub
+		-Servidor de repositórios Git.
+		-Surgiu em 2008.
+		-+10 milhões de repositórios.
+		-+10 milhões de usuários.
+
+#A02
+
+	Git Init 
+		-Será criado o diretório configurado como um repositorio Git.
+		-Todas as configurações do repositório ficam na pasta .git.
+
+	Git Push
+		-Envia alterações (commits) de uma branch para o repositório remoto.
+		-O envio é rejeitado se o repositório local não estiver sincronizado.
+
+	Git Add
+		-Adiciona os arquivos novos e modificados para o próximo commit.
+
+	Git Commit
+		-Registra o commit com todos os arquivos que usou "git add".
+		-Se o parâmetro de mensagem não for passado abrirá um editor de texto para escrever a mensagem.
+
+	Git Workflow
+		-Basicamente a maior parte do trabalho com git consiste nestas tarefas:
+			-01)Editar.
+			-02)Commitar.
+			-03)Sincronizar com o repositório remoto.
+
+	Estados dos arquivos
+		-Não monitorado (untracked).
+		-Modificado (modified).
+		-Preparado (staged).
+		-Consolidado (commited).
+
+		
 <-----BRACHING----->
 Criando ramificações do repositorio.
 
