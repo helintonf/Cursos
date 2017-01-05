@@ -78,7 +78,12 @@
 --#A08 INSERT INTO ... VALUES - Inserrir dados nas Tabelas
 
 
---#36 VARIÁVEIS - Declaração e atribuição
+--#A32 Cláusula WITH TIES
+
+	SELECT TOP (3) WITH TIES nome_time , pontos FROM tbl_times
+	ORDER BY pontos DESC
+
+--#A36 VARIÁVEIS - Declaração e atribuição
 	
 	--Ex. Declaração:
 		DECLARE @idade INT,
@@ -156,3 +161,4 @@
 			WHERE ti.codigoaluno = a.codigo)
 
 	
+
