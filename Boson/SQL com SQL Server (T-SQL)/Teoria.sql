@@ -349,6 +349,22 @@
 			AS
 				Bloco de códigos
 
+	#02)Alteração e Parâmetros de Entrada
+
+		Modificar Stored Procedure:
+			ALTER PROCEDURE nome_procedimento (@Parâmetros AS tipo_dados)
+			AS 
+			Bloco de códigos da sp.
+
+		Parâmetros de Entrada:
+			EXEC nome_procedimento (Parâmetros)
+
+		Executar:
+			-Por posição:
+				EXEC nome_procedimento 22,'teste'
+			-Por nome:
+				EXEC nome_procedimento @par2 = 'teste', @par1 = 22
+
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
 	-Trazer todos os alnos que não estão em turmas:
