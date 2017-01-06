@@ -229,6 +229,35 @@
 				SET @codigo = @codigo + 1
 			END;	
 
+
+
+--#A40 - Stored Procedures
+	
+	#01)Criação e Execução
+
+		--Ex01. Criar Stored Procedures
+			CREATE PROCEDURE teste 
+			AS
+			SELECT 'Helinton fioramonte' AS Nome
+
+			EXECUTE teste
+
+		--Ex02. Biblioteca acessando banco
+			CREATE PROCEDURE p_LivroValor
+			AS
+			SELECT Nome_Livro, Preco_Livro
+			FROM tbl_Livro
+
+		--Ex03. Visualizar conteúdo de SP:
+			EXEC sp_helptext p_LivroValor
+
+		--Ex04. Criptografar Stored Procedure
+			CREATE PROCEDURE p_LivroISBN
+				WITH ENCRYPTION
+			AS
+				SELECT Nome_Livro, ISBN
+				FROM tbl_Livro
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
