@@ -223,6 +223,7 @@
 				VALUES (valor01,valor02,...)
 
 
+
 #A32 - Cláusula WITH TIES
 	-Alguns valores deixam de ser exibidos princialmente quando tem o mesmo valor do ultimo da lista retornada.
 	-Verifica se existe algum item como mesmo valor do ultimo do TOP
@@ -240,8 +241,6 @@
 
 		-Variação de uma subconsulta, similar a uma exibição (VIEW).
 		-Pode ser acessada múltiplas vezes dentro da consulta principal, como se fosse uma exibição ou tabela.
-
-
 
 #A36 - Variáveis
 
@@ -296,6 +295,21 @@
 				BEGIN
 					Bloco de códigos
 				END;
+
+
+#A39 - Loop WHILE
+	-É usado para executar código REPETIDAMENTE enquanto uma condição for verdadeira.
+	-Executa apensa um comando.
+	-Se for necessário executar um bloco de comandos, use BEGIN / END;
+	-Sintaxe:
+		WHILE condição
+			BEGIN
+				Bloco de códigos
+			END;
+
+
+
+
 
 
 #AE01 - Exists

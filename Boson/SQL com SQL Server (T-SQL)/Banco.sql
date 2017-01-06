@@ -100,7 +100,7 @@
 			FROM Clientes AS CL
 			INNER JOIN Compras AS CO ON CL.ID_Cliente = CO.ID_Cliente
 			INNER JOIN Produtos AS PR ON CO.ID_Produto = PR.ID_Produto)
-		
+
 		SELECT Cliente, SUM(Total) AS ValorTotal
 		FROM ConsultaCTE
 		GROUP BY Cliente
@@ -177,6 +177,45 @@
 				END;
 
 		SELECT 'O aluno '+@nome+'está '+@resultado+' com média '+ CAST(@media AS VARCHAR);
+
+--#A39 - Loop WHILE
+
+	--Ex. WHILE:
+		DECLARE @valor INT
+		SET @valor = 0
+
+		WHILE @valor < 10
+			BEGIN
+				PRINT 'Número: '+ CAST(@valor AS VARCHAR(2))
+				SET @valor = @valor +1
+			END;
+
+	--Ex. Biblioteca:
+		DECLARE @codigo INT
+		SET @codigo = 100
+
+		WHILE @codigo < 106
+			BEGIN
+				SELECT ID_Livro AS ID, Nome_Livro AS Livro, Preco_Livro AS Preço
+				FROM tbl_Livro
+				WHERE ID_Livro = @codigo
+				SET @codigo = @codigo + 1
+			END;
+
+	--Ex. WHILE, IF E EXISTS:
+		DECLARE @codigo INT
+		SET @codigo = 100
+
+		WHILE @codigo <= 107
+			BEGIN	
+				IF EXISTS(SELECT ID_Livro AS ID FROM tbl_Livro AS L WHERE L.ID_Livro = @codigo )		
+					BEGIN			
+						SELECT ID_Livro AS ID, Nome_Livro AS Livro, Preco_Livro AS Preço
+						FROM tbl_Livro
+						WHERE ID_Livro = @codigo			
+					END;
+				SET @codigo = @codigo + 1
+			END;	
 
 --#AE01 - Exists
 	SELECT * FROM aluno a
