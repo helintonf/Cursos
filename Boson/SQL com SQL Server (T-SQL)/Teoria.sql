@@ -318,10 +318,36 @@
 				Bloco de códigos
 			END;
 
+#A40 - Stored Procedures
 
+	#01)Criação e Execução 
 
+		Stored Procedures:
+			-Procedimentos Armazenados.
+			-São lotes (batches) de declarações SQL que podem ser executadas como uma subrotina.
+			-Permite centralizar a lógica de acesso aos dados em um único local, facilitando a manutenção e otimização de código.
+			-Também é possível ajustar permissões de acesso aos usuários, definindo quem pode ou não executá-las.
 
+		Criar uma Stored Procedures:
+			CREATE PROCEDURE nome_procedimento (@Parâmetros Tipo_dados)
+			AS
+				Bloco de códigos
 
+		Executar uma Stored Procedures:
+			EXEC nome_procedimento
+
+			-Se o procedimento armazenado for o primeiro comando de um batch, não é necessario usar a palavra EXEC.
+			
+		Visualizar conteúdo de SP:
+			-Use o procedimento armazenado sp_helptext para extrair o conteúdo de texto de uma stored procedure:
+
+			EXEC sp_helptext nome_procedimento
+
+		Criptografar Stored Procedure:
+			CREATE PROCEDURE nome_procedimento (@Parâmetros Tipo_dados)
+				WITH ENCRYPTION
+			AS
+				Bloco de códigos
 
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
