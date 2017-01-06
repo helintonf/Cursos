@@ -78,6 +78,18 @@
 --#A08 INSERT INTO ... VALUES - Inserrir dados nas Tabelas
 
 
+--#A17 - Operador UNION
+	
+	--Ex. UNION:
+		SELECT ID_Autor FROM tbl_autores
+		UNION
+		SELECT ID_Autor FROM tbl_Livro
+
+	--Ex. Pessoa Generalização:
+		SELECT Nome_Cliente FROM tbd_Clientes
+		UNION
+		SELECT Nome_Funcionario FROM  tbd_Funcionarios
+
 --#A32 - Cláusula WITH TIES
 
 	SELECT TOP (3) WITH TIES nome_time , pontos FROM tbl_times

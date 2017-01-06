@@ -223,6 +223,17 @@
 				VALUES (valor01,valor02,...)
 
 
+#A17 - Operador UNION
+	-Permite combinar duas ou mais declarações SELECT.
+	-Cada declaração SELECT deve ter o mesmo número de colunas, tipos de dados e ordem das colunas.
+	-Mesmo retorno.
+	-Unir tabelas do mesmo tipo.
+	-Soma e concatena os resultados.
+
+	SELECT colunas FROM tabela1
+	UNION
+	SELECT colunas FROM tabela2
+
 
 #A32 - Cláusula WITH TIES
 	-Alguns valores deixam de ser exibidos princialmente quando tem o mesmo valor do ultimo da lista retornada.
