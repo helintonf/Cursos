@@ -365,6 +365,13 @@
 			-Por nome:
 				EXEC nome_procedimento @par2 = 'teste', @par1 = 22
 
+	#03)Parâmetros de Entrada e INSERT
+		CREATE PROCEDURE nome_procedimento(@Parâmetros)
+			AS 
+			INSERT INTO nome_tabela (colunas) 
+			VALUES(@Parâmetros)
+
+
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
 	-Trazer todos os alnos que não estão em turmas:
