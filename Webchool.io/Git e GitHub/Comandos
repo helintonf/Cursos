@@ -1,6 +1,6 @@
 --Comandos
 
-#A01
+#A01 - Git WorkFlow
 
 	| Tags |0.1||0.2| |1.0|				--Nome das versões
 			 |    |     | 
@@ -54,25 +54,24 @@
 		-01)git diff HEAD~1
 
 #A03 - CLONE, PULL, CHECKOUT, REVERT, RESET.
-	-HISTORICO, ALTERAÇÕES E CONFLITOS.
 
 	11)git clone <URL>
 		-Baixar o repositorio remoto
-		-outra forma de criar um repositorio local.
-		-ja vem com o remote configurado.
+		-Outra forma de criar um repositorio local.
+		-Ja vem com o remote configurado.
 
 	12)git pull
-		-baixa as alterações do repositorio remoto.
-		-mantem o repositorio sincronizado com os ultimos commits de uma branch.
+		-Baixa as alterações do repositorio remoto.
+		-Mantem o repositorio sincronizado com os ultimos commits de uma branch.
 
 	13)git checkout 
 		-(01)Navegar no historico:
 			-01)git checkout <commit> <file>
 				-Permite ver como um arquivo ou todo o repositorio estava em um determinado commit.		
 				-Altera o repositorio para o estado daquele commit.
-				-é util para fazer teste antes e depois de alterações.
+				-É util para fazer teste antes e depois de alterações.
 			-02)git checkout master = <branch>
-				-para voltar o repositorio no ultimo commit
+				-Para voltar o repositorio no ultimo commit
 		-(02)Desfazendo alterações:
 			-01)git checkout -- <path_or_file>
 				-Irá desfazer todas as alterações que não estejam no Stage desde o ultimo commit.
@@ -80,9 +79,9 @@
 				-Desfazer as alterações desde o ultimo commit incluindo o Stage.
 
 	14)git revert <commit>
-		-irá criar um novo commit que desfaz as alterações do commit especificado.
+		-Irá criar um novo commit que desfaz as alterações do commit especificado.
 		-Util par desfazer um commit antigo.
-		-faz um commit ao contrario, desfaz o commit mas volta.
+		-Faz um commit ao contrario, desfaz o commit mas volta.
 
 	15)git reset <commit>
 		-Reseta o repositorio para um determinado commit.
@@ -91,8 +90,6 @@
 			-CUIDADO AO USAR! NÃO USAR SE JÁ ESTIVER PUBLICADO.
 			-Util para desfazer ultimos commmits.
 		-02)git reset HEAD~<n commits atras>
-
-	>-----CONFLITOS-----<
 
 #A04 - BRACHING, MERGE, REBASE, FETCH, TAG.
 
@@ -117,8 +114,6 @@
 			-01)git push -u <origin> <nova_branch>
 				-Abreviação do comando anterio.
 
-	>-----BRANCH-----<
-
 	MERGE:
 		-Apliar os commits de uma branch na branch atual.
 		-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
@@ -142,8 +137,6 @@
 			0---0-|---|-0 	= 	0---0---O---O---°0
 				 `O---O
 
-	>-----MERGE - REBASE-----<
-
 	19)git fetch
 		-Baixa as atualizações do remote porém não aplica elas no repositório.
 		-Permite fazer o rebase de uma branch em vez de fazer o merge.
@@ -156,8 +149,6 @@
 		-Guarda um estado do repositório.
 		-01)git push <remote> <tag>
 			-Enviar a tag para o repositorio remoto.
-
-	>-----FETCH - TAG-----<
 
 #A05 - Interfaces Gráficas e GitHub.
 	
@@ -206,13 +197,12 @@
 		-Configurar arquivos que devem ser ignorados.
 		-Contém arquivos, caminhos e patterns.
 
-		.project
-
-		node_modules/
-
-		bower_components/
-
-		**/*.css
+		-Ex. Diretorio:
+			node_modules/
+		-Ex. Arquivo:
+			Index.html
+		-Ex. Seletor todos os arquivos:
+			**/*.css
 	
 	21)git commit --amend
 		-Altera o último commit.
