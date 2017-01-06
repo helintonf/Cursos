@@ -258,6 +258,35 @@
 				SELECT Nome_Livro, ISBN
 				FROM tbl_Livro
 
+	#02)Alteração e Parâmetros de Entrada
+
+		--Ex01. Modificar Stored Procedure
+			ALTER PROCEDURE teste (@par1 AS INT)
+			AS
+			SELECT @par1
+
+		--Ex02. Parâmetros de Entrada acessando banco
+			ALTER PROCEDURE p_LivroValor (@ID SMALLINT)
+			AS
+			SELECT Nome_Livro AS Livro, Preco_Livro AS Preço
+			FROM tbl_Livro
+			WHERE ID_Livro = @ID
+
+			EXEC p_LivroValor 107
+
+		--Ex03. Múltiplos parâmetros de entrada
+			ALTER PROCEDURE teste (@par1 AS INT, @par2 VARCHAR(20))
+			AS
+			BEGIN
+				SELECT @par1
+				SELECT @par2
+			END;
+
+			--Executar por posição:
+				EXEC teste 22,'Laranja'
+			--Executar por nome:
+				EXEC teste @par1=25,@par2='Abacate'
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
