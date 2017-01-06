@@ -287,6 +287,34 @@
 			--Executar por nome:
 				EXEC teste @par1=25,@par2='Abacate'
 
+	#03)Parâmetros de Entrada e INSERT
+
+		--Ex01. Multiplos parametros:
+			ALTER PROCEDURE p_LivroValor(@ID SMALLINT, @Preco MONEY)
+			AS
+			SELECT Nome_Livro AS Livro, Preco_Livro AS Preço
+			FROM tbl_Livro
+			WHERE ID_Livro > @ID AND Preco_Livro > @Preco
+
+			EXEC p_LivroValor @ID = 100, @Preco = 60
+
+		--Ex02. Fornecer o ID e a Quantidade e retornar o valor total pago
+			ALTER PROCEDURE p_LivroValor (@ID SMALLINT, @Quantidade SMALLINT)
+			AS
+			SELECT Nome_Livro AS Livro, Preco_Livro * @Quantidade AS Preço
+			FROM tbl_Livro
+			WHERE ID_Livro = @ID
+
+			EXEC p_LivroValor @ID=107,@Quantidade =10
+
+		--Ex03. Inserção de dados
+			CREATE PROCEDURE p_insere_editora(@nome VARCHAR(50))
+			AS 
+			INSERT INTO tbl_editoras (Nome_Editora) 
+			VALUES(@Nome)
+
+			EXEC p_insere_editora @nome = 'Editoral'
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
