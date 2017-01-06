@@ -70,40 +70,159 @@
 		-Preparado (staged).
 		-Consolidado (commited).
 
-		
-<-----BRACHING----->
-Criando ramificações do repositorio.
+#A03 - HISTORICO, ALTERAÇÕES E CONFLITOS.
 
-Oque são?
-Ramificações do repositorio
+	Git Clone
+		-Baixar o repositorio remoto
+		-Outra forma de criar um repositorio local.
+		-Ja vem com o remote configurado.
 
-BRANCH:
-	-É uma lista de commits.
-	-Representa ramificações no repositório.
-	-Muito útil para trabalhos colaborativos.
-	-Branchs de desenvolvimento facilitam o controle.
-	-Branch master é a padrão.
+	Git Pull
+		-Baixa as alterações do repositorio remoto.
+		-Mantem o repositorio sincronizado com os ultimos commits de uma branch.
 
-<-----MERGE - REABASE----->
+	Git Checkout
+		-Navegar no historico
+		-Desfazer alterações
 
-MERGE:
-	-Apliar os commits de uma branch na branch atual.
-	-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
-	-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+	Git Revert
+		-Irá criar um novo commit que desfaz as alterações do commit especificado
+		-Util par desfazer um commit antigo.
+		-Faz um commit ao contrario, desfaz o commit mas volta.
 
-REBASE:
-	-Semelhante ao Merge porem é diferente na ordem de aplicar os commits.
-	-No Rebase, os seus commits na frente da base são removidos temporiariamente, os commits de outra branch são aplicados na sua branch e por fim seus commits são aplicados um a um.
-	-Pode acontecer conflitos que serão resolvidos para cada commit.
+	Git Reset
+	    -Reseta o repositorio para um determinado commit.
 
-	-Exemplo Merge:
-		0---0-----0---O---O---°0
-			 `O---O-----------´
-	-Exemplo Rebase:
-		0---0-|---|-0 	= 	0---0---O---O---°0
-			 `O---O
+#A04 - BRACHING
 
-TAG:
-	-Porque usar branch a tag?
-		para commitar na branch com o hotfix.
+	BRANCH: 
+		-É uma lista de commits.
+		-Representa ramificações no repositório.
+		-Muito útil para trabalhos colaborativos.
+		-Branchs de desenvolvimento facilitam o controle.
+		-Branch master é a padrão.
 
+	MERGE:
+		-Apliar os commits de uma branch na branch atual.
+		-Encrontra um commit comum(base) entre as branchs e aplica todos os commits que a branch atual não possui.
+		-Caso existam commits na branch atual que não estão na outra, será criado um commit de merge.
+
+	REBASE:
+		-Semelhante ao Merge porem é diferente na ordem de aplicar os commits.
+		-No Rebase, os seus commits na frente da base são removidos temporiariamente, os commits de outra branch são aplicados na sua branch e por fim seus commits são aplicados um a um.
+		-Pode acontecer conflitos que serão resolvidos para cada commit.
+
+		-Exemplo Merge:
+			0---0-----0---O---O---°0
+				 `O---O-----------´
+		-Exemplo Rebase:
+			0---0-|---|-0 	= 	0---0---O---O---°0
+				 `O---O
+
+	Fetch
+		-Baixa as atualizações do remote porém não aplica elas no repositório.
+		-Permite fazer o rebase de uma branch em vez de fazer o merge.
+		-Pull = Fetch + Merge.
+		-Fetch + Rebase é melhor para manter histórico do desenvolvimento.
+
+	TAG:
+		-Útil para definir versões estáveis do projeto.
+		-Semelhante a Branch porém não recebe mais commits.
+		-Guarda um estado do repositório.
+		-Porque usar branch a tag?
+			para commitar na branch com o hotfix.
+
+#A05 - Interfaces Gráficas e GitHub.
+
+	Interfaces Gráficas GUI
+		-Pelo terminal se faz tudo.
+		-Interfaces gráficas ajudam na visualização e auxiliam em algumas tarefas.
+
+		Recomendadas:
+			-Egit = Plugin para Eclipse.
+			-GitEye = Linux, Windows e Mac.
+
+		Não Recomendado: 
+			-GitHub for Windows.
+
+	GitHub
+
+		Fork:
+			-Copia um repositório de outro usuário para seu usuáriono GitHub.
+			-É assim que começa a contribuição para outros projetos.
+			-Você teria uma cópia idependente do repositório original, podendo fazer quaisquer alterações.
+
+		Issues:
+			-Tradução: Questões.
+			-Reportar bugs.
+			-Organizar tarefas a serem feitas.
+			-Permite discussão entre os usuários.
+			-Pode ser referenciado por commits.
+				-Commit: "Closes #3"
+
+		Pull Request:
+			-O grande simbolo de colaboração.
+			-É quando você solicita qe sua alterações sejam unidas a uma branch no mesmo repositório ou a um repositorio que sofreu o fork.
+			-Igual uma Issue porém com uma branch associada.
+			-Muito útil para o trabalho colaborativo.
+
+		Fluxo do GitHub:
+			-https://guides.github.com/introduction/flow/
+
+		Checkout em Pull Request:
+			-git fetch origin pull/<ID>/head:<BRANCH>
+			-Cria uma branch com os commits do pull request.
+
+#A06
+	
+	.gitignore:
+		-Configurar arquivos que devem ser ignorados.
+		-Contém arquivos, caminhos e patterns.
+
+	Git Commit Amend
+		-Altera o último commit.
+		-Mensagem de commit.
+		-Adiciona arquivos.
+
+	Git Stash
+		-Guarda as alterações do Working Directory.
+		-Permite fazer rebase, merge trocar de branch sem a necessidade de fazer um commit.
+
+	Git Cherry-Pick
+		-Aplica as alterações de um commit na branch atual.
+		-Cria um novo commit.
+		-Replicar commit.
+		-Útil para recuperar histórico
+
+	Git Blame
+		-Mostra as alterações feitas em um arquivo por linha.
+		-Mostra o autor e o commit que foi feito aquela linha.
+		-Útil para verificar quando as alterações foram feitas, por que e por quem.
+
+	Git Bisect
+		-Permite fazer uma busca binária nos commits para encontrar uma alteração.
+		-Útil para alterações que modificaram o comportamento e não podem ser identificadas por código facilmente.
+		-Quando a alteração pode ser bastante antiga.
+
+	GitHub Pages
+		-Hospedagem de website estático.
+		-Site para usuários, organizações e repositórios.
+		-Branch    especial 'gh-pages'.
+		-Deve conter um index.html.
+		-gerador de páginas do GitHub.
+
+	GitHub Milestones
+		-Grupo de Issues associado a um objetivo.
+		-Possui uma data.
+		-Permite acompanhar a % de issues resolvidas.
+		-Existe em outros servidores Git.
+
+	Hooks e Serviços
+		-Permite integrar eventos do repositório com outras aplicações.
+		-Possui alguns serviços já compatíveis.
+		-Exemplo: travis-CI, Slack.
+
+	GIT KRAKEN
+	
+	GIT GAME
+		-Série de desafios para resolver com git.
