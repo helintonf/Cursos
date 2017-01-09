@@ -371,6 +371,24 @@
 			INSERT INTO nome_tabela (colunas) 
 			VALUES(@Parâmetros)
 
+	#04)Parâmetros de Saída, RETURN e Valor Padrão
+		-Parametro pode ser opcional pq ele tem um valor padrao
+
+		Parâmetros de Saída
+			-Os parâmetros de saída habilitam um procedimento armazenado a retornar dados ao procedimento chamador.
+			-Usamos a palavra-chave OUTPUT quando o procedimento é criado, e também quando é chamado.
+			-No Procedimento armazenado, o procedimento de saída aparece como uma variável local;
+			-No procedimento chamador, uma variável deve ser criada para receber o parâmetro de saída.
+			-Parâmetros biderecional.
+			-Passagem de valores por referencia.
+
+		Comando RETURN
+			-O comando RETURN termina incondicionalmente o procedimento e retorna um valor inteiro ao chamador.
+			-Pode ser usado para retornar status de sucesso ou falha do procedimento.
+			-NÃO RETORNA O VALOR DO PROCESSAMENTO, MAS DO STATUS.
+
+		SET NOCOUNT ON 
+			-Para não contar as linhas afetadas.
 
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
