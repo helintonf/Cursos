@@ -394,7 +394,7 @@
 
 		--Ex01. Biblioteca
 			CREATE FUNCTION retorna_itens(@valor REAL)
-			RETUNRS Table
+			RETURNS Table
 			AS
 			RETURN(
 				SELECT L.Nome_Livro, A.Nome_Autor, E.Nome_Editora
@@ -407,6 +407,24 @@
 			SELECT Nome_Livro, Nome_Autor
 			FROM retorna_itens(62.00)
 
+	#03)Valor de Tabela com Várias Instruções
+
+		--Ex01. Biblioteca
+			CREATE FUNCTION multi_tabela()
+			RETURNS @valores Table
+				(Nome_Livro VARCHAR(50),
+				Data_Pub DATETIME, Nome_Editora VARCHAR(50),
+				Preco_Livro MONEY)
+			AS
+			BEGIN
+				INSERT @valores (Nome_Livro, Data_Pub, Nome_Editora, Preco_Livro)
+				SELECT L.Nome_Livro, L.Data_Pub, E.Nome_Editora, L.Preco_Livro
+				FROM tbl_livro AS L
+				INNER JOIN tbl_editoras AS E ON L.ID_Editora = E.ID_Editora
+				RETURN
+			END
+
+			SELECT * FROM multi_tabela()
 
 --#AE01 - Exists
 	SELECT * FROM aluno a

@@ -420,6 +420,11 @@
 		AS
 		RETURN (Declaração_Select)
 
+	#03)Valor de Tabela com Várias Instruções
+		-Combina a habilidade da função escalar de conter códigos complexos com a habilidade de função com valor de tabela de retornar um resulset.
+		-Este tipo de função cria uma variável do tipo table e a popula a partir do código.
+		-Essa tabela é então passada de volta à função, de modo que possa ser usada em declarações SELECT.
+
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
 	-Trazer todos os alnos que não estão em turmas:
