@@ -95,6 +95,18 @@
 	SELECT TOP (3) WITH TIES nome_time , pontos FROM tbl_times
 	ORDER BY pontos DESC
 
+--A#33 - Views
+
+	--Ex01. View
+		CREATE VIEW vw_LivrosAutores
+		AS SELECT A.Nome_Livro AS Livro, B.Nome_Autor AS Nome_Autor
+		FROM tbl_Livro A
+		INNER JOIN tbl_autores B ON A.ID_Autor = B.ID_Autor
+
+		SELECT Livro, Autor
+		FROM vw_LivrosAutores
+		--WHERE Livro LIKE 'S%'
+
 --#A35 - CTE Commom Table Expression (SubConsultas)
 
 	--Ex. Loja - Totalizar todos os produtos comprados por cliente:
