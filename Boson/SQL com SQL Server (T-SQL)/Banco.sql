@@ -431,5 +431,8 @@
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
 			WHERE ti.codigoaluno = a.codigo)
 
-	
+--#AE02 - row_number() over
+	SELECT ROW_NUMBER() OVER(ORDER BY A.Data_Pub ASC) AS Livro, A.Nome_Livro
+	FROM tbl_Livro A
+	ORDER BY A.Data_Pub
 
