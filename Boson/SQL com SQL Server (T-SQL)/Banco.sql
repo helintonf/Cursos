@@ -315,6 +315,49 @@
 
 			EXEC p_insere_editora @nome = 'Editoral'
 
+	#04)Parâmetros de Saída, RETURN e Valor Padrão
+
+		--Ex01. Parâmetros com valor padrão
+			CREATE PROCEDURE p_teste_valor_padrão (@par1 INT, @par2 VARCHAR(20) = 'Valor Padrão!')
+			AS
+			SELECT 'Valor do parâmetro 1: '+ CAST(@par1 AS VARCHAR)
+			SELECT 'Valor do parâmetro 2:'+ @par2
+
+			EXEC p_teste_valor_padrão 30
+			EXEC p_teste_valor_padrão @par1 = 40, @par2 = 'Valor Modificado'
+
+		--Ex02. Parâmetros de saída
+			ALTER PROCEDURE teste (@par1 AS INT OUTPUT)
+			AS
+			SELECT @par1 * 2
+			RETURN
+
+			DECLARE @valor AS INT = 15
+			EXEC teste @valor OUTPUT
+			PRINT @valor
+
+		--Ex03. Usando o parâmetro RETURN
+			ALTER PROCEDURE p_LivroValor(
+				@Quantidade SMALLINT,
+				@Cod SMALLINT = -10,
+				@ID SMALLINT
+				)
+			AS
+			SET NOCOUNT ON --Para não mostrar as linhas afetas nas mesagens
+			IF EXISTS(SELECT ID_Livro FROM tbl_Livro WHERE ID_Livro = @ID)
+				BEGIN
+					SELECT Nome_Livro AS Livro, Preco_Livro * @Quantidade AS Preço
+					FROM tbl_Livro
+					WHERE ID_Livro = @ID
+					RETURN 1
+				END
+			ELSE
+				RETURN @Cod
+
+			DECLARE @Codigo INT
+			EXEC @Codigo = p_LivroValor @ID = 103, @Quantidade = 10
+			PRINT @Codigo
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
