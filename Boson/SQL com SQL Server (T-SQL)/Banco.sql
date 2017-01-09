@@ -361,7 +361,7 @@
 --#A41 - Funções
 
 	#01)Função Escalar
-	
+
 		--Ex01. Funções Escalares:
 			CREATE FUNCTION nota_media(@nome VARCHAR(30))
 			RETURNS REAL
@@ -376,6 +376,7 @@
 
 			SELECT dbo.nota_media('Fábio')
 
+		--Ex02. Biblioteca
 			CREATE FUNCTION livro_parcelado(@nome VARCHAR(30),@parcelas SMALLINT = 1)
 				RETURNS REAL
 				AS
@@ -387,8 +388,25 @@
 					RETURN @valor
 				END
 
-
 				SELECT dbo.livro_parcelado('Nova Ordem Mundial',1)
+
+	#02)Valor de Tabela Embutida
+
+		--Ex01. Biblioteca
+			CREATE FUNCTION retorna_itens(@valor REAL)
+			RETUNRS Table
+			AS
+			RETURN(
+				SELECT L.Nome_Livro, A.Nome_Autor, E.Nome_Editora
+				FROM tbl_livro AS L
+				INNER JOIN tbl_autores AS A ON L.ID_Autor = A.ID_Autor
+				INNER JOIN tbl_editoras AS E ON L.ID_Editora = E.ID_Editora
+				WHERE L.Preco_Livro > @valor
+				)
+
+			SELECT Nome_Livro, Nome_Autor
+			FROM retorna_itens(62.00)
+
 
 --#AE01 - Exists
 	SELECT * FROM aluno a

@@ -391,7 +391,7 @@
 			-Para não contar as linhas afetadas.
 
 
-#A41 - Funções~Definidas pelo usuário
+#A41 - Funções Definidas pelo Usuário
 	
 	#01)Função Escalar
 		Funções Definidas pelo Usuário
@@ -400,9 +400,8 @@
 				-Criar novas funções para expressões complexas.
 				-Substituir exibições com a vantagem de aceitar parâmetros.
 
-			-Há vários tipos de UDFs:
-				-Funções Escalares.
-					-Retorna apenas um único valor específico.
+			-Funções Escalares.
+				-Retorna apenas um único valor específico.
 
 					CREATE FUNCTION nome_função(<parâmetros>)
 					RETURNS tipo_dados_retorno
@@ -412,9 +411,14 @@
 						RETURN expressão_retorno
 					END
 
-				-Valor de Tabela Embutida, Valor de Tabela Multi-instruções.
+	#02)Valor de Tabela Embutida
+		-São similares a uma exibição, porém permitem utilizar parâmetros.
+		-Retornam um conjunto completo de dados.
 
-
+		CREATE FUNCTION nome_função(parâmetros)
+		RETURNS Table
+		AS
+		RETURN (Declaração_Select)
 
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
