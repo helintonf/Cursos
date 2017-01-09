@@ -432,3 +432,9 @@
 		WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
 				WHERE ti.codigoaluno = a.codigo)
 
+#AE02 - row_number() over
+	-Numerar linhas dinamicamente em uma instrução.
+
+	SELECT ROW_NUMBER () OVER(parâmetros de ordem), <Campos>
+	FROM
+	ORDER BY <Parâmetros de ordem>
