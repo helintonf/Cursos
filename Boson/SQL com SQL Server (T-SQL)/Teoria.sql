@@ -243,6 +243,17 @@
 	SELECT TOP (3) WITH TIES nome_time , pontos FROM tbl_times
 	ORDER BY pontos DESC
 
+#A33 - Views
+	-Uma Exibição (Visão) é uma tabela virtual baseada no conjunto de resultados de uma consulta SQL.
+	-Contém linhas e colunas como uma tabela real, e pode receber comandos como declarações JOIN, WHERE e funções como uma tabela normal.
+	-Mostra sempre resultados de dados atualizados, pois o motor do banco de dados recria os dados toda vez que um usuário consulta a visão.
+
+	CREATE VIEW <nome_view>
+	AS SELECT <colunas>
+	FROM <tabela>
+	WHERE <condições>
+
+
 #A35 - 	CTE Commom Table Expression (SubConsultas)
 	-Subconsultas e CTE com Tabelas Derivadas.
 
@@ -389,7 +400,6 @@
 
 		SET NOCOUNT ON 
 			-Para não contar as linhas afetadas.
-
 
 #A41 - Funções Definidas pelo Usuário
 	
