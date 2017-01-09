@@ -265,3 +265,50 @@
 	
 	GIT GAME
 		-Série de desafios para resolver com git.
+
+#P01 - Palestra Git
+
+	Git fluxo de trabalho
+
+		01)Working Directory.
+			->>add
+		02)Index/Stage.
+			->>commit
+		03)HEAD.
+
+	Git - configurações básicas
+
+		Nome do usuário:
+			-git config --global user.name "<username>"
+
+		E-mail do usuário:
+			-git config --global user.email "<email>"
+
+	git commit -am
+		-adiciona os arquivos aultomaticamente se eles foram alterados.
+
+	git iginore
+		https://github.com/github/gitignore
+
+	Git - ramificações
+
+		git branch <branch>
+			-Adicionando branch.
+
+		git branch
+			-Listar branchs.
+
+		git branch -D <branch>
+			-Excluir branch local.
+
+		git push <remote> :<branch>
+			-excluir nrach remoto.
+
+		git fetch <remote>
+			-sincronizar branch com o github.
+
+		git checkout -b <novaBranch>
+			-cria e troca de branch
+
+		git remote -v
+			-mostra as configurações de receber e enviar os commits.
