@@ -390,6 +390,32 @@
 		SET NOCOUNT ON 
 			-Para não contar as linhas afetadas.
 
+
+#A41 - Funções~Definidas pelo usuário
+	
+	#01)Função Escalar
+		Funções Definidas pelo Usuário
+			-Podemor criar funções (UDFs)para realizar diversas tarefas nos bancos de dados, tais como:
+				-Inserir lógica complexa em uma consulta.
+				-Criar novas funções para expressões complexas.
+				-Substituir exibições com a vantagem de aceitar parâmetros.
+
+			-Há vários tipos de UDFs:
+				-Funções Escalares.
+					-Retorna apenas um único valor específico.
+
+					CREATE FUNCTION nome_função(<parâmetros>)
+					RETURNS tipo_dados_retorno
+					AS
+					BEGIN
+						Bloco de códigos
+						RETURN expressão_retorno
+					END
+
+				-Valor de Tabela Embutida, Valor de Tabela Multi-instruções.
+
+
+
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
 	-Trazer todos os alnos que não estão em turmas:

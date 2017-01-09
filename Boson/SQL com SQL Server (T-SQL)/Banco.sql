@@ -358,6 +358,38 @@
 			EXEC @Codigo = p_LivroValor @ID = 103, @Quantidade = 10
 			PRINT @Codigo
 
+--#A41 - Funções
+
+	#01)Função Escalar
+	
+		--Ex01. Funções Escalares:
+			CREATE FUNCTION nota_media(@nome VARCHAR(30))
+			RETURNS REAL
+			AS
+			BEGIN
+				DECLARE @media REAL
+				SELECT @media = (nota1+nota2+nota3+nota4 * 2)/5.00
+				FROM tbl_alunos
+				WHERE nome_aluno = @nome
+				RETURN @media
+			END
+
+			SELECT dbo.nota_media('Fábio')
+
+			CREATE FUNCTION livro_parcelado(@nome VARCHAR(30),@parcelas SMALLINT = 1)
+				RETURNS REAL
+				AS
+				BEGIN
+					DECLARE @valor REAL
+					SELECT @valor = Preco_Livro / @parcelas
+					FROM tbl_Livro
+					WHERE Nome_Livro = @nome
+					RETURN @valor
+				END
+
+
+				SELECT dbo.livro_parcelado('Nova Ordem Mundial',1)
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
