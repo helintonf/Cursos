@@ -448,3 +448,80 @@
 	FROM tbl_Livro A
 	ORDER BY A.Data_Pub
 
+--#AE03 - Tabelas Temporárias
+
+	--Ex01. Locais
+		CREATE TABLE #tbl_Livro_Autores
+		(
+			ID SMALLINT IDENTITY(1,1) NOT NULL,
+			Livro VARCHAR(60),
+			Autor VARCHAR(80),
+			CONSTRAINT pk_tbl_livro_autores PRIMARY KEY CLUSTERED (ID)
+			)
+
+	--Ex02. Globais
+		CREATE PROCEDURE TesteTabelaTemporaria
+		AS
+		CREATE TABLE ##tmpTotalPage(
+			mes SMALLINT NULL,
+			total_Mes SMALLINT NULL,
+			media_Mes DECIMAL(9,3) NULL
+			)
+		
+		INSERT INTO ##tmpTotalPage(mes,total_Mes,media_Mes)
+		(SELECT DATEPART(MONTH,data) AS Mes, COUNT(*) AS TotalAcessos, NULL 
+			FROM Acessos AS AC
+			INNER JOIN CadastroTB AS C ON AC.idcad = C.idcad
+			GROUP BY DATEPART(MONTH,data))
+
+		select  mes, totalmes, 
+		media = case
+		 when mes = 1 then  totalmes / 31 
+		 when mes = 2 then  totalmes / 28 
+		 when mes = 3 then  totalmes / 30 
+		 when mes = 4 then  totalmes / 31 
+		 when mes = 5 then  totalmes / 30 
+		 when mes = 6 then  totalmes / 31 
+		 when mes = 7 then  totalmes / 30 
+		 when mes = 8 then  totalmes / 31 
+		 when mes = 9 then  totalmes / 30 
+		 when mes = 10 then  totalmes / 31 
+		 when mes = 11 then  totalmes / 30 
+		 when mes = 12 then  totalmes / 31  
+		end 
+		from #tmpTotalPage
+
+--#AE04 - Cursor
+
+	--Ex01. Duplicata
+		DECLARE @ID_Livro AS INT
+
+		DECLARE @Contador AS INT = 0
+
+		DECLARE LivroLetra CURSOR FOR
+			SELECT ID_Livro
+			FROM tbl_Livro
+
+		OPEN LivroLetra
+
+		FETCH NEXT FROM LivroLetra INTO @ID_Livro
+		WHILE @@FETCH_STATUS = 0
+			BEGIN
+
+				SET @Contador = @Contador +1 
+
+				UPDATE tbl_Livro 
+				SET ISBN =  CASE @Contador 
+					WHEN 1 THEN 'A' 
+					WHEN 2 THEN 'B' 
+					WHEN 3 THEN 'C' 
+					ELSE ' ' 
+					END
+				WHERE ID_Livro = @ID_Livro
+
+				FETCH NEXT FROM LivroLetra INTO @ID_Livro
+			END
+
+		CLOSE LivroLetra
+		DEALLOCATE LivroLetra
+
