@@ -448,3 +448,28 @@
 	SELECT ROW_NUMBER () OVER(parâmetros de ordem), <Campos>
 	FROM
 	ORDER BY <Parâmetros de ordem>
+
+#AE03 - Tabelas Temporárias
+	-São muito utilizadas quando precisamos reunir vários registros de várias tabelas em uma única seleção e exibi-las em uma aplicação
+	-É fundamental para aplicações cliente/servidor onde varios usuários estão acessando aquela procedure ao mesmo tempo.
+	-Só existira enquanto a procedure está sendo executada, após a execução da mesma ela é automaticamente excluida.
+	-São Criadas no database TempDB e podem ser classificadas em:
+
+	Locais:
+		-São criadas com o prefixo "#".
+		-Possuem visibilidade restrita para a conexão responsavel por sua criação.
+		-Outras conexões não "enxergam" a tabela.
+
+		CREATE TABLE #nomeTable
+		(campos tipo_dados)
+
+	Globais:
+		-São criadas com o prefixo "##".
+		-Possuem visibilidade por todas as conexões.
+
+		CREATE TABLE ##nomeTable
+		(campos tipo_dados)
+
+#AE04 - Criar Cursor
+	-Parecido com For para cada regirto consultado pode aplicar diversas operações e consultas.
+	
