@@ -438,6 +438,34 @@
 
 			SELECT * FROM multi_tabela()
 
+--#A42 - Triggers
+
+	--#01)Definição e Tipos Instead Of e After
+
+	--#02)Criação e Testes dos modos Instead Of e After
+
+		--Ex01. Trigger AFTER com PRINT
+			CREATE TRIGGER teste_trigger_after
+			ON tbl_editoras
+			AFTER INSERT
+			AS
+			PRINT 'Olá Editoras';
+
+		--Ex02. Trigger AFTER com Tabelas
+			CREATE TRIGGER trigger_after 
+			ON tbl_editoras
+			AFTER INSERT
+			AS
+			INSERT INTO tbl_autores VALUES(25,'José','da Silva')
+			INSERT INTO tbl_Livro VALUES('Livro1','123456000','20001010',77,25,2)
+
+		--Ex03. Trigger INSTEAD OF com PRINT
+			CREATE TRIGGER teste_trigger_insteadof
+			ON tbl_autores
+			INSTEAD OF INSERT
+			AS
+			PRINT 'Olá  Autor';
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
