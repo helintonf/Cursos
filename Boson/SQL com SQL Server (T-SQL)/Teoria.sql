@@ -555,6 +555,12 @@
 				-0 = Triggers desabilitados.
 				-1 = Triggers Habilitados.
 
+	#04)Deterinar Colunas alteradas e funções update().
+		-A função UPDATE() retorna True se uma coluna especifica for afetada por uma transação DML.
+		-Podemos criar um gatilho que executa um código caso a coluna especificada seja alterada por um comando DML usando essa função.
+		
+
+
 
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
