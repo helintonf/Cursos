@@ -558,8 +558,26 @@
 	#04)Deterinar Colunas alteradas e funções update().
 		-A função UPDATE() retorna True se uma coluna especifica for afetada por uma transação DML.
 		-Podemos criar um gatilho que executa um código caso a coluna especificada seja alterada por um comando DML usando essa função.
-		
 
+	#05)Aninhamento e Triggers Recursivos.
+
+		Aninhamento de Triggers DML
+			-Um Trigger, ao ser disparado, pode executar uma declaração DML que leva ao disparo de outro trigger.
+			-Quando um trigger dispara outro trigger indiretamente ou provoca o disparo dele proprio.
+			-Para isso, a opção de servidor "Permitir que Gatilhos disparem outros gatilhos", em:
+				-Propriedades do Servidor -> Avançado, deve estar configurada como True (é o padrão)
+
+			-Para desabilitar / habilitar a opção de aninhamneto de triggers, use o comando:
+				EXEC sp_configure 'Nested Triggers', 0 | 1;
+				RECONFIGURE;
+
+		Triggers Recursivos
+			-Um gatilho recursivo é um tipo especial de trigger AFTER aninhado.
+			-O trigger recursivo ocorre quando um trigger executa uma declaração DML que o dispara novamente.
+			-Podemos habilitar ou desabilitar os triggers recursivos com o comando ALTER DATABASE:
+
+				ALTER DATABASE nome_banco_dados
+				SET RECURSIVE_TRIGGERS ON | OFF
 
 
 #AE01 - Exists
