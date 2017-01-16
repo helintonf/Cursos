@@ -435,6 +435,106 @@
 		-Este tipo de função cria uma variável do tipo table e a popula a partir do código.
 		-Essa tabela é então passada de volta à função, de modo que possa ser usada em declarações SELECT.
 
+#A42 - Triggers
+
+	#01)Definição e Tipos Instead Of e After
+
+		Triggers
+			-Um trigger(Gatilho) é um tipo especial de Stored Procedure que é executada automaticamente 
+				quando um usuário realiza uma operação de modificação de dados em uma tabela especificada.
+			-Um trigger pode chamar outro trigger
+			-As operações que podem disparar um trigger são: DML
+				-INSERT
+				-UPDATE
+				-DELETE
+
+		Triggers DML
+			-Os triggers não são executados diretamente;
+			-Disparam apenas em resposta a eventos como INSERT, UPDATE ou DELETE em uma tabela.
+
+			-No SQL Server, os triggers disparam uma vez para cada operação de modificação
+			-E não uma vez por linha afetada(no Oracle há as duas opções).
+
+		Modos de disparo de um Trigger
+			-Pode ser disparado de dois modos diferentes:
+				-After:
+					-O código presente no trigger é executado após todas as ações terem sido completadas na tabela especificada.
+
+				-Instead Of: --em vez de
+					-O código presente no trigger é executado no lugar da operação que causou seu disparo.
+
+		Comparação entre Triggers:
+
+			-Declaração DML:
+				-INSTEAD OF
+					-Simulada, mas não executada.
+				-AFTER 
+					-Executada, mas pode ser revertida no trigger(Roll back).
+
+			-Timing:
+				-INSTEAD OF
+					-Antes das constraints PK e FK.
+				-AFTER
+					-Após a transação completa, mas antes do commit.
+
+			-N° eventos por tabela:
+				-INSTEAD OF
+					-Um.
+				-AFTER
+					-Múltiplos
+
+			-Aplicável em Views?
+				-INSTEAD OF
+					-Sim.
+				-AFTER
+					-Não.
+
+			-Permite aninhamento?
+				-INSTEAD OF
+					-Depende das operações do servidor.
+				-AFTER
+					-Depende das operações do servidor.
+
+			-É Recursivo?
+				-INSTEAD OF
+					-Não.
+				-AFTER
+					-Depende das operações do Banco de dados.
+
+		Fluxo de Transações:
+			-Para desenvolver Triggers, é necessário conhecimento do fluxo geral da transação, 
+				para evitar conflitos entre os triggers e constraints.
+			-As transações se movem através de verificações e códigos na ordem mostrada no próximo slide.
+
+			Fluxo:
+				-01)Verificação de IDENTITY INSERT.
+				-02)Restrição (Constraint) de Nulos(NULL).
+				-03)Checagem de tipos de dados.
+				-04)Execução de trigger INSTEAD OF (a execução do DML para aqui; esse trigger não é recursivo).
+				-05)Restrição de Chave Primária.
+				-06)Restrição "Check".
+				-07)Restrição de Chave Estrangeira.
+				-08)Execução do DML e atualização do log de transação.
+				-09)Execução do trigger AFTER.
+				-10)Commit da Transação (Confirmação).
+					
+	#02)Criação e Testes dos modos Instead Of e After
+
+		Sintaxe do Trigger:
+
+			CREATE TRIGGER nome_trigger
+			ON tabela | view 
+			[WITH ENCRYPTION]
+			AFTER | INSTEAD OF
+			[INSERT, UPDATE ,DELETE]
+
+			AS
+			Código do Trigger
+
+			-O trigger pode ser disparado por qualquer combinação de eventos INSERT, UPDATE ou DELETE.
+
+
+
 #AE01 - Exists
 	-Faz um sub SELECT para testar alguma confição.
 	-Trazer todos os alnos que não estão em turmas:
