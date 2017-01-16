@@ -497,6 +497,28 @@
 					PRINT 'Nome não foi modificado'
 				END
 
+	--#05)Aninhamento e Triggers Recursivos.
+
+		--Ex01. Trigger Recursivo
+			CREATE TABLE tbl_trigger_recursivo(
+				codigo INT PRIMARY KEY
+				)
+
+			CREATE TRIGGER trigger_rec ON tbl_trigger_recursivo
+			AFTER INSERT
+			AS
+			DECLARE @cod INT 
+			SELECT @cod = MAX(codigo)
+			FROM tbl_trigger_recursivo
+			IF @cod < 10
+				BEGIN
+					INSERT INTO tbl_trigger_recursivo SELECT MAX(codigo) + 1 from tbl_trigger_recursivo
+				END
+			ELSE
+				BEGIN
+					PRINT 'Trigger Recursivo Finalizado'
+				END
+
 
 --#AE01 - Exists
 	SELECT * FROM aluno a
