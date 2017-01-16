@@ -481,6 +481,23 @@
 				FROM sys.triggers
 				WHERE is_Disabled = 0
 
+	--#04)Deterinar Colunas alteradas e funções update().
+
+		--Ex01. Função Update()
+			CREATE TRIGGER trigger_after_autores
+			ON tbl_autores
+			AFTER INSERT, UPDATE
+			AS
+			IF UPDATE(Nome_Autor)
+				BEGIN
+					PRINT 'O nome do autor foi alterado ' + Nome_Autor
+				END
+			ELSE
+				BEGIN
+					PRINT 'Nome não foi modificado'
+				END
+
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
