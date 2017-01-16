@@ -466,6 +466,21 @@
 			AS
 			PRINT 'Olá  Autor';
 
+	--#03)Habilitar, Desabilitar e Verificar Status.
+
+		--Ex01. Desabilitar um trigger
+			ALTER TABLE tbl_editoras
+			DISABLE TRIGGER trigger_after
+
+		--Ex02. Verificar trigger
+			EXEC sp_helptrigger @tabname = tbl_editoras
+
+		--Ex03. Verificar abilitados ou desabilitados
+			USE db_Biblioteca
+				SELECT *
+				FROM sys.triggers
+				WHERE is_Disabled = 0
+
 --#AE01 - Exists
 	SELECT * FROM aluno a
 	WHERE NOT EXISTS (SELECT 1  FROM turmaitem ti
