@@ -533,6 +533,27 @@
 
 			-O trigger pode ser disparado por qualquer combinação de eventos INSERT, UPDATE ou DELETE.
 
+	#03)Habilitar, Desabilitar e Verificar Status.
+
+		Habilitar e Desabilitar Triggers
+			-O Adminsitrador do Sistema pode desabilitar temporariamente im trigger se houver necessidade.
+			-Para isso, use o comando DDL ALTER TABLE:
+				ALTER TABLE nome_tabela
+				ENABLE | DISABLE  TRIGGER nome_trigger
+
+		Verificar a existência de triggers
+
+			Em uma tabela específica:
+				EXEC sp_helptrigger @tabname = nome_tabela
+
+			No banco de dados todo:
+				USE nome_banco_dados
+				SELECT *
+				FROM sys.triggers
+				WHERE is_Disabled = 0
+
+				-0 = Triggers desabilitados.
+				-1 = Triggers Habilitados.
 
 
 #AE01 - Exists
