@@ -108,6 +108,119 @@
 					};
 
 
+#A02 - Lambda λ
+	-Lambda é uma regra de transformação.
+	-Expressão forma de uma função vai trabalhar.
+
+	expressões simples
+		int x;
+
+		int f(int x){
+			return x;
+		}
+
+		x: int 
+		f: int -> int
+		_______
+
+		x: a
+		f: a -> a
+
+	x E Z
+		-x pertence ao conjunto dos inteiros função f recebe um inteiro e retorna um inteiro.
+		-Se fosse apenas os inteiros positivos falariamos que pertence aos naturais.	
+
+	Composição de funções
+
+		x: a
+		f: a -> a
+		g: a -> a
+
+		f(g(a))
+
+		Notação
+			(f.g) = h : a -> a
+
+	-A sintaxe das expressões-lambda é determinada por duas operações:
+		-abstração.
+		-aplicação.(sendo que a aplicação envolve uma operação de substituição chamada conversão-Beta)
+
+	-Uma expressão-lambda pode ser uma variável, uma abstração de uma expressão, ou uma aplicação de duas expressões:
+		-Variáveis:
+		 	-x, y, z, um conjunto qualquer de nomes de variáveis;
+
+		-Abstrações:
+			-dada uma expressão-lambda E, podemos formar uma adstração de E usando `λ + variável +'.'+E`. Por exemplo: 'λx.x';
+
+		-Aplicações:
+			-dadas duas expressões-lambda E e F, a expressão da aplicação é formada pela justaposição de uma ao lado da outra: EF.
+
+	Exemplos
+
+		x //Apenas uma variável
+		λx.x
+		λx.y
+		(λx.x x)(λx.x x)
+		λm.λn.λb. m (n b a) (n a b)
+
+		Significado:
+			-a abstração significa a criação de uma função;
+			-aplicação significa o uso ou chamada dessa função em cima de um parâmetro.
+			-a conversão-Beta é a regra de substituição que diz como a aplicação deve funcionar.
+
+			Expressão Lambda
+				(λx.x)
+					-Onde x é a variavel que entrará na expressão λx
+					function(x){
+						return x;
+					}
+
+				(λy.x)
+
+					function(y){
+						return x;
+					}
+
+				(λx.(λy.x))
+
+					λx.λy.x
+
+					function(x){
+						return function(y){
+							return x;
+						}
+					}
+
+			Aplicação Lambda
+
+				(λx.x) y
+
+					-Onde (λx.x) tem como resultado a apressão avaliada passando o y como valor.
+
+				(λx.E) F
+
+					-Dada a aplicação (λx.E) F, o resultado é a expressão E, mas substituindo todas a ocorrências de x por F (o argumento da função).
+					-Onde (E=x e F = y), sendo E a função onde x é substituido pelo valor F.
+
+				λx.x UNICORNIO -> UNICORNIO
+
+				function(x){
+					return x;
+				}(UNICORNIO);
+
+			Conversão-Beta
+				-Analisemos essa expressão
+				-trocar por valor de verdade.
+
+				(λx.+x 1)4
+
+				conversão-Beta é 
+				+4 1
+
+			//EXERCICIOS
+
+
+
 
 
 
