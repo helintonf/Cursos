@@ -219,8 +219,74 @@
 
 			//EXERCICIOS
 
+				λx.λy.x  UNICORNIO -> UNICORNIO
 
+					function(UNICORNIO){
+						return function(y){
+							return UNICORNIO;
+						}
+					}
 
+				Multiplicação
+
+					function(x){
+						return function(y){
+							return x * y;
+						}
+					}
+
+#A03 
+
+	Por que JavaScript é funcional?
+		-por causa de suas funções.
+
+	Funções
+		-No JavaScript uma função nada mais é que um objeto que possui atributos como:
+			-arguments
+			-name
+			-length
+
+		E funções importantes como:
+			-apply
+			-bind
+			-call
+
+	TODA FUNÇÃO PRECISA RETORNAR UM VALOR
+
+		function setIdade(idade){
+			this.idade = idade;
+			return this;
+		}
+
+	Funções - anônima
+		-A função anônima é apenas a chamada do 'function' sem nomeá-la, 
+			sendo o lambda uma função anônima que aceita apenas um parâmetro.
+		-Server pra usar sem instanciar e armazenar em variavel em memoria.
+
+		function(nome){
+			return 'Ola '+nome;
+		};
+
+	Funções - IIFE
+		Immediately-Invoked Function Expression
+
+		-No JavaScript cada vez que você executa uma função você cria um escopo fechado 
+			para ela de onde as variáveis não podem "sair", tendo assim um mecanismo simples de privacidade.
+
+		-Bom se para executarmos uma função basta colocar () após o nome da função, podemos então substituir 
+			o nome da função pela própria declaração dela.
+			function(){--Code--}();
+		-O problema aqui é que quando o interpretador do javaScript encontra a palavra
+			function ele trata como uma declaração de função, para resolver esse problema nós
+			só precisamos encapsular ela entre ().
+				
+				(function(){--Code--}());
+				(function(){--Code--})();
+
+				(function(){alert('oi')})();
+
+				function foo(){ foo();}
+					var foo = function(){arguments.callee();};
 
 
 
