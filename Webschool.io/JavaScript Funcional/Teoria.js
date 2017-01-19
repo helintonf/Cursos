@@ -288,5 +288,103 @@
 				function foo(){ foo();}
 					var foo = function(){arguments.callee();};
 
+#A04 First-class e High-order
+
+	First-class Functions
+		-No JavaScript e função é first-class citizen, assim como objeto, entidade ou valor,
+			porque ela suporta todas as operações comuns às outras entidades.
+
+		Operações:
+			-Assinada a uma variável.
+			-Retornada de uma função.
+			-Ser passada por parâmetro.
+
+			var hello = function(name){alert('Olá '+name);}
+			var hello = function(name){return function(){alert('Olá '+name);}}
+			function ola(msg,name){msg(name);}
+
+			-Assinada a uma variável.
+				var add = function (a,b){
+					return a + b;
+				}
+
+			-Retorna uma função.
+				function adder(a){
+					return function(b){
+						return a + b;
+					}
+				}
+
+				var _add = adder(20);
+				_add(420);
+
+			-Passar parâmetro
+				function multi(a){
+					var sum = 0;
+					return function(b){
+						sum =b;
+						for(i=1;i<a;i++){
+							sum += b;
+						}
+						return sum;
+					}
+				}
+				var mult = multi(2);
+				mult(3);
+				multi(2)(3)
+
+				function adder(a){
+					console.log('a',a);
+					return function(b){
+						console.log('b',b);
+						return a+b;
+					}
+				}
+
+		No JavaScript uma função tambem poder ser um objeto.
+
+			var plus1 = new Function('a', 'return a+1;');
+			var sum = new Function('a','b','return a + b;');
+
+			var numbers = [1,2,3,4,5,6,7,8,9,10];
+			var pares = function(numero){
+				return !(numero % 2)
+			}
+
+			var resposta = numbers.filter(pares);
+
+			console.log(resposta)
+
+		High-order Functions
+			-Uma função é chamada de *high-order* quando ela faz duas coisas:
+				-Recebe uma ou mais funções como parâmetro.
+				-Retorna uma função.
+
+			-Basicamente é uma função que recebe outra função como parâmetro ou devolve uma função como resultado.
+			-Quando você usa callbacks no JavaScript e no Jquery, você está fazendo uso de high order functions.
+
+			function somar(x,y){
+				return x+y;
+			};
+			function subtrair(x,y){
+				return x-y;
+			};
+			function multiplicar(x,y){
+				return x*y;
+			};
+			function dividir(x,y){
+				return x /y;
+			};
+			-Função high order
+			function calcular(op,x,y){
+				return op(x,y);
+			};
 
 
+			function mp (op,valor,vezes){
+				var sum =valor;
+				for(i = 0; i <= vezes; i++){
+					sum = op(valor,sum);
+				}
+				return sum;
+			}
