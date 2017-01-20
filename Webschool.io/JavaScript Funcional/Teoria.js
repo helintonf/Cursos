@@ -388,3 +388,23 @@
 				}
 				return sum;
 			}
+
+#A05 - Closures
+	-É importante que você entenda como funciona o escopo no JavaScript para que não fique
+		confuso ao ver colsures e currying, existem até livros apenas sobre esse tema como:
+			-Closure the definitive guide.
+			-Scope & Closures, you dont know JS
+
+	-Como na maioria das linguagues do mercado, uma variável declarada em um escopo maior é visível em um escopo menor,
+		enquanto o contrário não é verdadeiro.
+
+		var name = 'helinton'
+		function foo(){
+			console.log(name);
+		}
+
+	-Significa também que uma variável local só é vista dentro do escopo em que foi criada, 
+		mesmo que tenha o mesmo nome de uma variável global.
+
+	-função criar uma variavel local se for passado o variavel global por parametro.
+
