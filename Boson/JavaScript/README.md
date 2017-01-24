@@ -1,7 +1,7 @@
 #A01 - Introdução
 
 ##JavaScript
-   - Linguagem `interpretada`, e não compilada, assim como PHP e Ruby.
+- Linguagem `interpretada`, e não compilada, assim como PHP e Ruby.
 - Não é uma versão "script" do Java, e não tem relação entre si.
 - Disponibilizada primeiramente no navegador Netscape Navigator 2.
 - Chamada inicialmente de `LiveScript`.
