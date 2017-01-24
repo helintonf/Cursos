@@ -107,7 +107,6 @@
 						return s+s;
 					};
 
-
 #A02 - Lambda λ
 	-Lambda é uma regra de transformação.
 	-Expressão forma de uma função vai trabalhar.
@@ -407,4 +406,175 @@
 		mesmo que tenha o mesmo nome de uma variável global.
 
 	-função criar uma variavel local se for passado o variavel global por parametro.
+
+#P01 - JavaScript Funcional ES6 (Palestra)
+
+	Oque é programação funcional?
+		-Basear em funções.
+		-menor entidade é a função.
+
+	Porque usar?
+		-concorrência.
+
+	Onde usar?
+		-BI
+		-Filtro de spam
+		-Radupe
+		-map
+		-reduce
+
+	Lambda
+		-λx.x
+
+	ES6
+		-Proxima versão do javascript.
+
+		LET
+			function varTeste(){
+				var x = 420;
+				if(true){
+					var x = 666;// same variable.
+					console.log(x); //666
+				}
+				console.log(x); //666
+			}
+
+			function letTest(){
+				let x =420;
+				if(true){
+					let x = 666; //different variable
+					console.log(x); //666
+				}
+				console.log(x); //420
+			}
+
+		CONST 
+			const x = 10;
+
+		DEFAULT PARAMETERS
+			function makeRequest(url,timeout = 2000,callback = function(){}){
+
+			}
+
+		DESTRUCTURING
+
+		SPREAD OPERATOR
+			-LISTA valores um por um
+			let values = [25,50,100]
+			console.log(Math.max(...values));
+
+		Arrow function 
+			-Não aceita new.
+			-Não possui o argments.
+			-this não pode ser mudado.
+			-this tem valor de onde é criado e não de onde é chamado.
+
+			function = (arguments){expression}
+			arguments => expression
+
+			normal
+				var hello = function(name){
+					return "Ola, "+name+"!";
+				}
+				console.log(hello('Helinton'));
+
+			Arrow Function
+				let hello = name => 'Olá, ${name}!';
+				let hello = () => 'Olá, ${name}!';
+				let sum = (num1,num2) => num1 + num2;
+				console.log(hello('Helinton'));
+
+		Interators
+			-interação
+
+			let arr = [3,5,7];
+			arr.foo = "hello";
+
+			for (let i in arr){
+				console.log(i); //0,1,2,foo
+			}
+				//in nomes das chaves
+
+			for (let i of arr){
+				console.lo(i); //3,5,7
+			}
+				// of pegamos os valores instanciados.
+
+		PROMISE
+			function httpGet(url){
+				return new Promise(
+					function (resolve,reject){
+						var request = new XMLHttpRequest();
+						request.onreadystatechange = function (){
+							if(this.status === 200){
+								//Success
+								resolve(this.response);
+							}else{
+								//Something went wrong (404 etc.)
+								reject(new Error(this.statusText));
+							}
+						}
+						request.onerror = function (){
+							reject(new Error(
+								'XMLHttpRequest Error:'+this.statusText
+								));
+						};
+						request.open('GET',url);
+						request.send();
+					}
+					);
+			}
+			//chamada da função
+			httpGet('http://hfweb.com.br')
+			.then(
+				function(value){
+					console.log('Contents:' + value);
+				},
+				function(reason){
+					console.error('Something went wrong', reason);
+				}
+				);
+
+		Funções
+			função anonima
+			IIFE
+				função anonima autoexecutada.
+			(function(){}());
+			(function(){})();
+
+			First-class Function
+				-FUNÇÃO COMO VARIAVEL, PARAMETRO.
+				-OQUE VC PODE FAZER COM UMA VARIAVEL PODE FAZER COM UMA FUNÇÃO(){}
+
+			Hight - ORDER Function
+				-PODER RECEBER UM PARAMETRO DE UMA FUNÇÃO
+				-RETORNAR UMA FUNÇÃO
+
+			Currying
+				-ARGUMENTOS UM POR UM CHAMANDO DE FORMA simples COM FUNÇÃO.
+
+			Closures
+				-Encapsular variaveis e escopos.
+
+			Hoisting
+				-mudar variavel da função filho pro pai e pai pra filho.
+
+			recursion
+				-interações 
+
+			Immutability
+				-não mudar valores.
+				-criar copia deles com valores mudados.
+
+			Pure function
+				-funções puras
+				-oque entra e sai da funçãos não tem alteração é o mesmo valor e tipo de dados.(){}
+
+			Loops
+
+			map 
+
+			reduce
+
+			filter
 
