@@ -192,7 +192,7 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
         --Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
 ```
 
-#A06 - AUTO INCREMENTO (IDENTITY)
+#A06 - Auto Incremento (IDENTITY)
 
 ##IDENTITY
 
@@ -201,3 +201,45 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 - Para que o valor de IDENTITY inicie em 100 e se incremente de 2 em 2, use IDENTITY(100,2).
 - **SOMENTE PODE SER USADO NA CRIAÇÃO DA COLUNA!**
 - **SOMENTE PODE USAR UMA COLUNA IDENTITY POR TABELA!**
+
+#A07 - Alterar e Excluir Tabelas e Colunas
+
+##Alterar Tabelas
+- É possível alterar a estrutura de uma tabela após ter sido criada, acrescentando ou excluindo atributos (campos).
+
+**ALTER TABLE - DROP**
+```sql
+    ALTER TABLE nome_tabela  --DELETAR COLUNA
+        DROP COLUMN nome_coluna
+
+    --Excluir uma constraint:
+    ALTER TABLE nome_tabela  --DELETAR CONSTRAINT
+        DROP CONSTRAINT nome_constraint
+```
+
+**ALTER TABLE - ADD**
+```sql
+    ALTER TABLE nome_tabela  --ADICIONAR COLUNA
+        ADD nome_coluna_tipos_constraints
+        CONSTRAINT chaves PK, FK, etc.
+        REFERENCES nome_tabela_referencia_chave
+
+    --Adicionar uma constraint:
+    ALTER TABLE nome_tabela   --ADICIONAR CONSTRAINT
+        ADD PRIMARY KEY (<coluna_constraints>)
+        --A coluna deve existir antes de ser transformada em chave primária.
+```
+
+**ALTER TABLE - ALTER** 
+```sql
+    ALTER TABLE nome_tabela
+        ALTER COLUMN nome_coluna
+            tipo_dados SMALLINT
+        --Alterar antes de inserir dados.
+```
+
+**DROP TABLE**
+```sql
+    DROP TABLE nome_tabela
+    --Excluir tabela
+```
