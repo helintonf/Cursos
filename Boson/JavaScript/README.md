@@ -117,3 +117,49 @@ document.write("d é "+ typeof d +"<br/>");
 document.write("e é "+ typeof e +"<br/>");
 
 ```
+
+#A03 - Operadores Aritméticos
+
+ - Operadores aritméticos são utlizados para a realização de cálculos simples em JavaScript.
+ - Representam os operadores matemáticos básicos:
+ 	+ Soma, subtração, divisão e multiplicação. 
+ - Além de algumas operações especiais:
+ 	+ Módulo e incremento / decremento. 
+ 	+ *"Módulo é o resto de uma divisão inteira"*
+ 	+ *"Incrementar significa aumentar o valor de algo, e decrementar significa diminuir o valor de algo."*
+
+![Operadores](https://raw.githubusercontent.com/helintonf/Cursos/JAVASCRIPT/Boson/JavaScript/images/operadores.jpg)
+
+##Exemplo 01:
+
+```javascript
+
+var a = 10;
+
+var b = 20;
+
+document.write("Soma: " + (a + b) + "<br/>");
+document.write("Subtração: " + (a - b) + "<br/>");
+document.write("Multiplicação: " + (a * b) + "<br/>");
+document.write("Divisão: " + (a / b) + "<br/>");
+document.write("Módulo: " + (b % a) + "<br/>");
+document.write("Incremento: " + (++a) + "<br/>"); //préincremento
+document.write("Decremento: " + (--b) + "<br/>"); //predecremento
+
+```
+
+##Exemplo 02 Calculando a área de um terreno:
+
+```javascript
+
+alert("Vamos calcular a área de um terreno.");
+
+var a = prompt("Digite a largura em metros:");
+var b = prompt("Digite o comprimento, em metros:");
+
+var s = a * b;
+
+document.write("A área do terreno é de " + s + " metros <br/>");
+
+```
+
