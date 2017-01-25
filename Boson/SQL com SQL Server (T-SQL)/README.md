@@ -131,3 +131,44 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
         --informa o tamanho, taxa de crescimento, e local do banco de dados.
 
 ```
+
+#A04 - CONSTRAINTS (Restrições)
+
+##SQL Constraints (Restrições)
+
+- Restrições são `regras` aplicadas nas `colunas` de uma tabela.
+- São usadas para `limitar` os tipos de dados que são inseridos.
+- Podem ser especificadas no momento de `criação` da tabela *CREATE*.
+- Ou após a tabela ter sido criada *ALTER*.
+
+**NOT NULL**
+- A constraint NOT NULL impõe a uma coluna a NÃO aceitar valores `NULL`.
+- Obriga um campo a sempre possuir um valor.
+- Deste modo, não é possível inserir um registro (ou atualizar) sem entrar com um valor neste campo. 
+
+**UNIQUE**
+- Identifica de forma única cada registro em uma tabela.
+- As constraints UNIQUE e PRIMARY KEY garantem a `unicidade` em uma coluna ou conjunto de colunas.
+- Uma constraint PRIMARY KEY automaticamente possui uma restrição UNIQUE definida.
+- pode ter várias constraints UNIQUE em uma tabela, mas apenas uma PRIMARY KEY por tabela.
+
+**PRIMARY KEY**
+- Identifica de forma única cada registro em uma tabela.
+- devem conter valores únicos.
+- não pode conter valores NULL.
+- Cada tabela deve ter apenas uma PRIMARY KEY.
+
+**FOREIGN KEY**
+- É um campo que aponta para uma chave primária em outra tabela.
+
+**CHECK**
+- É usada para `limitar` uma faixa de valores que podem ser colocados em uma coluna.
+- Permite apenas determinados valores para a coluna.
+- Se for definida para a tabela, poderá limitar os valores em algumas colunas com base nos valores de outras colunas do registro.
+
+**DEFAULT**
+- É usada para inserir um valor `padrão` em uma coluna.
+- O valor padrão será adicionado a todos os novos registros caso nenhum outro valor seja especificado.
+
+**IDENTITY(*INICIAR_SEQUENCIA*,*INCREMENTO*)**
+- Deixa o campo com `auto incremento`.
