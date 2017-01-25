@@ -116,13 +116,13 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 ##Criando Banco de Dados:
 
 ```sql
-        CREATE DATABASE NOME_BANCO ON PRIMARY (
-            NAME = 'NOME_BANCO',
-            FILENAME = 'CAMINHO',
-            SIZE = 10, --TAMANHO MB ou KB
-            MAXSIZE = 100, --TAMANHO MAXIMO MB ou KB
-            FILEGROWTH = 5,--TAMANHO CRESCIMENTO MB ou %
-            );
+    CREATE DATABASE NOME_BANCO ON PRIMARY (
+        NAME = 'NOME_BANCO',
+        FILENAME = 'CAMINHO',
+        SIZE = 10, --TAMANHO MB ou KB
+        MAXSIZE = 100, --TAMANHO MAXIMO MB ou KB
+        FILEGROWTH = 5,--TAMANHO CRESCIMENTO MB ou %
+        );
 
     USE BANCO_DE_DADOS;
         --Comando USE instrui o SGBDR a utilizar o banco de dados especificado para rodar os comandos.
