@@ -125,8 +125,8 @@ document.write("e é "+ typeof e +"<br/>");
  	+ Soma, subtração, divisão e multiplicação. 
  - Além de algumas operações especiais:
  	+ Módulo e incremento / decremento. 
- 	+ *"Módulo é o resto de uma divisão inteira"*
- 	+ *"Incrementar significa aumentar o valor de algo, e decrementar significa diminuir o valor de algo."*
+	 	+ *"Módulo é o resto de uma divisão inteira"*
+	 	+ *"Incrementar significa aumentar o valor de algo, e decrementar significa diminuir o valor de algo."*
 
 ![Operadores](https://raw.githubusercontent.com/helintonf/Cursos/JAVASCRIPT/Boson/JavaScript/images/operadores.jpg)
 
