@@ -243,3 +243,13 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
     DROP TABLE nome_tabela
     --Excluir tabela
 ```
+
+#A08 - Inserir dados nas Tabelas
+
+##Inserir Dados
+
+```sql
+    --inserir dados em uma tabela
+    INSERT INTO nome_tabela(coluna01,coluna02,...)
+        VALUES (valor01,valor02,...)
+```
