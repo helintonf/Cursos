@@ -110,3 +110,24 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
         --8 bytes.
 
 ```
+
+#A03 - Criar Banco de Dados (CREATE DATABASE)
+
+##Criando Banco de Dados:
+
+```sql
+        CREATE DATABASE NOME_BANCO ON PRIMARY (
+            NAME = 'NOME_BANCO',
+            FILENAME = 'CAMINHO',
+            SIZE = 10, --TAMANHO MB ou KB
+            MAXSIZE = 100, --TAMANHO MAXIMO MB ou KB
+            FILEGROWTH = 5,--TAMANHO CRESCIMENTO MB ou %
+            );
+
+    USE BANCO_DE_DADOS;
+        --Comando USE instrui o SGBDR a utilizar o banco de dados especificado para rodar os comandos.
+
+    sp_helpdb BANCO_DE_DADOS;
+        --informa o tamanho, taxa de crescimento, e local do banco de dados.
+
+```
