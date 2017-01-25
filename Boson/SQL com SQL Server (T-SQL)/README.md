@@ -172,3 +172,22 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 
 **IDENTITY(*INICIAR_SEQUENCIA*,*INCREMENTO*)**
 - Deixa o campo com `auto incremento`.
+
+#A05 - Criação de Tabelas (CREATE TABLE)
+    
+##Criar Tabela
+
+```sql
+    CREATE TABLE NOME_TABELA(
+        --CAMPOS TIPOS CONSTRAINTS
+        Campo_ID SMALLINT PRIMARY KEY IDENTITY(100,1),
+        Campo_Texto VARCHAR(50) NOT NULL,
+        Campo_Data DATETIME NOT NULL,
+        Campo_Numerico INT NOT NULL,
+        Campo_Decimal REAL NOT NULL
+        );
+
+    sp_help NOME_TABELA;
+        --informa os índices, chaves, campos atributos, tipos de atributos de uma tabela.
+        --Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
+```
