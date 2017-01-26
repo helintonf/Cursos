@@ -190,3 +190,133 @@ alert(nome + ", o período é constante com o valor " + PERIODO);
 - Melhora a performace do Sistema.
 - Se alterarmos o valor da constante no código, seu valor será automaticamente alterado em todos os pontos onde a constante aparece no script.
 
+#A05 - Métodos JavaScript
+
+##Métodos
+
+- Os métodos **confirm()**, **alert()** e **prompt()** são usados para exibir uma caixa de diálogo `pop-up` para o usuário, com o intuito de exibir ou solicitar informações.
+- Esses três métodos pertencem ao objeto `window`, e podem ser referenciados como:
+	+ window.confirm
+	+ window.alert
+	+ window.prompt
+- O objeto window representa uma janela aberta no navegador, e contém outros objetos, como o objeto `document`.
+
+##Método alert()
+
+- Usado para mostrar uma caixa de alerta *"diálogo"* e um botão de OK.
+- pertence ao objeto `window`, que representa uma janela aberta em um navegador.
+
+**Sintaxe:**
+```javascript
+
+alert("mensagem");
+
+```
+
+- **mensagem** indica o texto *"string"* a ser exibido na caixa de alerta.
+
+Exemplo método alert()
+
+```javascript
+
+alert("Bom dia");
+alert("Vamos estudar a linguaguem \n JavaScript hoje!");
+
+```
+
+##Método prompt()
+
+- Caixa de diálogo para entrada de dados.
+- Pertence ao objeto window.
+
+**Sintaxe:**
+```javascript
+
+prompt("arg01","[arg02]");
+
+```
+
+Onde:
+- **arg01** é uma mensagem de instrução direcionada ao usuário.
+- **arg02** é um valor padrão, geralmente usado para fornecer uma dica ao usuário *"Opcional"*.
+
+- Os argumentos devem sempre estar entre aspas, simples ou duplas.
+- Se o usuário clicar no botão OK, retornará os dados digitados na caixa.
+- Se clicar em Cancelar, retornará o valor **null**.
+
+Exemplo método prompt()
+
+```javascript
+
+var a = prompt("Digite seu nome: ", "Nome");
+var b = prompt("Digite seu sobrenome:");
+document.write("Bom dia, "+ a +" " + b + "<br/>");
+
+```
+
+##Método confirm()
+
+- Usado para mostrar uma `caixa de confirmação`, com uma mensagem especificada, e botões OK e Cancelar.
+- Retorna **TRUE** se o usuário clicar em OK, e **FALSE** se clicar em Cancelar.
+- Também pertence ao objeto window.
+
+**Sintaxe:**
+```javascript
+
+confirm("mensagem");
+
+```
+
+- **mensagem** é uma string de texto, opcional, que especifica o texto a mostrar na caixa de confirmação.
+
+Exemplo do método confirm()
+
+```javascript
+
+var mensagem;
+
+var retorno = confirm("Clique em um dos botões!");
+
+if (retorno == true){
+	mensagem = "Operação confirmada";
+}
+else{
+	mensagem = "Você cancelou a operação";
+}
+document.write(mensagem);
+
+```
+
+##Método document.write()
+
+- Permite escrever texto e HTML em um documento.
+
+**Sintaxe:**
+
+```javascript
+
+document.write("argumentos");
+
+```
+
+- **argumentos** podem ser texto *"string"* ou marcações HTML.
+- O método `document.write()` somente funciona se estiver inserido no documento processado.
+- Se for executado a partir de um evento, sobrescreverá todo HTML da página.
+
+Exemplo do método document.write()
+
+```javascript
+
+var a = prompt("Digite nome do Aluno:","Nome Aluno");
+var b = confirm("Deseja salvar o Aluno: "+a);
+var i = 1;
+if(b == true){
+	document.write(i+ ") "+ a+"<br/>");
+	alert("O Aluno "+ a +" foi salvo na tela.");	
+	i++;
+}
+else{
+	alert("Você cancelou o cadastro do Aluno "+a);
+}
+
+```
