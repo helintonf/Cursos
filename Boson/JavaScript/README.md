@@ -163,3 +163,30 @@ document.write("A área do terreno é de " + s + " metros <br/>");
 
 ```
 
+#A04 - Constantes
+
+##Constantes em JavaScript
+
+- Uma variável pode ter seu valor alterado a qualquer momento durante a execução do script.
+- Às vezes precisamos armazenar valores que nunca mudarão.
+- Uma constante é criada como uma variável inicializada, e seu valor é `permanente`, não podendo ser alterado durante a execução do script.
+
+###Criando uma constante em JavaScript
+
+- para criar uma constante usamos a palavra-chave **const**, seguida do nome desejado para a constante e de uma valor a ela atribuido.
+
+```javascript
+
+var nome;
+const PERIODO = 10;
+nome = prompt("Digite seu nome");
+//PERIODO = 15; //vai dar erro.
+alert(nome + ", o período é constante com o valor " + PERIODO);
+
+```
+
+###Boa prática:
+- Nomear as constantes com letras maiúsculas para se diferenciarem de variáveis normais.
+- Melhora a performace do Sistema.
+- Se alterarmos o valor da constante no código, seu valor será automaticamente alterado em todos os pontos onde a constante aparece no script.
+
