@@ -320,3 +320,143 @@ else{
 }
 
 ```
+
+#A06 - Convertendo Tipos de Dados
+
+- Às vezes precisamos informar em nosso código exatamente o tipo de dados que deve ser usado no processamento de informações.
+- Como o JavaScript é uma linguagem não-tipada, existe o risco de um tipo de dado ser interpretado de forma errônea, causando problemas no processamento ods dados.
+- Podemos converter entre tipos de dados usando funções especificas no JavaScript, como os métodos **parseInt()** e **parseFloat()**, entre outras.
+
+##Operador typeof
+
+- como operador **typeof()** podemos descobrir o tipo de um dado ou de uma variável.
+
+```javascript
+
+document.write(typeof "Helinton" + "<br/>");
+document.write(typeof 345.89 + "<br/>");
+document.write(typeof 12 + "<br/>");
+document.write(typeof true + "<br/>");
+
+```
+
+##Converter para String
+
+- Usando o método **String()**:
+	+ Podemos converter um valor `numerico` em string.
+	+ Podemos converter um valor `lógico` em string.
+
+```javascript
+
+//Number
+var n = 20;
+document.write("A variável n é do tipo "+ typeof n + "<br/>");
+n = String(n);
+document.write("A variável n agora é do tipo "+ typeof n +"<br/>");
+
+//Boolean
+var b = true;
+document.write("A variável b é do tipo " + typeof b +"<br/>");
+b =String(b);
+document.write("A variável b agora é do tipo "+ typeof b + "<br/>");
+
+//Podemor também usar o método toString() do objeto:
+
+n = n.toString(); 
+document.write("A variável n agora é do tipo "+ typeof n +"<br/>");
+
+b = b.toString(); 
+document.write("A variável b agora é do tipo "+ typeof b +"<br/>");
+
+```
+
+##Converter para Number
+
+- Usando o método **Number()**:
+	+ Podemos converter uma `string` em número.
+	+ Podemos converter um `boolean` em número.
+
+```javascript
+
+//String Inteiro
+var si = "10";
+console.log("A variável si é do tipo "+ typeof si);
+si = Number(si);
+console.log("A variável si agora é do tipo "+ typeof si);
+
+//String com ponto Flutuante
+var sf = "23.6";
+console.log("A variável sf é do tipo "+ typeof sf);
+sf = Number(sf);
+console.log("A variável sf agora é do tipo "+ typeof sf);
+
+//Booleano
+var bo = "23.6";
+console.log("A variável bo é do tipo "+ typeof bo);
+bo = Number(bo);
+console.log("A variável bo agora é do tipo "+ typeof bo);
+
+```
+
+###Converter para número inteiro
+
+- Usando o método **parseInt()**:
+	+ Podemos converter uma `string` especificamente para um número inteiro.
+	+ Podemos converter um numero de ponto flutuante `float` para um inteiro.
+
+```javascript
+
+var a ="10";
+a = parseInt(a);
+console.log("O valor "+ a +" da variável a agora é do tipo "+ typeof a);
+
+var b = "12.45";
+b = parseInt(b);
+console.log("O valor "+ b +" da variável b agora é do tipo "+ typeof b);
+
+var f = 56.26;
+f = parseInt(f);
+console.log("O valor "+ f +" da variável f agora é do tipo "+ typeof f);
+
+```
+
+###Converter para número de ponto flutuante
+
+- Usando o método **parseFloat()**:
+	+ Podemos converter uma `string` especificamente para um número de ponto flutuante.
+
+```javascript
+
+var a = "10.32";
+a = parseFloat(a);
+console.log("O valor "+ a +" da variável a agora é do tipo "+ typeof a);
+
+```
+
+####Precisão de ponto flutuante
+
+- Usando o método **toFixed(n)**:
+	+ Podemos controlar a `precisão` que será retornada do número de ponto flutuante.
+	+ O método só tem efeito nas `casa decimais`.
+	+ O método retorna uma `string`.
+
+```javascript
+
+var a = 10.2;
+console.log("O Valor de a é: "+ a.toFixed(2));
+
+```
+
+####Comprimento de ponto flutuante
+
+- Usando o método **toPrecision(n)**:
+	+ Podemos controlar o `comprimento` total do número que será retornado.
+	+ O comprimento é o `numero + as casas decimais`.
+	+ O método retorna uma `string`.
+
+```javascript
+
+var a = 10.2;
+console.log("O valor de a é: " + a.toPrecision(5));
+
+```
