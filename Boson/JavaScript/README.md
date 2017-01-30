@@ -1,7 +1,7 @@
 #Índice
-* [#A01 - Introdução](#a01---introdução)
+* [A01 - Introdução](#a01---introdução)
   * [Javascript](#javascript)
-* [#A02 - Variáveis e Tipos de Dados](#a02---variáveis-e-tipos-de-dados)
+* [A02 - Variáveis e Tipos de Dados](#a02---variáveis-e-tipos-de-dados)
   * [Tipos de Dados em Javascript](#tipos-de-dados-em-javascript)
     * [Tipos de Dados](#em-javascript-há-diversos-tipos-de-dados-disponíveis-tais-como)
     * [Tipo de dado Númerico](#tipos-de-dados-númerico)
@@ -12,15 +12,15 @@
   * [Escopo Variáveis](#escopo-das-variáveis)
   	- [Declarando Variáveis](#declarando-variáveis)
   * [Operador typeof](#operador-typeof)
-* [#A03 - Operadores Aritméticos](#a03---operadores-aritméticos)
-* [#A04 - Constantes](#a04---constantes)
+* [A03 - Operadores Aritméticos](#a03---operadores-aritméticos)
+* [A04 - Constantes](#a04---constantes)
 	- [Boas Práticas](#boa-prática)
-* [#A05 - Métodos Javascript](#a05---métodos-javascript)
+* [A05 - Métodos Javascript](#a05---métodos-javascript)
 	- [Método alert()](#método-alert)
 	- [Método prompt()](#método-prompt)
 	- [Método confirm()](#método-confirm)
 	- [Método documentwrite()](#método-documentwrite)
-* [#A06 - Convertendo Tipos de Dados](#a06---convertendo-tipos-de-dados)
+* [A06 - Convertendo Tipos de Dados](#a06---convertendo-tipos-de-dados)
 	- [Operador typeof](#operador-typeof-1)
 	- [Converter para String](#converter-para-string)
 	- [Converter para Number](#converter-para-number)
@@ -28,7 +28,7 @@
 		+ [Converter para número de ponto flutuante](#converter-para-número-de-ponto-flutuante)
 			* [Precisão de ponto flutuante](#precisão-de-ponto-flutuante)
 			* [Comprimento de ponto flutuante](#comprimento-de-ponto-flutuante)
-* [#A07 - Operadores Relacionais](#a07---operadores-relacionais)
+* [A07 - Operadores Relacionais](#a07---operadores-relacionais)
 
 
 
