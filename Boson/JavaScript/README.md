@@ -460,3 +460,46 @@ var a = 10.2;
 console.log("O valor de a é: " + a.toPrecision(5));
 
 ```
+
+#A07 - Operadores Relacionais
+
+- Operadores relacionais ou de comparação são utilizados para comparar dois valores (contidos ou não em variaveis).
+- Retorna um resultado booleano (true ou false), dependendo da comparação realizada.
+- São usados para verificar se valores são iguais, diferentes, maiores ou menores entre si. 
+- Geralmente associados a estruturas de repetição ou condicionais.
+
+![Operadores Relacionais](https://raw.githubusercontent.com/helintonf/Cursos/JAVASCRIPT/Boson/JavaScript/images/relacionais.jpg)
+
+
+```javascript
+
+var logico = true;
+var num = 10;
+var texto = "10";
+console.log(logico);
+
+logico = num == texto;
+console.log("10 == \"10\" "+logico);
+
+logico = num ===texto;
+console.log("10 === \"10\" "+logico);
+
+logico = num != texto;
+console.log("10 != \"10\" "+logico);
+
+logico = num !== texto;
+console.log("10 !== \"10\" "+logico);
+
+logico = num >texto;
+console.log("10 > \"10\" "+logico);
+
+logico = num >= texto;
+console.log("10 >= \"10\" "+logico);
+
+logico = num <texto;
+console.log("10 < \"10\" "+logico);
+
+logico = num <= texto;
+console.log("10 <= \"10\" "+logico);
+
+```
