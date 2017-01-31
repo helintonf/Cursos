@@ -30,11 +30,11 @@
 			* [Comprimento de ponto flutuante](#comprimento-de-ponto-flutuante)
 * [A07 - Operadores Relacionais](#a07---operadores-relacionais)
 * [A08 - Operadores Lógicos](#a08---operadores-lógicos)
-	- [AND lógico - &&](#and-lógico---&&)
-		+ [Retornando operandos com &&](#retornando-operandos-com-&&)
-	- [OR lógico - ||](#or-lógico---||)
-		+ [Retornando operandos com ||](#retornando-operandos-com-||)
-	- [NOT lógico - !](#not-lógico---!)
+	- [AND lógico - &&](#and-lógico---)
+		+ [Retornando operandos com &&](#retornando-operandos-com-)
+	- [OR lógico - ||](#or-lógico---)
+		+ [Retornando operandos com ||](#retornando-operandos-com--1)
+	- [NOT lógico - !](#not-lógico---)
 	
 
 #A01 - Introdução
