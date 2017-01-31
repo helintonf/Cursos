@@ -29,8 +29,13 @@
 			* [Precisão de ponto flutuante](#precisão-de-ponto-flutuante)
 			* [Comprimento de ponto flutuante](#comprimento-de-ponto-flutuante)
 * [A07 - Operadores Relacionais](#a07---operadores-relacionais)
-
-
+* [A08 - Operadores Lógicos](#a08---operadores-lógicos)
+	- [AND lógico - &&](#and-lógico---&&)
+		+ [Retornando operandos com &&](#retornando-operandos-com-&&)
+	- [OR lógico - ||](#or-lógico---||)
+		+ [Retornando operandos com ||](#retornando-operandos-com-||)
+	- [NOT lógico - !](#not-lógico---!)
+	
 
 #A01 - Introdução
 
@@ -535,5 +540,159 @@ console.log("10 < \"10\" "+logico);
 
 logico = num <= texto;
 console.log("10 <= \"10\" "+logico);
+
+```
+
+#A08 - Operadores Lógicos
+
+- Usamos operadores lógicos para que seja possível tomar decisões baseadas em valores booleanos true e false.
+- Sua Principal aplicação é em estruturas de controle condicionais e estruturas de repetição.
+- Os operadores lógicos disponíveis em Javascript são os seguintes:
+
+![Operadores Logicos](https://raw.githubusercontent.com/helintonf/Cursos/JAVASCRIPT/Boson/JavaScript/images/logicos.jpg)
+
+##AND lógico - &&
+
+- Esse operador retorna true se `ambos` os operadores envolvidos na operação forem verdadeiros "true". 
+- Retorna falso "false" em qualquer outro caso.
+
+Operador 01 | Operador 02 | Resultado
+:---------: | :---------: | :-------:
+FALSE       | FALSE       | FALSE
+FALSE       | TRUE        | FALSE
+TRUE        | FALSE       | FALSE
+TRUE        | TRUE        | TRUE
+
+Exemplo AND lógico:
+
+```javascript
+
+var logico;
+var num1 = 25;
+var num2 = 30;
+
+logico = (num1 != num2) && (num1 < num2);
+console.log(logico);
+
+console.log("Alterando num1: ");
+num1 = 30;
+
+logico = (num1 != num2) && (num1 < num2);
+console.log(logico);
+
+```
+
+###Retornando operandos com &&
+
+- É possível utilizar o operador && para que seja retornado o valor de um dos operadores, em vez de um booleano, de acordo com o resultado da operação.
+
+Usamos para isso a sintaxe:
+
+**variavel = operando01 && operando02;**
+
+- Onde a `variável`:
+	+ Receberá o valor de `operando01` caso seja falso.
+	+ Receberá o valor de `operando02` caso contrario ou seja `operando01` for verdadeiro.
+
+Exemplo retornando operando com &&:
+
+```javascript
+
+var logico;
+var x =12;
+var num1 = 25;
+var num2 = 30;
+
+logico = (num1 != num2) && (x);
+console.log(logico);
+
+logico = (num1 == num2) && (x);
+console.log(logico);
+
+```
+
+##OR lógico - ||
+
+- Esse operador retorna true se ao menos `um` dos operadores envolvidos na operação for verdadeiro true, e retorna false somente se ambos forem falsos.
+
+Operador 01 | Operador 02 | Resultado
+:---------: | :---------: | :-------:
+FALSE       | FALSE       | FALSE
+FALSE       | TRUE        | TRUE
+TRUE        | FALSE       | TRUE
+TRUE        | TRUE        | TRUE
+
+Exemplo OR lógico:
+
+```javascript
+
+var logico;
+var num1 = 25;
+var num2 = 30;
+
+logico = (num1 != num2) || (num1 < num2);
+console.log(logico);
+
+console.log("Alterando num1: ");
+num1 = 30;
+
+logico = (num1 != num2) || (num1 < num2);
+console.log(logico);
+
+```
+
+###Retornando operandos com ||
+
+- Tambem podemos utilizar o operador || para que seja retornado o valor de um dos operadores, em vez de um booleano, de acordo com o resultado da operação.
+
+Usamos para isso a sintaxe:
+
+**variavel = operando01 || operando02;**
+
+- Onde a `variável`:
+	+ Receberá o valor de `operando01` caso seja verdadeiro.
+	+ Receberá o valor de `operando02` caso contrario ou seja `operando01` for false.
+
+Exemplo retornando operando com &&:
+
+```javascript
+
+var logico;
+var x =12;
+var num1 = 25;
+var num2 = 30;
+
+logico = (num1 != num2) || (x);
+console.log(logico);
+
+logico = (num1 == num2) || (x);
+console.log(logico);
+
+```
+
+##NOT lógico - !
+
+- Esse operador inverte o valor booleano do operando envolvido na operação.
+- Por isso é chamado de `"operador de negação"`.
+- É um operador `unário` (*age apenas sobre um valor lógico*).
+
+Operando | Resultado
+:------: | :-------:
+FALSE    | TRUE
+TRUE     | FALSE
+
+Exemplo NOT lógico:
+
+```javascript
+
+var logico;
+var num1 = 25;
+var num2 = 30;
+
+logico = !(num1 != num2);
+console.log(logico);
+
+logico = !(num1 == num2);
+console.log(logico);
 
 ```
