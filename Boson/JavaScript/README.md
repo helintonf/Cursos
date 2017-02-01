@@ -35,7 +35,10 @@
 	- [OR lógico - ||](#or-lógico---)
 		+ [Retornando operandos com ||](#retornando-operandos-com--1)
 	- [NOT lógico - !](#not-lógico---)
-	
+* [A09 - Estruturas de decisão Condicional IF](#a09---estruturas-de-decisão-condicional-if)	 
+	- [Estrutura Condicional Composta - if / else](#estrutura-condicional-composta---if--else)
+	- [Estrutura Condicional Aninhada ou Encadeado - else if](#estrutura-condicional-aninhada-ou-encadeado---else-if)
+
 
 #A01 - Introdução
 
@@ -695,4 +698,82 @@ console.log(logico);
 logico = !(num1 == num2);
 console.log(logico);
 
+```
+
+#A09 - Estruturas de decisão Condicional IF
+
+- Usamos o condicional simples em Javascript para especificar um bloco de código que deverá ser executado, caso uma condição de teste retorne o valor True (verdadeiro).
+- Caso a condição de teste retorne False (falso), o script deve simplesmente seguir seu fluxo de xecução normal.
+
+```javascript
+/*
+if(expressão_teste)
+{
+	Bloco de códigos a executar se a expressão_teste retornar True.
+}
+*/
+
+var a = 10;
+if(a % 2 == 0){
+	alert("O número é par!");
+}
+
+```
+
+##Estrutura Condicional Composta - if / else
+
+- Usamos o condicional composto em Javascript para especificar um segundo bloco de código que deverá ser executado, quando a condição de teste não for valida.
+
+```javascript
+/*
+if(expressão_teste)
+{
+	Bloco de códigos a executar se a expressão_teste retornar True.
+}
+else
+{
+	Bloco de códigos a executar se a expressão_teste retornar False.
+}
+*/
+
+var a = 10;
+if(a % 2 == 0){
+	alert("O número é par!");
+}
+else{
+	alert(" número é impar!");
+}
+```
+
+##Estrutura Condicional Aninhada  ou Encadeado - else if
+
+- Com a declaração `else if` podemos estabelecer uma nova condição a ser testada.
+- Caso a primeira não for valida, antes de executar um bloco de códigos.
+
+```javascript
+/*
+if(expressão_teste)
+{
+	Bloco de códigos a executar se a expressão_teste retornar True.
+}
+else if(expressão_teste_2)
+{
+	Bloco de códigos a executar se a expressão_teste retornar False.
+}
+else
+{
+	Bloco de códigos a executar caso ninhuma condição for valida.
+}
+*/
+
+var a = 10;
+if(a > 10){
+	alert("O número é maior que dez!");
+}
+else if(a < 10){
+	alert("O número é menor que dez!");
+}
+else{
+	alert("O número é exato");
+}
 ```
