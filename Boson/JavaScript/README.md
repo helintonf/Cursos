@@ -37,7 +37,7 @@
 	- [NOT lógico - !](#not-lógico---)
 * [A09 - Estruturas de decisão Condicional IF](#a09---estruturas-de-decisão-condicional-if)	 
 	- [Estrutura Condicional Composta - if / else](#estrutura-condicional-composta---if--else)
-	- [Estrutura Condicional Aninhada ou Encadeado - else if](#estrutura-condicional-aninhada-ou-encadeado---else-if)
+	- [Estrutura Condicional Aninhada ou Encadeado - else if](#estrutura-condicional-aninhada--ou-encadeado---else-if)
 
 
 #A01 - Introdução
