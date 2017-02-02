@@ -38,6 +38,7 @@
 * [A09 - Estruturas de decisão Condicional IF](#a09---estruturas-de-decisão-condicional-if)	 
 	- [Estrutura Condicional Composta - if / else](#estrutura-condicional-composta---if--else)
 	- [Estrutura Condicional Aninhada ou Encadeado - else if](#estrutura-condicional-aninhada--ou-encadeado---else-if)
+* [A10 - Estrutura Condicional Switch Case](#a10---estrutura-condicional-switch-case)	 	
 
 
 #A01 - Introdução
@@ -776,4 +777,59 @@ else if(a < 10){
 else{
 	alert("O número é exato");
 }
+```
+
+#A10 - Estrutura Condicional Switch Case
+
+- É utilizada quando é preciso realizar deferentes ações baseadas em condições distintas.
+- Geralmente é utilizada no lugar de um `condicional aninhado`, pois simplifica o código.
+
+Sintaxe:
+
+```javascript
+switch(expressao){
+	case "caso1":
+		//comandos a executar;
+		break;
+	case "casoN":
+		//comandos a executar;
+		break;
+	default:
+		//comandos padrão a executar;
+		break;
+}
+```
+
+**case:**
+- Valor que será comparado com a expressão.
+- Se `corresponder`, o bloco de código associado será executado.
+
+**break:**
+- Garante que a estrutura seja `finalizada` ao ser encontrada uma correspondência.
+
+**default:**
+- O bloco de códigos `padrão` a serem executados se nenhum caso corresponder à expressão.
+
+Exemplo:
+
+```javascript
+var fruta;
+fruta = prompt("Digite o nome de uma fruta");
+fruta = fruta.toLowerCase();
+
+switch(fruta){
+	case "morango":
+		alert("Fruta boa para merengue!");
+		break;
+	case "laranja":
+		alert("Fruta boa para suco!");
+		break;
+	case "banana":
+		alert("Fruta boa para vitamina!");
+		break;
+	default:
+		alert("Fruta desconhecida");
+		break;
+}
+
 ```
