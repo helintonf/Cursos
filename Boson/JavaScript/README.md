@@ -40,6 +40,8 @@
 	- [Estrutura Condicional Aninhada ou Encadeado - else if](#estrutura-condicional-aninhada--ou-encadeado---else-if)
 * [A10 - Estrutura Condicional Switch Case](#a10---estrutura-condicional-switch-case)	 	
 * [A11 - Estrutura de Repetição FOR](#a11---estrutura-de-repetição-for)
+* [A12 - Estrutra de Repetição While](#a12---estrutra-de-repetição-while)
+
 
 #A01 - Introdução
 
@@ -873,7 +875,46 @@ else
 
 ```
 
+#A12 - Estrutra de Repetição While
 
+- Em muitos casos é necessário `repetir` um trecho de um programa diversas vezes.
+- Nesse caso podemos usar um `"loop"` que efetue essa repetição de código quantas vezes forem necessárias.
+- Os loops são chamados também de `laços de repetição`.
+- Realiza um teste lógico no início do loop.
+- A cada vez que o teste é valido, os comandos associados ao laço são executados.
+- Quando o teste não é valido, o laço é encerrado e o processamento volta para o fluxo principal do programa.
 
+Sintaxe:
 
+```javascript
 
+/*
+while(expressao)
+{
+	instruções executadas enquanto condição verdadeora
+}
+*/
+```
+
+Exemplo:
+
+```javascript
+
+var numero;
+var contador = 0;
+
+numero = prompt("Digite um número qualquer entre 10 e 100");
+
+if((numero < 10) ||(numero > 100))
+{
+	alert("Valor fora do intervalo especificado!");
+}
+else
+{
+	while(contador <= numero)
+	{
+		console.log(contador);
+		contador++;
+	}
+}
+```
