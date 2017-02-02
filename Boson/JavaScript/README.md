@@ -39,7 +39,7 @@
 	- [Estrutura Condicional Composta - if / else](#estrutura-condicional-composta---if--else)
 	- [Estrutura Condicional Aninhada ou Encadeado - else if](#estrutura-condicional-aninhada--ou-encadeado---else-if)
 * [A10 - Estrutura Condicional Switch Case](#a10---estrutura-condicional-switch-case)	 	
-
+* [A11 - Estrutura de Repetição FOR](#a11---estrutura-de-repetição-for)
 
 #A01 - Introdução
 
@@ -833,3 +833,47 @@ switch(fruta){
 }
 
 ```
+
+#A11 - Estrutura de Repetição FOR
+
+- Permite construir estruturas de loop para casos onde se conhece de antemão o `número de repetições` que devem ser realizadas (número finito de laços).
+
+Sintaxe:
+
+```javascript
+/*
+for(variavel = valor_inicio; condicao_fim; incremento){
+	instrucoes
+}
+*/
+//variavel = variavel contadora
+//valor_inicio = valor inicial atribudo a variavel
+//condicao_fim = valor final que determina o final do loop
+//incremento = valor para incrementar a variavel a cada loop.
+```
+
+Exemplo:
+
+```javascript
+
+var numero;
+numero = prompt("Digite um número qualquer entre 10 e 100");
+
+if((numero <10)||(numero > 100))
+{
+	alert("Valor fora do intervalo especificado!");
+}
+else
+{
+	for(contador = 1; contador <= numero; contador++)
+	{
+		console.log(contador);
+	}
+}
+
+```
+
+
+
+
+
