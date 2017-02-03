@@ -41,6 +41,12 @@
 * [A10 - Estrutura Condicional Switch Case](#a10---estrutura-condicional-switch-case)	 	
 * [A11 - Estrutura de Repetição FOR](#a11---estrutura-de-repetição-for)
 * [A12 - Estrutra de Repetição While](#a12---estrutra-de-repetição-while)
+* [A13 - Arrays Declaração e Atribuição](#a13---arrays-declaração-e-atribuição)
+	- [Criando um Array literal](#criando-um-array-literal)
+	- [Criando um Array com new](#criando-um-array-com-new)
+	- [Lendo os elementos do Array](#lendo-os-elementos-do-array)
+	- [Alterando um Array](#alterando-um-array)
+	
 
 
 #A01 - Introdução
@@ -917,4 +923,80 @@ else
 		contador++;
 	}
 }
+```
+
+#A13 - Arrays Declaração e Atribuição
+
+- Usamos arrays em Javascript para armazenar múltiplos valores em uma única variável.
+- Os valores armazenados em um array podem ser de tipos diferentes no JS.
+- Com o uso de arrays poupamos o esforço de criar uma variável para cada item a ser armazenado.
+- Cada item de dados armazenado em uma posição do array é chamado de `elemento`.
+- Cada elemento possui um `valor de índice`, oque permite distinguir cada elemento dentro da estrutura.
+- O Javascript não suporta Arrays Associativos.
+
+##Criando um Array literal
+
+Exemplo:
+
+```javascript
+var Estados = []; //array vazio
+var Cidades = ["São Paulo","Recife","Vitória","Aracaju"]; //array inicializado
+//Podemos declarar os valores em linhas separadas:
+Estados = [
+	"São Paulo",
+	"Rio de Janeiro",
+	"Minas Gerais",
+	"Amazonas",
+	"Alagoas"
+];
+```
+
+##Criando um Array com new
+
+Exemplo:
+
+```javascript
+
+var Paises = new Array("Brasil","Inglaterra","Espanha","Mexico","Canada","Argentina");
+console.log(Array.isArray(Paises)); //como saber se a variavel é array.
+
+```
+
+##Lendo os elementos do Array
+
+- Os elementos em um array são lidos a partir de seu número de índice, que começa a ser contato a partir do zero.
+
+Exemplo:
+
+```javascript
+
+var cidade = Cidades[0];
+console.log("A cidade é "+cidade);
+
+```
+
+- Podemos também ler todo o conteúdo de um array efetuando um loop em seus elementos:
+
+Exemplo:
+
+```javascript
+
+for(i = 0;i < Cidades.length; i++){
+	console.log(Cidades[i]);
+}
+
+```
+
+##Alterando um Array
+
+- Podemos alterar um valor em um array simplesmente atribuindo um valor a uma de suas posições.
+- Se a posição já contiver um valor ele será substituido pelo novo valor.
+
+Exemplo:
+
+```javascript
+
+Cidades[1] = "Araras";
+console.log("A cidade é "+Cidades[1]);
+
 ```
