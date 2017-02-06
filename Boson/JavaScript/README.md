@@ -1012,7 +1012,7 @@ console.log("A cidade é "+Cidades[1]);
 
 #A14 - Propriedades e Métodos de um Array
 
--Os arrays em Javascript possuem métodos e propriedades disponíveis:
+- Os arrays em Javascript possuem métodos e propriedades disponíveis:
 
 ##length
 
