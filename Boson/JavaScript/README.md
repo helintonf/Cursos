@@ -46,7 +46,16 @@
 	- [Criando um Array com new](#criando-um-array-com-new)
 	- [Lendo os elementos do Array](#lendo-os-elementos-do-array)
 	- [Alterando um Array](#alterando-um-array)
-	
+* [A14 - Propriedades e Métodos de um Array](#a14---propriedades-e-métodos-de-um-array)	
+	- [length](#length)
+	- [push()](#push--)
+	- [pop()](#pop--)
+	- [join()](#join--)
+	- [shift()](#shift--)
+	- [delete](#delete)
+	- [splice()](#splice--)
+		+ [Removendo Elementos com método splice()](#removendo-elementos-com-método-splice--)
+	- [concat()](#concat--)
 
 
 #A01 - Introdução
@@ -998,5 +1007,177 @@ Exemplo:
 
 Cidades[1] = "Araras";
 console.log("A cidade é "+Cidades[1]);
+
+```
+
+#A14 - Propriedades e Métodos de um Array
+
+-Os arrays em Javascript possuem métodos e propriedades disponíveis:
+
+##length
+
+- A `propriedade` length retorna o número de elementos presentes no array.
+
+```javascript
+
+var qtd = Cidades.length;
+console.log("O array possui "+qtd+" elementos");
+
+
+```
+
+##push()
+
+- Usando o `método` push(), podemos facilmente `adicionar` mais elementos a um array.
+- Acrecenta elementos no `final` do array.
+- É similar ao conceito de pilha.
+
+```javascript
+
+Cidades.push("Leme");
+Cidades.push("Campinas");
+Cidades.push("Conchal");
+
+```
+
+##pop()
+
+- Usando o `método` pop(), podemos `remover` o `último` elemento.
+- O método retorna o último elemento.
+- Não tem argumentos para passar.
+
+```javascript
+
+console.log(Cidades[Cidades.length -1]); //ultimo elemento
+Cidades.pop();
+console.log(Cidades[Cidades.length -1]); //ultimo elemento
+
+```
+
+##join()
+
+- O `método` join permite `unir` todos os elementos de uma array em uma `string`, especificando um caractere separador entre eles.
+
+
+```javascript
+
+var ConjuntoCidades = Cidades.join(",");
+console.log(ConjuntoCidades);
+
+```
+
+##shift()
+
+- Usando o `método` shift(), podemos `remover` o `primeiro` elemento de um array e deslocar demais uma posição para "baixo".
+
+```javascript
+
+Cidades.push("Maceió");
+console.log("Antes do deslocamento");
+console.log("Tamanho: "+Cidades.length);
+console.log("1º elemento: "+Cidades[0]);
+
+Cidades.shift(); //deslocar em inglês
+
+console.log("Após o deslocamento: ");
+console.log("Tamanho: "+Cidades.length);
+console.log("1º elemento: "+Cidades[0]);
+
+```
+
+##delete
+
+- Usando o `operador` delete, podemos excluir um elemento em uma posição qualquer do array.
+- A posição cujo conteúdo é excluido ficará com o valor `undefined`.
+- Apaga somente o conteudo de uma posição.
+- O Array não diminuo de tamanho e mantem o mesmo numero de posições.
+- Apaga o indice do elemeto e não realoca os outros indices com valor.
+
+```javascript
+
+var Cidades = ["São Paulo", "Recife", "Vitória", "Aracaju"];
+for(i = 0; i < Cidades.length; i++){
+	console.log(Cidades[i]);
+}
+
+delete Cidades[2];
+console.log("Após excluir o elemento: ");
+
+for(i=0;i<Cidades.length;i++){
+	console.log(Cidades[i]);
+}
+
+```
+
+##splice()
+
+- Usando o `método` splice(), podemos `inserir` um elemento em uma posição `específica`.
+- Um novo elemento é adicionado ao array, sem alterar os elementos já existentes.
+- Pode substituir os elemento tambem.
+- Subistituir deversos elemtos de uma só vez.
+- Re-organiza oos indices.
+
+```javascript
+
+for(i=0;i<Cidades.length;i++){
+	console.log(Cidades[i]);
+}
+
+Cidades.splice(
+	1, //indica a partir de qual posição os elementos serão adicionados ao array.
+	0, //indica se e quantos elementos deverão ser removidos a partir da posição inicial indicada, deixar 0 para não remover nada.
+	"Manaus", //são os valores a serem inseridos a partir.
+	"Londrina", //são os valores a serem inseridos a partir.
+	"CidadeN..."
+	);
+console.log("Após adicionar os elementos: ");
+
+for(i=0;i<Cidades.length;i++){
+	console.log(Cidades[i]);
+}
+
+```
+
+###Removendo Elementos com método splice()
+
+- Também podemos usar o método `splice()` para `remover elementos do meio do array` sem deixar posições com valor `undefined`.
+
+```javascript
+
+for(i=0;i<Cidades.length; i++){
+	console.log(Cidades[i]);
+}
+
+Cidades.splice(1,2);
+
+console.log("Após adicionar os elementos: ");
+
+for(i=0;i<Cidades.length;i++){
+	console.log(Cidades[i]);
+}
+
+```
+
+##concat()
+
+- Usando o `método` concat(), podemos unir dois ou mais arrays e formar um novo array.
+
+```javascript
+
+var Sudeste = ["SP","RJ","ES","MG"];
+var Nordeste = ["PI","MA","CE","RN","PB","PE","SE","AL","BA"];
+var Norte = ["AC","AM","AP","RO","RR","PA","TO"];
+var Sul = ["PR","SC","RS"];
+var CentroOeste = ["MS","MT","GO","DF"];
+
+var Estados = Nordeste.concat(Sudeste,Norte,Sul,CentroOeste);
+
+console.log("Listando os estados: ");
+
+Estados.sort(); //Ordenando os estados alfabeticamente
+
+for(i = 0; i < Estados.length; i++){
+	console.log(Estados[i]);
+}
 
 ```
