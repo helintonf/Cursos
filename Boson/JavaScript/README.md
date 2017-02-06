@@ -48,14 +48,14 @@
 	- [Alterando um Array](#alterando-um-array)
 * [A14 - Propriedades e Métodos de um Array](#a14---propriedades-e-métodos-de-um-array)	
 	- [length](#length)
-	- [push()](#push--)
-	- [pop()](#pop--)
-	- [join()](#join--)
-	- [shift()](#shift--)
+	- [push()](#push)
+	- [pop()](#pop)
+	- [join()](#join)
+	- [shift()](#shift)
 	- [delete](#delete)
-	- [splice()](#splice--)
-		+ [Removendo Elementos com método splice()](#removendo-elementos-com-método-splice--)
-	- [concat()](#concat--)
+	- [splice()](#splice)
+		+ [Removendo Elementos com método splice()](#removendo-elementos-com-método-splice)
+	- [concat()](#concat)
 
 
 #A01 - Introdução
