@@ -56,6 +56,12 @@
 	- [splice()](#splice)
 		+ [Removendo Elementos com método splice()](#removendo-elementos-com-método-splice)
 	- [concat()](#concat)
+* [A15 - Ordenando Elementos](#a15---ordenando-elementos)
+	- [Ordenar elementos string](#ordenar-elementos-string)
+	- [Ordenar elementos numericos](#ordenar-elementos-numericos)
+	- [Ordenação reversa dos elementos string](#ordenação-reversa-dos-elementos-string)
+	- [Ordenação reversa dos elementos numericos](#ordenação-reversa-dos-elementos-numericos)
+
 
 
 #A01 - Introdução
@@ -1178,6 +1184,93 @@ Estados.sort(); //Ordenando os estados alfabeticamente
 
 for(i = 0; i < Estados.length; i++){
 	console.log(Estados[i]);
+}
+
+```
+
+#A15 - Ordenando Elementos
+
+##Ordenar elementos string
+
+- Usamos o método `sort()` para ordenar os elementos de um array alfabeticamente.
+	+ Ordena somente strings alfabeticamente.
+
+```javascript
+
+var Cidades = ["São Paulo","Recife","Vitória","Aracaju","Belém"];
+Cidades.sort();
+
+for(i=0;i<Cidades.length;i++){
+	console.log(Cidades[i]);
+}
+
+```
+
+##Ordenar elementos numericos
+
+- É necessario criar funções de comparação para ordenação.
+
+```javascript
+
+var Valores = [12,34,6,45,10,9,44,38,23,98];
+
+function ordenaNum(a,b){
+	return a > b ? 1 : a < b ? -1 : 0;
+}
+
+//forma simples
+
+function ordenaNum(a,b){
+	return a - b;
+}
+
+Valores.sort(ordenaNum);
+
+for(i=0;i<Valores.length;i++){
+	console.log(Valores[i]);
+}
+
+```
+
+##Ordenação reversa dos elementos string
+
+- Usamos o método `reverse()` para ordenar os elementos de um array em ordem descendente `posições`.
+	+ Para ordenar de forma reversa alfabeticamente primeiro ordene com `sort()` e depois com reverse().
+
+```javascript
+var Cidades = ["São Paulo","Recife","Vitória","Aracaju","Belém"];
+
+Cidades.sort();
+Cidades.reverse();
+
+for(i=0;i<Cidades.length;i++){
+	console.log(Cidades[i]);
+}
+
+```
+
+##Ordenação reversa dos elementos numericos
+
+- É necessario criar funções de comparação para ordenação.
+
+```javascript
+
+var Valores = [12,34,6,45,10,9,44,38,23,98];
+
+function ordenaNumReverse(a,b){
+	return b > a ? 1 : b < a ? -1 : 0;
+}
+
+//forma simples
+
+function ordenaNumReverse(a,b){
+	return b - a;
+}
+
+Valores.sort(ordenaNumReverse);
+
+for(i=0;i<Valores.length;i++){
+	console.log(Valores[i]);
 }
 
 ```
