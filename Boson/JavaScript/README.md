@@ -64,8 +64,9 @@
 * [A16 - Funções](#a16---funções)
 	- [Passando parâmetro à função](#passando-parâmetro-à-função)
 	- [Retornando um valor com a função](#retornando-um-valor-com-a-função)
-
-
+* [A17 - Parâmetros em Funções](#a17---parâmetros-em-funções)
+	- [Passagem por valor e referência](#passagem-por-valor-e-referência)
+	- [Passando parâmetros por valor e referência](#passando-parâmetros-por-valor-e-referência)
 
 
 
@@ -1330,5 +1331,61 @@ function calcula(v,r){
 
 var corrente = calcula(v,r);
 console.log("O valor da corrente é "+corrente+"A");
+
+```
+
+#A17 - Parâmetros em Funções
+
+- Uma função pode se cominicar com o programa onde é executada por meio do uso de `argumentos` passados a ela, assim com pelo valor `retornado` pela função.
+- Argumentos são passados a uma função usando-se `parâmetros`, que são nomes declarados no cabeçalho da função.
+
+##Passagem por valor e referência
+
+- Parâmetros de tipos primitivos, como strings, numéricos ou booleanos são passados por `valor`.
+	+ Isso significa que se o argumento for alterado dentro da função, essa alteração `não` se reflete na variáveldo programa original fora da função.
+- Já objetos são passados por `referência`.
+	+ Isso significa que se uma alteração for realizada no objeto dentro da função, a alteração irá se propagar para o objeto fora da função, no programa chamado.
+
+Exemplo passagemde parâmetro:
+
+```javascript
+
+function Somar(a,b){
+	a = Number(a);
+	b = Number(b);
+	console.log(a+b);
+}
+
+var a = prompt("Entre com valor");
+var b = prompt("Entre com valor");
+Somar(a,b);
+
+```
+
+##Passando parâmetros por valor e referência
+
+- No exemplo a seguir a função recebe dois argumentos:
+	+ Uma string `(tipo primitivo)` e um array `(objeto)`.
+	+ Os valores são modificados dentro da função.
+	+ Verifcamos se as variáveis originais foram modificadas após as chamada da função.
+
+```javascript
+
+function valorReferencia(strVar,arrVar){
+	strVar = "String Modificada";
+	arrVar[0] = "Array Modificado";
+}
+
+var texto = "Valor Original";
+var vetor = ["Valor Original"];
+
+console.log("String antes de chamar função: "+texto);
+console.log("Array antes de chamar função: "+vetor[0]);
+
+valorReferencia(texto,vetor);
+console.log("------------------");
+
+console.log("String antes de chamar função: "+texto);
+console.log("Array antes de chamar função: "+vetor[0]);
 
 ```
