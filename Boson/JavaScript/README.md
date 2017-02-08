@@ -67,6 +67,7 @@
 * [A17 - Parâmetros em Funções](#a17---parâmetros-em-funções)
 	- [Passagem por valor e referência](#passagem-por-valor-e-referência)
 	- [Passando parâmetros por valor e referência](#passando-parâmetros-por-valor-e-referência)
+* [A18 - Declaração return em Funções](#a18---declaração-return-em-funções)
 
 
 
@@ -1387,5 +1388,43 @@ console.log("------------------");
 
 console.log("String antes de chamar função: "+texto);
 console.log("Array antes de chamar função: "+vetor[0]);
+
+```
+
+#A18 - Declaração return em Funções
+
+- Uma função pode ou não retornar um valor ao programa chamador.
+- Caso seja retornado um valor, usamos a instrução `return` em um ponto apropriado do programa.
+- Quando a instrução return é encontrada, o processamento de código da função para neste ponto, e returna o `valor e o controle` para o chamador.
+- Podemos ter mais de uma instrução return em uma função.
+
+Exemplo:
+
+```javascript
+
+function quadrado(numero){
+	var quad = numero * numero;
+	return quad;
+}
+
+var num = prompt("Entre com um número qualquer");
+console.log("O quadrado de "+num+" é "+quadrado(num));
+
+```
+
+Exemplo Usando mais de um return:
+
+```javascript
+
+function quadrado(numero){
+	if(isNaN(numero)){ //is Not A Number
+		return "Valor digitado não é um numero válido";
+	}
+	var quad = numero * numero;
+	return quad;
+}
+
+var num = prompt("Entre com um número qualquer");
+console.log(quadrado(num));
 
 ```
