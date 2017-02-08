@@ -61,6 +61,11 @@
 	- [Ordenar elementos numericos](#ordenar-elementos-numericos)
 	- [Ordenação reversa dos elementos string](#ordenação-reversa-dos-elementos-string)
 	- [Ordenação reversa dos elementos numericos](#ordenação-reversa-dos-elementos-numericos)
+* [A16 - Funções](#a16---funções)
+	- [Passando parâmetro à função](#passando-parâmetro-à-função)
+	- [Retornando um valor com a função](#retornando-um-valor-com-a-função)
+
+
 
 
 
@@ -1272,5 +1277,58 @@ Valores.sort(ordenaNumReverse);
 for(i=0;i<Valores.length;i++){
 	console.log(Valores[i]);
 }
+
+```
+
+#A16 - Funções
+
+- Funções são `conjuntos de instruções` que podem ser executadas como um único comando.
+- Permitem efetuar `reuso de código`, poupando muitas linhas de programação nos scripts.
+- Podem `receber` parâmetros e `retornar` valores, ou simplesmente `executar` uma tarefa.
+
+Exemplo:
+
+```javascript
+
+function Mensagem(){
+
+	alert("Parabens");
+
+}
+
+```
+
+##Passando parâmetro à função
+
+Exemplo:
+
+```javascript
+
+function Mensagem(nome){
+	alert("Parabéns "+nome);
+}
+
+var a = prompt("Digite seu nome na caixa abaixo:");
+Mensagem(a);
+
+```
+
+##Retornando um valor com a função
+
+- Uma função também pode retornar um `valor` ao script que a chamou.
+- Usamos a palavra-chave `return` para tal.
+
+```javascript
+
+var v = prompt("Entre com o valor da tensão");
+var r = prompt("Entre com o valor da resistência");
+
+function calcula(v,r){
+	var i = v/r;
+	return i;
+}
+
+var corrente = calcula(v,r);
+console.log("O valor da corrente é "+corrente+"A");
 
 ```
