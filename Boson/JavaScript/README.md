@@ -72,8 +72,9 @@
 	- [Escopo Local](#escopo-local)
 	- [Escopo Global](#escopo-global)
 	- [Dicas](#dicas)
-
-
+* [A20 - Objeto Math](#a20---objeto-math)
+    - [Propriedades do objeto Math](#propriedades-do-objeto-math)
+    - [Métodos do objeto Math](#métodos-do-objeto-math)
 
 
 
@@ -1486,3 +1487,68 @@ console.log("Eu quero uma "+comida);
  
  - `Evitar` uso de variáveis globais.
  - Variáveis que foram declaradas sem o **VAR** são consideradas `globais`, mesmo dentro de funções.
+
+
+#A20 - Objeto Math
+
+- O objeto Math fornece propriedades e métodos matemáticos.
+- Todas as suas propriedades e métodos são `estáticos`.
+- Não criamos uma nova instância de Math para utilizar sua funcionalidade.
+- Acessamos essas propriedades e métodos no próprio objeto.
+
+##Propriedades do objeto Math
+
+- **LN10** - Logaritmo natural de 10.
+- **LN2** - Logaritmo natural de 2.
+- **LOG10E** - Logaritmo de base 10 de E.
+- **PI** - Valor de Pi.
+- **SQRT2** - Raiz quadrada de 2.
+- **SQRT1_2** - Raiz quadrada de 1/2.
+
+Exemplo:
+
+```javascript
+
+console.log("Logaritmo natural de 10: " + Math.LN10);
+console.log("Valor de pi: "+ Math.PI);
+console.log("Raiz quadrada de 2: "+ Math.SQRT2);
+
+
+```
+
+##Métodos do objeto Math
+
+- Todos os argumentos passados para os métodos do objeto Math são convertidos para números primeiro, automaticamente.
+- Não é necessário efetuar conversões via código.
+
+Métodos:
+
+- **abs(x)** - Retorna o valor absoluto de x.
+- **sin(x)** - Seno de ângulo específico x, em radianos.
+- **cos(x)** - Cosseno de ângulo x, em radianos.
+- **tan(x)** - Tangente de um ângulo x, em radianos.
+- **ceil(x)** - Arredonda x para o próximo inteiro (acima).
+- **floor(x)** - Arredonda x para o inteiro abaixo.
+- **round(x)** - Arredonda x para o inteiro mais próximo.
+- **pow(x,y)** - Retorna x elevado a y.
+- **min(x1,x2,x3,...)** - Compara os números e retorna o menor.
+- **max(x1,x2,x3,...)** - Compara os números e retorna o maior.
+- **random()** - Gera um número entre 0 e 1, aleatoriamente.
+
+Exemplo:
+
+```javascript
+
+var a = 2.56;
+var x = 4;
+var y = 3;
+
+console.log("Arredondar para cima: " + Math.ceil(a));
+console.log("Arredondar para baixo: "+ Math.floor(a));
+console.log("Arredondar para o mais próximo: "+ Math.round(a));
+console.log("X elevado a Y: "+ Math.pow(x,y));
+console.log("Maior valor: "+ Math.max(x,a,y));
+console.log("Menor valor: "+ Math.min(a,x,y));
+console.log("Gerar valor aleatório: "+ Math.random()*10);
+
+```
