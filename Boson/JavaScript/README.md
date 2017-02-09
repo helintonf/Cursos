@@ -68,6 +68,12 @@
 	- [Passagem por valor e referência](#passagem-por-valor-e-referência)
 	- [Passando parâmetros por valor e referência](#passando-parâmetros-por-valor-e-referência)
 * [A18 - Declaração return em Funções](#a18---declaração-return-em-funções)
+* [A19 - Escopo das Variáveis](#a19---escopo-das-variáveis)
+	- [Escopo Local](#escopo-local)
+	- [Escopo Global](#escopo-global)
+	- [Dicas](#dicas)
+
+
 
 
 
@@ -1428,3 +1434,55 @@ var num = prompt("Entre com um número qualquer");
 console.log(quadrado(num));
 
 ```
+
+
+#A19 - Escopo das Variáveis
+
+- Escopo é um local dentro do codigo onde essa variavel é reconhecida e pode ser utilizada.
+- As variáveis em javascript podem ter um escopo `global` ou um escopo `local`.
+
+##Escopo Local
+
+- Variável é declarada dentro de um bloco de codigo especifico.
+- Variável só é valida dentro do bloco de codigo.
+
+Exemplo:
+
+```javascript
+
+function pedirComida(){
+	var comida = "pizza"; //variavel local
+	console.log(comida); //só é acessivel na função
+}
+
+pedirComida();
+
+console.log("Eu quero uma "+comida);//não é acessivel fora da função
+
+```
+
+##Escopo Global
+
+- Variável não é declarada em nenhuma função.
+- Variável valida em todo o script.
+
+Exemplo:
+
+```javascript
+
+var comida = "pizza"; //variavel global
+
+function pedirComida(){
+	console.log(comida); //consegue acessar o conteudo.
+}
+
+pedirComida();
+
+console.log("Eu quero uma "+comida);
+
+```
+
+##Dicas
+ 
+ - `Evitar` uso de variáveis globais.
+ - Variáveis que foram declaradas sem o **VAR** são consideradas `globais`, mesmo dentro de funções.
