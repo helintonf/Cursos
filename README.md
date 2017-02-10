@@ -7,3 +7,4 @@ Exemplos e Exercícios das Aulas.
 
 ### Bóson:
  -  [SQL com SQL Server (T-SQL)](https://www.youtube.com/playlist?list=PLucm8g_ezqNqI5cW3alteV5olcMCcHYRK)
+ -  [JavaScript Basico](https://www.youtube.com/playlist?list=PLucm8g_ezqNrXkDWHtgvtU9RGuauEs_xz)
