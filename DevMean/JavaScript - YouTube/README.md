@@ -29,3 +29,86 @@ function TypeNull(variavel){
     }
 }
 ```
+
+#A02 - Funções e Escopo
+
+- Escopo global.
+    + Acessivel em todo codigo.
+    + Risco de poluir o escopo global.
+    + Evite variaveis no escopo global.
+    + Crie objetos de configuração.
+
+```javascript
+
+var contador = 0;
+
+function incrementar(){
+    contador += 1;
+    console.log(contador);
+}
+
+incrementar();
+
+var contador = "joão";
+
+incrementar();
+
+////-----------
+
+var objConf = {};
+
+objConf.contador = 0;
+
+objConf.incrementar = function(){
+    objConf.contador += 1;
+    console.log(objConf.contador);
+}
+
+objConf.incrementar();
+
+```
+
+##Funções Declaration
+
+- Ocorre o içamento da função `Hosting`.
+- Função vai para o inicio do arquivo.
+
+```javascript
+
+function modificaNome(){
+
+}
+
+```
+
+
+##Funções Expression
+
+- é executado na seguencia do codigo.
+
+```javascript
+
+var modificaNome = function(){
+
+}
+
+```
+
+Exemplo Funções:
+
+```javascript
+
+var add = function(num1,num2){
+    var result = num1 + num2;
+    //console.log(num1+num2);
+    return result;
+}
+
+var calc = function(x){
+    console.log(x+1);
+}
+//função como parametro.
+calc(add(2,2));
+console.log(add(2,4));
+
+```

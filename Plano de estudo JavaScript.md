@@ -1,5 +1,5 @@
 JavaScript Basico:
-- [ ] [Boson Treinamentos - Video Aula](https://www.youtube.com/playlist?list=PLucm8g_ezqNrXkDWHtgvtU9RGuauEs_xz)
+- [x] [Boson Treinamentos - Video Aula](https://www.youtube.com/playlist?list=PLucm8g_ezqNrXkDWHtgvtU9RGuauEs_xz)
 - [ ] [DevMean - Video Aula](https://www.youtube.com/channel/UCJZJZS3Y-thD9up9kQ5l5Ng/videos)
 - [ ] [Eloquent JavaScript - Livro](http://braziljs.github.io/eloquente-javascript/)
 - [ ] [Javascript Essentials -  Udemy](https://www.udemy.com/javascript-essentials/learn/v4/overview)	
@@ -8,7 +8,7 @@ JavaScript Basico:
 - [ ] [O que TODO desenvolvedor JavaScript precisa saber - Artigo](https://medium.com/tableless/o-que-todo-desenvolvedor-javascript-precisa-saber-2cc33daedb86#.cyrs2jv6j)	
 	
 JavaScript Funcional:
-- [ ] [WebSchool - Video Aula](https://www.youtube.com/playlist?list=PL77JVjKTJT2iAlBJX3buyljqzfoR9nV_R)	
+- [x] [WebSchool - Video Aula](https://www.youtube.com/playlist?list=PL77JVjKTJT2iAlBJX3buyljqzfoR9nV_R)	
 - [ ] [WebSchool - Apostila](https://github.com/Webschool-io/workshop-js-funcional-free)
 - [ ] [Entendendo Programação Funcional em JavaScript de uma vez - Artigo](https://medium.com/tableless/entendendo-programa%C3%A7%C3%A3o-funcional-em-javascript-de-uma-vez-c676489be08b#.w2lt617e2)
 
