@@ -158,3 +158,109 @@ var dados = incrementar(); //referencia
 console.log(dados.inc());
 
 ```
+
+#A04 - Objetos, Funções e Métodos
+
+- É possivel acessar funções a partir de objetos. 
+- Função só tem this quando ela é executada dentro de um objeto.
+
+Exemplo:
+
+```javascript
+
+//var getIdade = function(){
+//       return this.idade;//this
+//} 
+
+var pessoa = {
+    nome:"Helinton",
+    idade:27,
+    getIdade: function(){
+        return this.idade;//this getIdade
+    }
+};
+
+
+
+console.log(pessoa.getIdade());
+
+```
+
+##Função Construtura:
+
+- Criar objetos a partir de uma função.
+- Sempre função construtura começa com a primeira letra maiuscula
+
+Exemplo:
+
+```javascript
+
+function Pessoa(nome,idade,sexo){ //Primeira letra maiuscula
+    this.nome = nome;
+    this.idade = idade;
+    this.sexo = sexo;
+}
+
+var novaPessoa = new Pessoa("Helinton",27,"Masculino");
+
+console.log(novaPessoa);
+
+```
+
+##Função Fabrica:
+
+- a Diferença é o operador `new`.
+
+Exemplo:
+
+```javascript
+
+var pessoa = function(nome,idade,sexo){
+    return {
+        nome :nome,
+        idade : idade,
+        sexo : sexo
+    };
+};
+
+console.log(pessoa("João",23,"Masculino"));
+
+```
+
+##Métodos call e apply
+
+- Método nativo das funções.
+- Chamo as funções relacionando ao escopo especifico de um objeto.
+- O objeto passado como parâmetro passa a ser o `this` da função.
+- Call:
+    + Recebe diversos parametros.
+- Apply:
+    + Recebe 2 parâmetros, sendo o primeiro o escopo e o segundo um `array` de parâmetros.
+
+
+```javascript
+
+var getIdade = function(){
+    return this.idade;
+}
+
+var setInfo = function(nome,sexo){
+    this.nome = nome;
+    this.sexo = sexo;
+}
+
+var pessoa = {
+    nome : "helinton",
+    idade : 27,
+    sexo : "Masculino",
+    getIdade: getIdade
+}
+
+//console.log(getIdade.call(pessoa,nome,sexo));
+
+setInfo.call(pessoa,"Maria","Feminino");
+console.log(pessoa);
+
+//console.log(getIdade.apply(pessoa,[nome,sexo]));
+
+```

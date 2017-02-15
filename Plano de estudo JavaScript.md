@@ -1,6 +1,6 @@
 JavaScript Basico:
 - [x] [Boson Treinamentos - Video Aula](https://www.youtube.com/playlist?list=PLucm8g_ezqNrXkDWHtgvtU9RGuauEs_xz)
-- [ ] [DevMean - Video Aula](https://www.youtube.com/channel/UCJZJZS3Y-thD9up9kQ5l5Ng/videos)
+- [x] [DevMean - Video Aula](https://www.youtube.com/channel/UCJZJZS3Y-thD9up9kQ5l5Ng/videos)
 - [ ] [Eloquent JavaScript - Livro](http://braziljs.github.io/eloquente-javascript/)
 - [ ] [Javascript Essentials -  Udemy](https://www.udemy.com/javascript-essentials/learn/v4/overview)	
 - [ ] [Joao Felipe Pego - Video Aula](https://www.youtube.com/playlist?list=PLHO9UhS3tkPTvd2ZD86Kf69lXOQlLlfnX)
