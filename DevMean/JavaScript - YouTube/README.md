@@ -112,3 +112,49 @@ calc(add(2,2));
 console.log(add(2,4));
 
 ```
+
+#A03 - Closures
+- Closures = encapsulamento, conseguir acessar um escopo esterno a ela (função, global, etc).
+- Criar `ambientes isolados` onde variaveis e funções só existem nesse escopo.
+- Uma função prove encapsulamento.
+- Quando quiser trazer dados publicos use `return` um objeto.
+- Quando não quiser mostrar dados não use return nem em dados e variavel.
+
+Exemplo 01:
+
+```javascript
+
+var getNome = function(name){
+    var nome = name;
+    var mostraNome = function(){
+        console.log(nome);
+    }
+    mostraNome();
+}
+getNome("helinton");
+//mostraNome(); //não funciona pq o escopo dela é na função getNome();
+```
+
+Exemplo 02:
+
+```javascript
+
+var incrementar = function(){
+    var contador = 0; //dados privados
+    var dadosPublicos = {
+        nome:"Helinton",
+        idade:27,
+        inc: function(){
+            return contador += 1;
+        }
+    }
+    return dadosPublicos;
+    //return function (){  //var inc //expor a função
+    //    contador +=1;
+    //    return contador;
+    //}
+}
+var dados = incrementar(); //referencia
+console.log(dados.inc());
+
+```
