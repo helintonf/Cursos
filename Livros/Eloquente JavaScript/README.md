@@ -33,3 +33,83 @@ var stB = "texto novo \"\\n\"nova linha";
 var stC = "con"+"ca"+"te"+"na"+"do";
 ```
 
+#C02 - Estrutura do programa
+
+- Um fragmento de código que `produz` um valor é chamado de `expressão`.
+- Todo valor é uma expressão.
+- Uma expressão entre parênteses também é uma expressão.
+- Operadores aplicado a espressões também.
+- Pode combinar expressões encadeadas.
+
+Declaração:
+
+- Vale por si só.
+- Equivale a alguma coisa
+- se ela afeta em algo.
+- essas mudanças são chamdas efeitos colaterais.
+
+
+Variaveis
+
+- imaginar como tentaculos.
+
+Função
+
+- valores dados a função são chamados argumetos.
+- As chaves, para declarações, são similares aos parênteses para as expressões.
+- Agrupando e fazendo com que sejam tratadas como uma única declaração.
+- Uma sequencia de declarações envolvidas por chaves é chamada de `bloco`.
+
+```javascript
+
+var theNumber = Number(prompt("Pick a number", ""));
+if(!isNaN(theNumber))
+    alert("Your number is the square root "+theNumber * theNumber);
+else
+    alert("Ei! cade o numero?");
+
+
+var num = Number(prompt("Digite um número","0"));
+
+if(num < 10)
+    alert("Pequeno");
+else if(num < 100)
+    alert("Médio");
+else
+    alert("Grande");
+
+
+```
+
+While:
+
+```javascript
+
+var number = 0;
+
+while (number <= 12){
+    console.log(number);
+    number += 1;
+}
+
+
+var result = 1;
+var counter = 0;
+
+while (counter < 10){
+    result *=  2;
+    counter += 1;
+}
+console.log(result);
+```
+
+do:
+
+```javascript
+
+do{
+    var name = prompt("Who are you?");
+}while(!name);
+console.log(name);
+
+```
