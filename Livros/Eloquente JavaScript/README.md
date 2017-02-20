@@ -113,3 +113,32 @@ do{
 console.log(name);
 
 ```
+
+for:
+
+```javascript
+
+for (var number = 0; number <=12; number = number +2){
+    console.log(number);
+}
+
+
+```
+
+break:
+
+quebrar a execução de um loop.
+
+```javascript
+
+for(var current = 20; ;current++)
+{
+    if(current % 7 == 0){
+        break;
+    }
+    console.log(current);
+}
+
+```
+
+continue: interenpe a execução do loop pulando para a proxima interação.
