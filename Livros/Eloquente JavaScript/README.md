@@ -142,3 +142,139 @@ for(var current = 20; ;current++)
 ```
 
 continue: interenpe a execução do loop pulando para a proxima interação.
+
+##Atualizando variáveis sucintamente.
+
+```javascript
+
+soma += 1;
+
+multiplica *= 1;
+
+diminue -= 1;
+
+//mais curtos
+
+counter++
+
+counter--
+
+```
+
+##switch
+
+```javascript
+
+switch(prompt('What is the weather like?')){
+    case "chuva":
+        console.log("It's rainy, Remenber to bring an umbrella.");
+        break;
+    case "sol":
+        console.log("It's sunny, Dress lightly.");
+        break;
+    case "nublado":
+        console.log("It's cloudy, Go outside.");
+        break;
+    default:
+        console.log("Unknow weather type!");
+        break;
+}
+
+/*nomes possiveis pra variaveis*/
+
+var nomecompostovalor;
+
+var nome_composto_valor;
+
+var NomeCompostoValor; //funções com construtor
+
+var nomeCompostoValor;
+
+```
+
+##Exercícios
+
+###Triângulo com Loop
+
+Escreva um programa que faça sete chamadasa console.log() para retornar o seguinte triângulo:
+
+#
+##
+###
+####
+#####
+######
+#######
+
+
+```javascript
+
+var value = "#";
+while(value.length < 7){
+    console.log(value);
+    value += "#";
+}
+
+//Solução livro
+
+for(var line = "#"; line.length <= 7; line +="#")
+    console.log(line);
+```
+
+###FizzBuzz
+
+```javascript
+
+for(var i = 0; i < 100; i++){
+
+    var st = "";
+    if(i % 3 == 0){
+        st="Fizz";    
+    }
+    if(i % 5 == 0){
+        st += "Buzz";
+    }
+    if(st != ""){
+        console.log(st);    
+    }else{
+        console.log(i)        
+    }
+    
+}
+
+//solução livro
+
+for (var n = 1; n <= 100; n++) {
+  var output = "";
+  if (n % 3 == 0)
+    output += "Fizz";
+  if (n % 5 == 0)
+    output += "Buzz";
+  console.log(output || n);
+}
+
+```
+
+###Tabuleiro de Xadrez
+
+```javascript
+
+var size = 8;
+var vl =""; 
+
+for(var i = 0; i < size; i++){    
+       
+    for(var j = 0; j < size; j++){
+        var tt = ((i+j) % 2);
+        if(tt == 0){
+            vl += "#";
+        }else {
+            vl += " ";
+        }
+    }
+    vl +="\n";
+}
+
+console.log(vl);
+
+```
