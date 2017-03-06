@@ -278,3 +278,65 @@ for(var i = 0; i < size; i++){
 console.log(vl);
 
 ```
+
+#C03 - Funções
+
+##Definindo uma função
+
+```javascript
+
+var square = function(x){
+    return x*x;
+};
+
+console.log(square(12));
+
+```
+
+nenhum parametro:
+
+```javascript
+
+var makeNoise = function(){
+    console.log("Pling!");
+};
+
+```
+
+Varios parametros:
+
+```javascript
+
+var power = function(base,exponent){
+    var result = 1;
+    for(var count = 0; count < exponent; count++){
+        result *= base;        
+    }
+    return result;
+};
+
+console.log(power(2,10));
+
+```
+
+##Parâmetros e Escopos
+
+```javascript
+
+var x = "outside";
+
+var f1 = function(){
+    var x = "inside f1";
+};
+f1();
+console.log(x);
+// ouside
+
+var f2 = function(){
+    x = "inside f2";
+};
+f2();
+console.log(x);
+//inside
+
+```
