@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vuejs</title>
+	<script src="https://unpkg.com/vue">
+</script>
+</head>
+<body>
+
+
+<div id="app">
+<p>
+<input type="text" v-on:input="changeTitle">
+{{title}}
+</p>
+</div>
+
+
+<script type="text/javascript">
+	new Vue({
+	el:'#app',
+  data:{
+  	title:'Hello World!'
+  },
+  methods:{
+  	changeTitle: function(event){
+    	this.title = event.target.value;
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>

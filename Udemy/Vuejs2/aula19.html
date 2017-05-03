@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vuejs</title>
+	<script src="https://unpkg.com/vue">
+</script>
+</head>
+<body>
+
+
+<div id="app">
+  <button v-on:click="increase(2)">
+  Click me
+  </button>
+  <p>{{counter}}</p>
+  <p v-on:mousemove="updateCoordinates">
+  Coordinates:{{x}}/{{y}}
+  </p>
+</div>
+
+
+<script type="text/javascript">
+new Vue({
+  el:'#app',
+  data:{
+    counter:0,
+    x:0,
+    y:0
+  },
+  methods:{
+    increase: function(step){
+      this.counter += step;
+    },
+    updateCoordinates:function(event){
+      this.x = event.clientX;
+      this.y = event.clientY;
+    }
+  }
+});
+</script>
+
+
+</body>
+</html>
