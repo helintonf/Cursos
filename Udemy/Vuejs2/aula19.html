@@ -45,3 +45,32 @@ new Vue({
 
 </body>
 </html>
+
+
+  <div id="app"> 
+    <input type="text" v-model="name">
+    <p>{{name}}</p>
+  </div>
+
+
+<script type="text/javascript">
+
+new Vue({
+  el:'#app',
+  data:{
+    name: 'Helinton'
+  }
+});
+
+</script>
+
+
+
+
+
+Vue{
+  el: 'Connect to DOM'
+  data: 'Store Data to be used'
+  methods: 'Methods of this Vue Instance'
+  computed:'Dependent Properties'
+}
