@@ -1,0 +1,37 @@
+﻿@using System.Collections;
+@{
+   
+
+    ViewBag.Title = "Home";
+
+    //Expressão Lambda
+
+    int[] numbers = { 4, 5, 7, 2, 8, 0, 4, 1 };
+    int menor = numbers.Count(n => n < 5);
+
+    //var é uma forma de declarar um varial no C# que ira assumir o tipo de dado que lhe for atribuido
+    var SelecoesMundias = new ArrayList(new string[]
+    {
+        "USA",
+        "Africa",
+        "Mexico",
+        "Brasil"
+    });
+
+
+    var melhor = from string p in SelecoesMundias where p == "Brasil" select p;
+
+    var  melhor2 = SelecoesMundias.Cast<string>().Where(p => p == "Brasil");
+
+
+}
+
+<h2>Index</h2>
+
+@BannersPublicitarios.RetornaDoisBannersMaisRecentes()
+
+@menor
+
+@melhor
+
+@melhor2

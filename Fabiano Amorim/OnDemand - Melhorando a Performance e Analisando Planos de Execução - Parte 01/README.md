@@ -6,7 +6,7 @@
 - Detalhes sobre operador Merge Join.
 
 
-# #A01 - Otimizador de Consultas
+# A01 - Otimizador de Consultas
 
 - Na linguaguem **ANSI SQL** você `diz oque quer`, e não `como/onde buscar` a informação.
 - Otimizador de consultas decide qual é o melhor caminho para ler os dados.
