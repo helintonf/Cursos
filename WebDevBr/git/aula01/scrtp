@@ -1,0 +1,31 @@
+@section Scripts{
+    <script>
+        $(function () {
+            var linhaAtual;
+
+            $("#menuMedicos").addClass("active");
+
+            $(".excluir").on("click", function () {
+                if (confirm("Confirmar a exlcusão do tipo tarefa?")) {
+                    var urlExclusao = $(this).attr("href");
+                    linhaAtual = $(this).closest("tr");
+
+                    $.ajax({
+                        url: urlExclusao,
+                        type: "POST"
+                    }).done(function (excluiu) {
+                        if (excluiu) {
+                            linhaAtual.remove();
+                        } else {
+                            alert("Ocorreu algum problema na exclusão do medico :(");
+                        }
+                    }).fail(function () {
+                        alert("Ocorreu algum erro :(");
+                    });
+                }
+                return false;
+            });
+        });
+    </script>
+
+}
