@@ -44,9 +44,9 @@ def gameOver():
     GOsurf = myFont.render('Game Over!',True,red)
     GOrect = GOsurf.get_rect()
     GOrect.midtop = (360,15)
-    playSurface.blit(GOsurf,GOrect)
-    pygame.display.flip()
+    playSurface.blit(GOsurf,GOrect)    
     showScore(0)
+    pygame.display.flip()
     time.sleep(5)
     pygame.quit()#pygame exit
     sys.exit()#console exit
@@ -60,7 +60,7 @@ def showScore(choice=1):
     else:
         sRect.midtop = (360,120)
     playSurface.blit(sSurf,sRect)
-    pygame.display.flip()
+    
 
 
 # Main Logic of the game
@@ -79,7 +79,7 @@ while True:
             if event.key == pygame.K_DOWN or event.key == ord('S'):
                 changeTo = 'DOWN'
             if event.key == pygame.K_ESCAPE:
-                pygame.event.post(pygame.event.Event(QUIT))
+                pygame.event.post(pygame.event.Event(pygame.QUIT))
 
 
     #validation of direction <= [][][] =>
@@ -136,6 +136,6 @@ while True:
         if snakePos[0] == block[0] and snakePos[1] == block[1]:
             gameOver()
     
-    pygame.display.flip()
     showScore()
+    pygame.display.flip()    
     fpsController.tick(20)
