@@ -1,11 +1,11 @@
-#A01 - Introdução e Grupo de Comandos
+# A01 - Introdução e Grupo de Comandos
 
-##SQL: Structured Query Language
+## SQL: Structured Query Language
 - Linguagem de Consulta Estruturada padrão para acesso a Banco de Dados.
 - Usada em inpumeros sistemas, como MySQL, SQL Server, Oracle, Sybase, Access, DB2, PostgreSQL, etc.
 - Cada sistema pode usar um `"dialeto"` do SQL, como T-SQL (SQL Server), PL/SQL (Oracle), JET SQL (Access), etc.
 
-##Funções do SQL  
+## Funções do SQL  
 - Permite o acesso a dados em SGBDR.
 - Permite definir os dados no banco de dados e manipulá-los.
 - Pode ser embutido em outras linguagues usando módulos SQL, bibliotecas, etc.
@@ -13,7 +13,7 @@
 - Permite a criação de Visões(exibições), Stored Procedures e Funções em um Banco de Dados.
 - Permite configurar permissões de acesso em tabelas, procedimentos e visões.
 
-##Grupos de Comados
+## Grupos de Comados
 Os comandos SQL podem ser divididos em quatro grupos princiais:
 - **DDL** - *`Data Definition Language`*
     - **CREATE**
@@ -38,14 +38,14 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
     - **SELECT**
         - Obtém registros especificados de uma ou mais tabelas atraves de consultas.
 
-#A02 - Bancos de Dados, SGBDR, Tipos de Dados
+# A02 - Bancos de Dados, SGBDR, Tipos de Dados
 
-##SGBDR:
+## SGBDR:
 
 - (**S**)istema (**G**)erenciador de (**B**)anco de (**D**)ados (**R**)elacional.
 - Trata-se de um sistema de gerenciamento de bancos de dados baseado no modelo relacional introduzido por E.F.Codd.
 
-###Composição:
+### Composição:
 
 - **Tabelas** - *`Relação`*
     - Objetos onde são armazenados os dados em um banco de dados relacional.
@@ -62,7 +62,7 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
     - Cada `entrada` individual em uma tabela.
     - Trata-se de um conjunto de campos relacionados que caracterizam os `dados` de uma entidade única.
 
-###Tipos de Dados:
+### Tipos de Dados:
 
 ```sql
 
@@ -111,9 +111,9 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 
 ```
 
-#A03 - Criar Banco de Dados (CREATE DATABASE)
+# A03 - Criar Banco de Dados (CREATE DATABASE)
 
-##Criando Banco de Dados:
+## Criando Banco de Dados:
 
 ```sql
     CREATE DATABASE NOME_BANCO ON PRIMARY (
@@ -132,9 +132,9 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 
 ```
 
-#A04 - CONSTRAINTS (Restrições)
+# A04 - CONSTRAINTS (Restrições)
 
-##SQL Constraints (Restrições)
+## SQL Constraints (Restrições)
 
 - Restrições são `regras` aplicadas nas `colunas` de uma tabela.
 - São usadas para `limitar` os tipos de dados que são inseridos.
@@ -173,9 +173,9 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 **IDENTITY(*INICIAR_SEQUENCIA*,*INCREMENTO*)**
 - Deixa o campo com `auto incremento`.
 
-#A05 - Criação de Tabelas (CREATE TABLE)
+# A05 - Criação de Tabelas (CREATE TABLE)
     
-##Criar Tabela
+## Criar Tabela
 
 ```sql
     CREATE TABLE NOME_TABELA(
@@ -192,9 +192,9 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
         --Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
 ```
 
-#A06 - Auto Incremento (IDENTITY)
+# A06 - Auto Incremento (IDENTITY)
 
-##IDENTITY
+## IDENTITY
 
 - Permite que um número único seja gerado quando um novo registro é inserido em uma tabela.
 - SQL SERVER é IDENTITY(identidade), cujo valor inicial padrão é 1, e se incremeta em 1.
@@ -202,9 +202,9 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
 - **SOMENTE PODE SER USADO NA CRIAÇÃO DA COLUNA!**
 - **SOMENTE PODE USAR UMA COLUNA IDENTITY POR TABELA!**
 
-#A07 - Alterar e Excluir Tabelas e Colunas
+# A07 - Alterar e Excluir Tabelas e Colunas
 
-##Alterar Tabelas
+## Alterar Tabelas
 - É possível alterar a estrutura de uma tabela após ter sido criada, acrescentando ou excluindo atributos (campos).
 
 **ALTER TABLE - DROP**
@@ -244,7 +244,7 @@ Os comandos SQL podem ser divididos em quatro grupos princiais:
     --Excluir tabela
 ```
 
-#A08 - Inserir dados nas Tabelas
+# A08 - Inserir dados nas Tabelas
 
 ##Inserir Dados
 
