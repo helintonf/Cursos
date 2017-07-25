@@ -53,6 +53,34 @@
 - Potência:
     + `x ** y`.
 
+### Operadores de bits
+
+- Ou:
+    - `x | y`.
+- Ou exclusivo:
+    - `x ^y`.
+- E:
+    - `x & y`.
+- Inverso:
+    - `~x`
+- x com y btis deslocados à esquerda:
+    - `x << y`.
+- x com y bits deslocados à direita:
+    - `x >> y`.
+
+### Regras de Coerção    
+
+- Existe uma política de coerção de números que define qual tipo resultante de uma operação que mistura tipos diferentes de números.
+- int + float = float
+- int + complex = complex
+- float + complex = conplex
+
+### Função Type()
+
+- Retorna o tipo(ou classe) de um objeto.
+- Porem é recomendado o usu da função `isinstace(obj,class)` para realizar teste em condicionas.
+- Para meras verificações nos terminais u se `type()`.
+
 ## C02.2 - Como Manipular Texto
 
 - Em Python existe apenas `strings` que é um tipo `classe`.
@@ -60,9 +88,10 @@
 
 ## C02.3 - Criando e Manipulando Texto
 
-
-#Type of variable
-isinstace(obj,class)
+- Os formatos principais são com `'...'` e `"..."`.
+- Sendo que ao usar um, o outro podeser ser usado internamente:
+    - Ex01. `'-----"||||"-----'`.
+    - Ex02. `"-----'||||'-----"`.
 
 # Strings
 

@@ -172,7 +172,7 @@
 		-informa os índices, chaves, campos atributos, tipos de atributos de uma tabela.
 		-Informa tambem as Stored procedures, comendos pré-programados de uma tabela.
 
-#A06
+#A06 -AUTO INCREMENT (IDENTITY)
 
 	AUTO INCREMENT (IDENTITY)
 		-Permite que um número único seja gerado quando um novo registro é inserido em uma tabela.
@@ -181,7 +181,7 @@
 		-SOMENTE PODE SER USADO NA CRIAÇÃO DA COLUNA!
 		-SOMENTE PODE USAR UMA COLUNA IDENTITY POR TABELA.
 
-#A07
+#A07 - Alterar Tabelas
 
 	Alterar Tabelas
 		-É possível alterar a estrutura de uma tabela após ter sido criada, acrescentando ou excluindo atributos (campos).
