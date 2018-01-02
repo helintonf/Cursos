@@ -1,0 +1,22 @@
+Texto
+	-Localizar
+		-IndexOf:
+			-retorna um inteiro
+			-a posição que se encontra a palavra.
+		-LastIndexOf:
+			-a ultima palavra ou posição que ele encontrou do texto que passou
+
+	-Replace:
+			-subistituição.
+			-retorna a string subistituida.
+
+	-Texto existe
+			-StartsWith:
+				-verificar se tem no inicio.
+			-EndsWith:
+			-verificar se tem no fim.
+			-verficar se tem na frase.
+
+	-Format:
+		-
+

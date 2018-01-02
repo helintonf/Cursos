@@ -1,0 +1,5 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\ConversaoTxtNumber\bin\Debug\ConversaoTxtNumber.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\ConversaoTxtNumber\bin\Debug\ConversaoTxtNumber.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\ConversaoTxtNumber\bin\Debug\ConversaoTxtNumber.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\ConversaoTxtNumber\obj\Debug\ConversaoTxtNumber.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\ConversaoTxtNumber\obj\Debug\ConversaoTxtNumber.pdb

@@ -1,0 +1,18 @@
+Modo Release e Debug
+	-Debug:
+		-Quer acompanhar a execução do programa.
+		-teste em desenvolvimento.
+		-mostra a inha do erro e qual erro aconteceu.
+	-Release:
+		-Criação de um projeto.
+		-versão final do projeto.
+
+Exception:
+	-Erros que acontecem no codigo.
+	-as bibliotecas passa a responsabilidades para o programa.
+	-qual ação deve ser tomada.
+	-toda exception é uma classe.
+	-posso tratar todos os erros de uma vez.
+	-posso tratar de erros especificos.
+	FInally:
+		-esse codigo sempre vai ser executado.

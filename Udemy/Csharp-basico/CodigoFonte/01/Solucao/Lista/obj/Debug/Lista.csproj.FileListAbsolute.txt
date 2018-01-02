@@ -1,0 +1,6 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Lista\bin\Debug\Lista.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Lista\bin\Debug\Lista.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Lista\bin\Debug\Lista.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Lista\obj\Debug\Lista.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Lista\obj\Debug\Lista.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Lista\obj\Debug\Lista.pdb

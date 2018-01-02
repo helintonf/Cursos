@@ -1,0 +1,5 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Switch\bin\Debug\Switch.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Switch\bin\Debug\Switch.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Switch\bin\Debug\Switch.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Switch\obj\Debug\Switch.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Switch\obj\Debug\Switch.pdb

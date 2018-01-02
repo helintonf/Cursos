@@ -1,0 +1,5 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\For\bin\Debug\For.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\For\bin\Debug\For.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\For\bin\Debug\For.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\For\obj\Debug\For.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\For\obj\Debug\For.pdb

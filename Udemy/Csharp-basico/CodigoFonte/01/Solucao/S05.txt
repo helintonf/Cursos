@@ -1,0 +1,12 @@
+Array:
+	-armazenar varios valores.
+	-limitações:
+		-preciso iniciar ele com os elementos
+		-preciso saber do tamanho dele.
+
+List<>:
+	-
+
+Dicionario:
+	-armazenar chave e valor de uma informação.
+	-é uma lista com o indice personalizado

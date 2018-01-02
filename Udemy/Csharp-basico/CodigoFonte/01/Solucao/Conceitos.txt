@@ -1,0 +1,40 @@
+IF:
+	-qual fluxo que ele vai tomarc
+	-expressao
+	-primeiro caminho verdade ele vai entrar e ignorar os outros
+	-else somente uma vez
+
+Switch:
+	-sempre tem que ter o break;
+
+While:
+	-repetição enquanto a condição for verdadeira
+	-enquanto
+
+Do While:
+	-faça isso equanto a expressao for verdadeira
+	-sempre vai executar pelo menos uma unica vez.
+	- contra barra = '\' ajuda a iginorar o caractere de aspas duplas = ""  permitindo elas aparecerem dentro de uma string.
+
+For:
+	-tem um controle implementado.
+	-(declarar variavel; expressão; estrutura de incremento ou decremento)
+
+ForEach:
+	-não precisa de uma esturtura de controle.
+	-passa uma variavel para ser referencia de um dos elementos de um array
+	-usado apra percorrer lista, e coleções
+
+Continue:
+	-interrompe a interação e o fluxo e passa para a proxima interação do laço de repetição.
+	-ignorar a execução seguinte.
+
+Break:
+	-para o fluxo inteiro.
+	-não continua mais no laço de repetição.
+
+
+Escopo de Variavel:
+	-scopo é o momento em que a variavel existe e depois deixa de existir.
+	-é a duração da vida da variavel e sua visibilidade e influencia.
+	-onde voce declara a variavel vc delimita o scopo dela.

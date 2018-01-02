@@ -1,0 +1,47 @@
+Herança:
+	-herda da classe pai, propriedades e metodos.
+	-exemplo:
+		class Filho : Pai{ Propridades e metodos  }
+	-Classe Pai = Classe Base
+	-Classe Filho = Classe Derivada
+
+Sobre Escrita:
+	-a classe derivada implementar de forma diferente o metodo.
+	-reescrever o metodo.
+	-subistituir um metodo ou propriedade da classe pai.
+	-base é a classe pai.
+	-virtual:
+		-utilizado em medotos e atribultos.
+		-abilita para ser sobreescrito por outra classe.
+	-override:
+		-palavra reservada para definir que vc esta sobreescrevendo um metodo do pai.
+
+Sobre carga de metodos:
+	-um metodo de mesmo nome e varios parametos.
+	-varios metodos com mesmo nome mais con assinaturas diferentes.
+	-parametros ou tipos de parametros diferentes.
+	-varias possibilidades para um metodo.
+
+
+Polimorfismo:
+	-generalizar o acesso das classes derivadas para a classe pai.
+	-diversas implementação ou comportamentos para a mesma classe.
+	-vairas formas de implementar.
+	-chamado a classe base como parametro em uma funçãoi param ela chamar os medotos espeficicos e derivados.
+	-ponto commun ponto base para executar de forma especificas.
+
+Construtor:
+	-a forma de instanciar um objeto.
+	-primeiro metodo executado na hora de criar um objeto.
+	-controi o objeto.
+	-metodo especial.
+	-metodo que retorna uma instancia do objeto.
+	-montar somente com a visibilidade, sem o retorno, mesmo sem void e com o nome da classe:
+		-public NomedaClasse(){}
+	-setar os atributos.
+	-fazer sobrecarga de contrutores.
+
+this:
+	-propriedade referente ao meu objeto.
+	-metodo referente ao escopo do meu objeto.
+

@@ -1,0 +1,5 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\While\bin\Debug\While.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\While\bin\Debug\While.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\While\bin\Debug\While.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\While\obj\Debug\While.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\While\obj\Debug\While.pdb

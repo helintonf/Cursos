@@ -1,0 +1,6 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Operadores\bin\Debug\Operadores.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Operadores\bin\Debug\Operadores.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Operadores\bin\Debug\Operadores.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Operadores\obj\Debug\Operadores.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Operadores\obj\Debug\Operadores.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Operadores\obj\Debug\Operadores.pdb

@@ -1,0 +1,28 @@
+Comentario simples:
+	-informações uteis para entender o codigo.
+	-comentarios não são compilados.
+	-gerar o codigo binario iginorado.
+	comentario simples = \\ somente em uma linha
+
+Comentario multiplas linhas:
+	-Delimitador de inicio e delimitador de fim.
+	-Delimitador de inicio.
+		/*
+	-Delimitador de fim.
+		*/
+	-COmentarios não são compilados.
+
+Comentarios de Documentação:
+	-usar /// para documentar
+	-classes
+	-metodos
+	-propriedades
+	summary:
+		- para que server.
+		- definição
+
+Comentario para Terefas:
+	-todolist
+	-lista de tarefas
+	- TODO em maiusculo de preferencia
+	-task list

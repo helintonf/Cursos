@@ -1,0 +1,6 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Texto\bin\Debug\Texto.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Texto\bin\Debug\Texto.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Texto\bin\Debug\Texto.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Texto\obj\Debug\Texto.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Texto\obj\Debug\Texto.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\Texto\obj\Debug\Texto.pdb

@@ -1,0 +1,29 @@
+Operadores:
+	-Resursos para fazer operações.
+	-Compilador trabalha da esquerda para direita.
+	-Isolar a operaçã Matematica.
+	-Aritimeticos:
+		-Matematicos
+			-para fazer soma, multiplicação, divisão e resto.
+			-+
+				-Somar.
+				-Concatenar.
+		-Atribuição
+			-Atribuir valor.
+			=
+		-Logicos
+			-E  = &
+				-&& = performatico, compara ate achar a falsa.
+				-todas as expressões deve ser verdadeira para retornar true
+			-OU = |
+				-|| = performatico, compara ate achar uma verdadeira.
+				-qualquer uma das expressos for verdadeira vai retornar true.
+			-Usar quando querer mais de uma expressão apresentada.
+
+		-Relacionais
+			-Verifica igualdade
+				-==
+				-! nega os resultados, negação.
+
+
+		

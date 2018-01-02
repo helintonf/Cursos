@@ -1,0 +1,5 @@
+Implementação de um classe:
+	-F12 para localizar o metodo, classe ou propriedade
+
+Manual:
+	-F1 em qualquer palavra reservado do C# que ele abre o manual para vc ver como funciona.

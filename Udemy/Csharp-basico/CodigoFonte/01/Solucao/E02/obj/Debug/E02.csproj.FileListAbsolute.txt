@@ -1,0 +1,6 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\E02\bin\Debug\E02.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\E02\bin\Debug\E02.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\E02\bin\Debug\E02.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\E02\obj\Debug\E02.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\E02\obj\Debug\E02.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\E02\obj\Debug\E02.pdb

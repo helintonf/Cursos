@@ -1,0 +1,12 @@
+bit: é uma posição, pode ser 0 ou 1
+Byte = 8 bits
+0000-0000
+2 elevedo a 8 = 256
+Range do Byte : 0 - 255
+
+
+sinais: + positivo - negativo
+| primeira posição para simbolizar o sinal, sobra 7 posições
+0000-0000
+2 elevado a 7 = 128
+Range do Byte: -128 a 127

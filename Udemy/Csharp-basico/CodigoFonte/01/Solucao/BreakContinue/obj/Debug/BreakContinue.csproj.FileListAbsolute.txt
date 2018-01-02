@@ -1,0 +1,6 @@
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\BreakContinue\bin\Debug\BreakContinue.exe.config
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\BreakContinue\bin\Debug\BreakContinue.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\BreakContinue\bin\Debug\BreakContinue.pdb
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\BreakContinue\obj\Debug\BreakContinue.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\BreakContinue\obj\Debug\BreakContinue.exe
+C:\home\github\Cursos\Udemy\Csharp-basico\CodigoFonte\01\Solucao\BreakContinue\obj\Debug\BreakContinue.pdb

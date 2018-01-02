@@ -1,0 +1,36 @@
+POO
+Oque são objetos?
+	qualidade, propriedades = caracteristicas, atributos, funções e metodos = ações.
+
+Oque é Classe?
+	-Fabrica.
+	-Forma.
+	-Definição.
+	-Classificar.
+	-Categorizar.
+	-mas com informações diferentes.
+
+
+Metodos
+	-retorna informação.
+		-tipo de retorno
+	-não retorna informação.
+		-void
+
+
+namespace:
+	-pastas e caminhos virtual para guardar as classes.
+	-armazenamento de classes.
+	-soluções de conflitos com mesmo nome em caminhos diferentes.
+	-as pastas representão os namespace.
+	-criar classes em arquivos separados.
+
+using:
+	-utilizar o namespace.
+
+static:
+	-static é uma propriedade ou metodo pertencnete a classe.
+	-propriedades e metodos não staticos são pertencentes aos objetos.
+
+dicas:
+	-C# é caseSensitive
