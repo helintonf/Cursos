@@ -1,0 +1,10 @@
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\bin\Debug\netcoreapp2.0\InterfacePolimorfismo.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\bin\Debug\netcoreapp2.0\InterfacePolimorfismo.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\bin\Debug\netcoreapp2.0\InterfacePolimorfismo.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\bin\Debug\netcoreapp2.0\InterfacePolimorfismo.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\bin\Debug\netcoreapp2.0\InterfacePolimorfismo.pdb
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\obj\Debug\netcoreapp2.0\InterfacePolimorfismo.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\obj\Debug\netcoreapp2.0\InterfacePolimorfismo.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\obj\Debug\netcoreapp2.0\InterfacePolimorfismo.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\obj\Debug\netcoreapp2.0\InterfacePolimorfismo.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\InterfacePolimorfismo\obj\Debug\netcoreapp2.0\InterfacePolimorfismo.pdb

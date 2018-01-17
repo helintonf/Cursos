@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\bin\Debug\netcoreapp2.0\Exception.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\bin\Debug\netcoreapp2.0\Exception.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\bin\Debug\netcoreapp2.0\Exception.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\bin\Debug\netcoreapp2.0\Exception.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\bin\Debug\netcoreapp2.0\Exception.pdb
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\obj\Debug\netcoreapp2.0\Exception.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\obj\Debug\netcoreapp2.0\Exception.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\obj\Debug\netcoreapp2.0\Exception.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\obj\Debug\netcoreapp2.0\Exception.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\obj\Debug\netcoreapp2.0\Exception.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Exception\obj\Debug\netcoreapp2.0\Exception.pdb

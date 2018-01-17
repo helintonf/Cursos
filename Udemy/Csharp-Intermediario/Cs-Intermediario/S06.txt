@@ -1,0 +1,17 @@
+This:
+	-referenciando as propriedades e metodos da propria classe.
+	-dentro da classe
+
+Base:
+	-referenciar um metodo ou umapropriedade dentro da classe pai.
+	-: base(i) no contrutor do filho.
+
+Casting:
+	-Converter tipos de dados.
+
+
+Boxing:
+	-Pegar um tipo de dado por valor e converter para referencia.
+
+Unboxing:
+	-Pegar um tipo de dado por referencia e converter para valor.

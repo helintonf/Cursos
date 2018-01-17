@@ -1,0 +1,10 @@
+Lançando uma Exception:
+	-toda exeção fecha o programa
+	-Verificar qual metodo pode gerar ujm exceção
+		-Fazer o tratamento.
+	-Atraves do try cath eu trato os erros.
+
+finally:
+	-sempre vai ser executado quando encontrar uma exception
+
+Criar uma Exception:
