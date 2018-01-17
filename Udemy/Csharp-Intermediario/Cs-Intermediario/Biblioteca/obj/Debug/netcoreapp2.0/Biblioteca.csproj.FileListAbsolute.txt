@@ -1,0 +1,8 @@
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\bin\Debug\netcoreapp2.0\Biblioteca.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\bin\Debug\netcoreapp2.0\Biblioteca.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\bin\Debug\netcoreapp2.0\Biblioteca.pdb
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\obj\Debug\netcoreapp2.0\Biblioteca.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\obj\Debug\netcoreapp2.0\Biblioteca.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\obj\Debug\netcoreapp2.0\Biblioteca.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\obj\Debug\netcoreapp2.0\Biblioteca.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Biblioteca\obj\Debug\netcoreapp2.0\Biblioteca.pdb

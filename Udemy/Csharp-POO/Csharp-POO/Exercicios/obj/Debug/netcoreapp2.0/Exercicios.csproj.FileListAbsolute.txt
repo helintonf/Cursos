@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\bin\Debug\netcoreapp2.0\Exercicios.deps.json
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\bin\Debug\netcoreapp2.0\Exercicios.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\bin\Debug\netcoreapp2.0\Exercicios.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\bin\Debug\netcoreapp2.0\Exercicios.dll
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\bin\Debug\netcoreapp2.0\Exercicios.pdb
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\obj\Debug\netcoreapp2.0\Exercicios.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\obj\Debug\netcoreapp2.0\Exercicios.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\obj\Debug\netcoreapp2.0\Exercicios.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\obj\Debug\netcoreapp2.0\Exercicios.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\obj\Debug\netcoreapp2.0\Exercicios.dll
+C:\home\github\Cursos\Udemy\Csharp-POO\Csharp-POO\Exercicios\obj\Debug\netcoreapp2.0\Exercicios.pdb

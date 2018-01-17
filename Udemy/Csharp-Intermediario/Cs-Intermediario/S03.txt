@@ -1,0 +1,48 @@
+Estrutura - struct:
+	-Não pode ser herdado.
+	-Não pode herdar de outra classe ou estrutura.
+	-Posso implementar um interface.
+	-Parecido com classe +ou-.
+	-Destinado a dados que não se pretende alterar após  sua criação.
+	-Struct é valor
+	-Classe é referencia.
+	-Formas de armazenar valores ou informação:
+		-Por Valor:
+			-Estruturas são armazenadas por valor.
+			-Tem o endereço do valor direto na memoria
+			-Cria Strutura:
+				-int i = 10;
+		-Por Referência:
+			-Classes são armazenadas por referencia.
+			-tem a referencia e não é direto ao valor do objeto.
+			-Cria Classe
+				Carro carro new Carro();
+	-Estruturas não pode ter valores atribuidos.
+	-Estruturas tem a opção de não utilizar o new na declaração da variavel.
+
+Passagem de parametro:
+	-Por Valor:
+		-Duplica a variavel e valor.
+		-gera dois ou mais conteudos com valores identicos.
+		-variaveis não se relacionam
+		-duplicação e copia de valores.
+	-Por referencia:
+		-variaves se relacionam.
+		-ref:
+			-Palavra chave para passar valores por referencia.
+			-passar ref na chamada do metodo e na assinatura do metodo.
+		-out:
+			-Palavra chave reservada do C#.
+			-Passagem de parametro por referencia.
+			-consigo alterar o valor da variavel.
+			-porem não pode ser lido seu valor.
+			-medoto para ter mais de um retorno callback.
+			-passa somente a referencia e não o valor.
+	-Params:
+		-Varias entradas.
+		-entrar com uma quantidade ilimitade de parametros.
+		-todos os parametros são convertidos para um array dentro do metodo.
+		-sempre tem que ser o ultimo parametro do metodo.
+
+
+

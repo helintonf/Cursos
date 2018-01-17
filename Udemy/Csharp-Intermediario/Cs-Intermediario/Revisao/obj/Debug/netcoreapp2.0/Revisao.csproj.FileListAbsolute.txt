@@ -1,0 +1,10 @@
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\bin\Debug\netcoreapp2.0\Revisao.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\bin\Debug\netcoreapp2.0\Revisao.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\bin\Debug\netcoreapp2.0\Revisao.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\bin\Debug\netcoreapp2.0\Revisao.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\bin\Debug\netcoreapp2.0\Revisao.pdb
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\obj\Debug\netcoreapp2.0\Revisao.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\obj\Debug\netcoreapp2.0\Revisao.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\obj\Debug\netcoreapp2.0\Revisao.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\obj\Debug\netcoreapp2.0\Revisao.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Revisao\obj\Debug\netcoreapp2.0\Revisao.pdb

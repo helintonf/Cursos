@@ -8,4 +8,21 @@ plataforma .NET
 C# linguagem de programação.
 
  VB ->
- C# -> CIL -> CLR (COMMON LANGUAGUE RUNTIME)
+ C# -> CIL (COMMON INTERMEDIATE LANGUAGUE)  -> CLR (COMMON LANGUAGUE RUNTIME)
+
+
+S02
+
+variaveis
+
+    espaço reservados, tamanha e tipo.
+    3 tipos de informação
+        primitivos: tipos da linguagem oferece.
+        customizados compostos: classes e estruturas.    
+
+    tipo NomeDaVariavel
+
+    primitivos.
+
+
+

@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\bin\Debug\netcoreapp2.0\Estrutura.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\bin\Debug\netcoreapp2.0\Estrutura.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\bin\Debug\netcoreapp2.0\Estrutura.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\bin\Debug\netcoreapp2.0\Estrutura.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\bin\Debug\netcoreapp2.0\Estrutura.pdb
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\obj\Debug\netcoreapp2.0\Estrutura.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\obj\Debug\netcoreapp2.0\Estrutura.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\obj\Debug\netcoreapp2.0\Estrutura.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\obj\Debug\netcoreapp2.0\Estrutura.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\obj\Debug\netcoreapp2.0\Estrutura.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Estrutura\obj\Debug\netcoreapp2.0\Estrutura.pdb

@@ -1,0 +1,54 @@
+Referencias:
+	-É uma forma de ter no projeto tual todas as classes e informações do outro projeto.
+	-Reaproveitar codigo.
+
+Modificadores de acesso:
+	-Public:
+		-Acessível para todos.
+		-Classe:
+			-Pode ser acessivel em todo projeto.
+			-Poder ser instanciada em outros projetos.
+		-Propriedade:
+		-Metodo:
+			-Pode ser utilizado por qualquer classe que intanciou sua classe.
+			-Disponivel.
+	-Protected:
+		-Proteger a informação.
+		-Acessível somente pela classe e para derivados dela.
+		-Propriedade:
+		-Metodo:
+			-Informação diponivel a propria classe.
+			-Classes derivadas.
+	-Private:
+		-Acessível apenas pela classe.
+	
+	\\exclusivo C#//
+	-Internal:
+		-Acessível apenas pelo assembly = projeto.
+		-Acessível somente pelas classes do projeto.
+
+	-Protected Internal:
+		-Acessível somente pelo projeto ou tipos derivados.
+
+Encapsulamento:
+	-Proteger suas informações.
+	-Proteger suas propriedades da classe.
+	-Criar metodos para expor as propriedades.
+	-Pode manipular como vc vai receber o dado e enviar o dado.
+
+AutoImplement:
+	-Recurso do C#
+	-Criar propriedades e um pequeno encapsulamento, rapido.
+	-e pra ser seguido!.
+	-customizar a entrada e saida de informações.
+
+
+ReadOnly:
+	-Palavra reservada do C#.
+	-usado nas propriedades.
+	-propriedade somente para ler, não é possivel atribuir informações.
+	-é meio parecido com "constante".
+	-não pode ser escrita nem na propria classe somente:
+		-atribuir a informação na criação.
+		-ou no medoto contrutor.
+	

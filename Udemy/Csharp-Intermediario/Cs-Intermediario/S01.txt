@@ -1,0 +1,9 @@
+Dicas:
+	-\n Pula linha em uma string
+
+
+Metodos:
+
+
+COntrutor
+	-modificador de acesso e o nome da classe.

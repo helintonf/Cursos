@@ -1,0 +1,56 @@
+Classe Interna:
+	-Uma classe dentro de outra classe.
+	-Somente a classe pai pode instanciar uma classe interna.
+	-A classe interna pode instanciar a classe pai.
+	-Se for public vai ser visivel a todas as classes.
+	-Almentar a Organização.
+	-ALinha as classes parecido com o namespace.
+
+Classe Parcial:
+	-Classe que foi contruida em dois ou varios arquivos.
+	-Dividir a construção da classe.
+	-Organização da contrução da classe.
+	-partial
+
+	Metodo Parcial:
+		-Metodos que podem ser divididos em 2 arquivos.
+		-Regras:
+			-Não pode ter modificadores de acesso.
+			-sempre sera privado.
+			-não terona informações.
+			-sempre void.
+
+Classe Abstrata:
+	-Classe que não pode ser instanciada.
+	-Pode ser herdada.
+	-Metodos e atributo não podem ser estaticos.
+
+	Metodo Abstrato:
+		-Precisa ser em uma classe abstrata.
+		-Tudo que é abstrato tem a ideia de não estar completa e precisa ser construida com mais informações na classes derivadas.
+		-è uma obrigatoriedade a implementação do metodo.
+
+	Propriedade Abstrata:
+		-server para forçar uma implementação dos gets e sets da prorpiedade
+		-so aceita de tiver get e sets da proproedade
+		-property
+
+Classe Sealed:
+	-não pode ter herdeiros.
+	-todas as struct são sealed.
+	-classes seladas.
+
+Interface:
+	-alternativa a herança.
+	-todas as classes não pode ter mais de uma herança.
+	-definem oque a classe deve ter para atendenter oque a interface espera.
+	-é um contrato.
+	-temque Começar com o I maiusculo.
+	-não temos nenhuma Implementação.
+	-pode implementar diversas interfaces.
+	-Uma interface pode implementar ou "Herdar" somente de outra interfaces
+
+Enumeradores:
+	-Lista de Constantes.
+
+
