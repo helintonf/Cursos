@@ -1,0 +1,16 @@
+Escrever Arquivos
+	-using System.IO
+	-using pode ser usado para importar e para definir um escopo.
+	Vantagens em utilizar o using:
+		-Criar um scopo.
+		-executa o dispose automatico.
+		-segurança que o arquivo vai ser fechado e todos os recursos de maquina liberado.
+
+using static:
+	-posso acessar os metodos estaticos da classe sem precisar para o nome da classe.
+
+
+Intrução using:
+	-sintaxe conveniente que garante o uso correto de objetos IDisposable
+	recursos não gerenciados e tipos de biblioteca de classe que os encapsula.
+

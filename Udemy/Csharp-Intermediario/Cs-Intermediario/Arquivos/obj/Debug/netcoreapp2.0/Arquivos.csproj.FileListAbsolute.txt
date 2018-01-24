@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\bin\Debug\netcoreapp2.0\Arquivos.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\bin\Debug\netcoreapp2.0\Arquivos.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\bin\Debug\netcoreapp2.0\Arquivos.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\bin\Debug\netcoreapp2.0\Arquivos.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\bin\Debug\netcoreapp2.0\Arquivos.pdb
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\obj\Debug\netcoreapp2.0\Arquivos.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\obj\Debug\netcoreapp2.0\Arquivos.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\obj\Debug\netcoreapp2.0\Arquivos.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\obj\Debug\netcoreapp2.0\Arquivos.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\obj\Debug\netcoreapp2.0\Arquivos.dll
+C:\home\github\Cursos\Udemy\Csharp-Intermediario\Cs-Intermediario\Arquivos\obj\Debug\netcoreapp2.0\Arquivos.pdb

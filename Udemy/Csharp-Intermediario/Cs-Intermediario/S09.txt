@@ -1,0 +1,8 @@
+Construtor Rapido:
+	-Objeto ov = new Objeto {propriedades = "valores"};
+
+Auto Implement Property - atribuir Valor:
+	- a partir do C# 6.0 pode atribuir valor a propridade
+
+Using Static:
+	-como a classe que ela é chamada vira a classe dela

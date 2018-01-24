@@ -140,6 +140,11 @@ namespace Texto
             string txtFormat = String.Format("Bem vindo {0}! {1} Natal! - ", nome, "Feliz");
 
             Console.WriteLine(txtFormat + newFormat);
+
+            Console.WriteLine("Olá {0}! feliz {1}!", nome, "2018");
+
+            //recurso para formatar string
+            Console.WriteLine($"Olá {nome}! Feliz 2018!");
         }
 
 
