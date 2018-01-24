@@ -1,0 +1,13 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Serializar.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Serializar.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Serializar.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Serializar.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Serializar.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Lib.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\bin\Debug\netcoreapp2.0\Lib.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\obj\Debug\netcoreapp2.0\Serializar.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\obj\Debug\netcoreapp2.0\Serializar.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\obj\Debug\netcoreapp2.0\Serializar.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\obj\Debug\netcoreapp2.0\Serializar.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\obj\Debug\netcoreapp2.0\Serializar.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Serializar\obj\Debug\netcoreapp2.0\Serializar.pdb

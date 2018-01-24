@@ -1,0 +1,13 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\SerializarDeserializarJSON.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\SerializarDeserializarJSON.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\SerializarDeserializarJSON.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\SerializarDeserializarJSON.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\Lib.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\Lib.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\obj\Debug\netcoreapp2.0\SerializarDeserializarJSON.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\obj\Debug\netcoreapp2.0\SerializarDeserializarJSON.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\obj\Debug\netcoreapp2.0\SerializarDeserializarJSON.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\obj\Debug\netcoreapp2.0\SerializarDeserializarJSON.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\bin\Debug\netcoreapp2.0\SerializarDeserializarJSON.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\obj\Debug\netcoreapp2.0\SerializarDeserializarJSON.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\SerializarDeserializarJSON\obj\Debug\netcoreapp2.0\SerializarDeserializarJSON.pdb
