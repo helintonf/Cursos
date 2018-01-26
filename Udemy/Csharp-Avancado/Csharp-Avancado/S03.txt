@@ -1,0 +1,53 @@
+Generics:
+	-Classes e metodos que pode trabalhar com outras classes como parametro de entrada.
+	-É uma classe que recebe como parametro outras classes.
+	-passar classe como parametro.
+	-Sintaxe:
+		-<T>
+
+Variaveis dinamicas e flexiveis:
+	-Tipada automaticamente.
+	-object:
+		-É um tipo primitivo.
+        -É um tipo generico.
+        -A mesma variavel aceita valores e tipos diferentes.
+	-var:
+		-atalho para declaração e atribuição automatica da variavel.
+		-var tipado automaticamente.
+		-o compilador determina o tipo.
+        -obrigado a atribuir um tipo.
+		-declaração de tipo implicito.
+        -tipo é atribuido automaticamente na criação da variavel.
+        -a variavel não aceita tipos diferentes ou dimamicamente.
+
+	-dynamic:	  
+		-trabalha no tempo de execução // exceções RunTime Exception
+        -objeto que será resolvido em tempo de execução.
+        -sem erros de compilação.
+        -atribuir valores diferentes e dinamicamente.
+		-iginora a verificação de tipo em tempo de compilação.
+		-semenhante ao object são compiladas como object.
+
+Extension Methods:
+	-Expandir determinadas classes.
+	-como aumentar os recursos da classe sem utilizar herança.
+	-Utilizar quando não for possivel utilizar a herança.
+	-deixar a classe mais poderosa.
+	-Adicionar metodos a classes seladas selead.
+	-Simbolo é seta pra baixo |.
+	-obrigações:
+		-this na entrada do metodo e tipo da entrada do nome da classe.
+		-primeiro parametro temque ser o this e o nome da classe que vai estender
+		-variavel que vai ser a instancia da classe, valor.
+			(this String str,....)
+		-classe tem que ser estatica.
+		-metodo tem que ser estatico.
+		-DIca:
+			-Quando for extensão das classes nativas do C# deixar com o mesmo namespace da classe original para nçao esquecer de importar
+
+Nullable:
+	-Por valor não recebe nullo.
+	-Classe pode ser nullo.
+	-Para fezer tipos primitivos e por valor serem nulos.
+		-Nullable<int> idade = null;
+		-int? Idade2 = null;

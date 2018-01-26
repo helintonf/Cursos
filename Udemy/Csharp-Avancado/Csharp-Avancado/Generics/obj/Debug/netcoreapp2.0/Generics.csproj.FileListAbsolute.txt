@@ -1,0 +1,13 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Generics.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Generics.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Generics.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Generics.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Generics.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Newtonsoft.Json.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\bin\Debug\netcoreapp2.0\Newtonsoft.Json.xml
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\obj\Debug\netcoreapp2.0\Generics.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\obj\Debug\netcoreapp2.0\Generics.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\obj\Debug\netcoreapp2.0\Generics.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\obj\Debug\netcoreapp2.0\Generics.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\obj\Debug\netcoreapp2.0\Generics.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Generics\obj\Debug\netcoreapp2.0\Generics.pdb

@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\bin\Debug\netcoreapp2.0\VarDynamic.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\bin\Debug\netcoreapp2.0\VarDynamic.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\bin\Debug\netcoreapp2.0\VarDynamic.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\bin\Debug\netcoreapp2.0\VarDynamic.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\bin\Debug\netcoreapp2.0\VarDynamic.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\obj\Debug\netcoreapp2.0\VarDynamic.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\obj\Debug\netcoreapp2.0\VarDynamic.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\obj\Debug\netcoreapp2.0\VarDynamic.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\obj\Debug\netcoreapp2.0\VarDynamic.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\obj\Debug\netcoreapp2.0\VarDynamic.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\VarDynamic\obj\Debug\netcoreapp2.0\VarDynamic.pdb

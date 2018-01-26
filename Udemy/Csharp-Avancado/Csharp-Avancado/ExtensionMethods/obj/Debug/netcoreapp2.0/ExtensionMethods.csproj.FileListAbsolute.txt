@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\bin\Debug\netcoreapp2.0\ExtensionMethods.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\bin\Debug\netcoreapp2.0\ExtensionMethods.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\bin\Debug\netcoreapp2.0\ExtensionMethods.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\bin\Debug\netcoreapp2.0\ExtensionMethods.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\bin\Debug\netcoreapp2.0\ExtensionMethods.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\obj\Debug\netcoreapp2.0\ExtensionMethods.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\obj\Debug\netcoreapp2.0\ExtensionMethods.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\obj\Debug\netcoreapp2.0\ExtensionMethods.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\obj\Debug\netcoreapp2.0\ExtensionMethods.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\obj\Debug\netcoreapp2.0\ExtensionMethods.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ExtensionMethods\obj\Debug\netcoreapp2.0\ExtensionMethods.pdb
