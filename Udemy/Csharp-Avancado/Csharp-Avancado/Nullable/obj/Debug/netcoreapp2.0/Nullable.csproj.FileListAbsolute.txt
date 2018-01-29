@@ -1,0 +1,3 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Nullable\obj\Debug\netcoreapp2.0\Nullable.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Nullable\obj\Debug\netcoreapp2.0\Nullable.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Nullable\obj\Debug\netcoreapp2.0\Nullable.AssemblyInfo.cs

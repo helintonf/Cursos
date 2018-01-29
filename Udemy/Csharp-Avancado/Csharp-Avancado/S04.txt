@@ -1,0 +1,25 @@
+LINQ:
+	-Estrutura para recursos de consulta.
+	-Conjunto de Dados.
+	-para lista e arrays.
+	-Language Integrated Query
+	-Consultar informações de um conjunto de dados na memoria.
+	-Representação da linguaguem sql dentro do C#.
+
+
+LAMBDA:
+	-É uma expressão.
+	-Pode usar parametro e expressões no codigo.
+	() entrada vazia porque faz parte do objeto.
+	-O Select é a ultima expressão a ultilizar nas chamadas das funções.
+	-Da pra ultilizar da forma de funções ou pela forma literal atrazes de escritas:
+		-lista.Where(a => a > 10).OrderBy(a => a.Select(a => a); //atraves de Metodos
+		-from a in lista where a > 10 orderby a select a; //atraves de texto literal.
+	-Exemplo:
+		-(Entrada) => (expressao)
+		-(variavel) => (expressão)
+
+Group By:
+	-O valor fica dentro da propriedade KEY;
+
+**COMO FAZER O HAVING NO LINQ**
