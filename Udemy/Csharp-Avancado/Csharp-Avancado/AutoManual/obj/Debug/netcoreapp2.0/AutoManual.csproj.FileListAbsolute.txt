@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\bin\Debug\netcoreapp2.0\AutoManual.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\bin\Debug\netcoreapp2.0\AutoManual.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\bin\Debug\netcoreapp2.0\AutoManual.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\bin\Debug\netcoreapp2.0\AutoManual.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\bin\Debug\netcoreapp2.0\AutoManual.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\obj\Debug\netcoreapp2.0\AutoManual.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\obj\Debug\netcoreapp2.0\AutoManual.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\obj\Debug\netcoreapp2.0\AutoManual.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\obj\Debug\netcoreapp2.0\AutoManual.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\obj\Debug\netcoreapp2.0\AutoManual.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\AutoManual\obj\Debug\netcoreapp2.0\AutoManual.pdb

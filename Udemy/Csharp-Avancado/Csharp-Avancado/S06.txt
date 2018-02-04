@@ -1,0 +1,38 @@
+Threads:
+	-Execução em paralelo
+	-Fluxo de execução em paralelo.
+	-IsBackGround:
+		-Faz a thread ficar dependente da principal, assim que a principal aacaba ele tb acaba.
+	-Start(parametro):
+		-Metodo pra receber parametros da thread, tem que ser do tipo object.
+	-Sleep():
+		-Tempo que a thread deve esperar para prosseguir
+	-Join():
+		-Quando vc quer que seu programa só execute depois que uma thread foi finalizada
+
+	-Lock(variavel de controle):
+		-Reservar um recurso para ser utilizado por uma thread por vez.
+		-recursos compartilhados somente uma thread por vez pode utilizar o recurso.
+		-FIFO - First In e First Out.
+
+
+	-Sincronizar Threads:
+		-Dependencia entre Threads.
+		-Parecido com a ideia de um semaforo de transito.
+			-verde e vermelho.
+		-só passa se alguma coisa acontecer.
+
+		-AutoResetEvent:
+			-Auto é igual ao manual a diferença é que ele libeta para execução e ja trava com o metodo reset para uma possivel parada atraves do metodo WaitOne();
+			-AutoMatico o Reset().
+			**AutoReset
+
+		-ManualResetEvent:
+			**ManualReset
+			-WaitOne():
+				-Sinal vermelho a Thread para e fica esperando ser liberada.
+			-Set():
+				-Sinal Verde Libera Thread para ser executada.
+			-Reset():
+				-Sinal convertido pra vermelho é o unico que pode para mas tarde utilizar o WaitOne() novamente.
+	

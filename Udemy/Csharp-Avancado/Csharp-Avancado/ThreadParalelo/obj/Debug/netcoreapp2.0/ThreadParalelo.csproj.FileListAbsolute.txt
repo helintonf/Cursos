@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\bin\Debug\netcoreapp2.0\ThreadParalelo.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\bin\Debug\netcoreapp2.0\ThreadParalelo.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\bin\Debug\netcoreapp2.0\ThreadParalelo.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\bin\Debug\netcoreapp2.0\ThreadParalelo.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\bin\Debug\netcoreapp2.0\ThreadParalelo.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\obj\Debug\netcoreapp2.0\ThreadParalelo.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\obj\Debug\netcoreapp2.0\ThreadParalelo.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\obj\Debug\netcoreapp2.0\ThreadParalelo.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\obj\Debug\netcoreapp2.0\ThreadParalelo.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\obj\Debug\netcoreapp2.0\ThreadParalelo.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\ThreadParalelo\obj\Debug\netcoreapp2.0\ThreadParalelo.pdb
