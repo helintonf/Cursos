@@ -1,0 +1,10 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\bin\Debug\TaskAsync.exe.config
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\bin\Debug\TaskAsync.exe
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\bin\Debug\TaskAsync.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.Form1.resources
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.Properties.Resources.resources
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.csproj.GenerateResource.Cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.exe
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskAsync\obj\Debug\TaskAsync.pdb

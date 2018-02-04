@@ -1,0 +1,21 @@
+Task:
+	-Acrecimo as Threads- Paralelismo.
+	-Para Classes que causam lentidão.
+	-ter metodos assincronos.
+	-na assinatura do metodo presisa ter a informação se é asincrono.
+	-assinc on wait.
+	metodos assincronos
+	-Quando usamos tasks nosso fluxo cia assincrono.
+	-Todo metodo assincrono retorna uma Task.
+	await:
+		-Ilimina o possibilidade de receber uma Task.
+	
+	-WaitAny():
+		-Vai esperar que uma tarefa seja concluida.
+
+	-WaitAll():
+		-esperar que todas as tasks sejam concluidas.
+
+	-WhenAll:
+		-Faz as execução.
+		-não faz nenhuma pausa

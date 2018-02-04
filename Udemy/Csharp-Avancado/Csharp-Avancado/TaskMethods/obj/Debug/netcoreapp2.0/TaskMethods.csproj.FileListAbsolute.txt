@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\bin\Debug\netcoreapp2.0\TaskMethods.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\bin\Debug\netcoreapp2.0\TaskMethods.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\bin\Debug\netcoreapp2.0\TaskMethods.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\bin\Debug\netcoreapp2.0\TaskMethods.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\bin\Debug\netcoreapp2.0\TaskMethods.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\obj\Debug\netcoreapp2.0\TaskMethods.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\obj\Debug\netcoreapp2.0\TaskMethods.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\obj\Debug\netcoreapp2.0\TaskMethods.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\obj\Debug\netcoreapp2.0\TaskMethods.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\obj\Debug\netcoreapp2.0\TaskMethods.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\TaskMethods\obj\Debug\netcoreapp2.0\TaskMethods.pdb
