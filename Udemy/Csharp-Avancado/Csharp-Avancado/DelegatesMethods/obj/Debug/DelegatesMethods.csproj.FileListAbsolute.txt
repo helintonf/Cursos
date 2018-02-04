@@ -1,0 +1,10 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\bin\Debug\DelegatesMethods.exe.config
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\bin\Debug\DelegatesMethods.exe
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\bin\Debug\DelegatesMethods.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.Form1.resources
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.Properties.Resources.resources
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.csproj.GenerateResource.Cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.exe
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\DelegatesMethods\obj\Debug\DelegatesMethods.csprojResolveAssemblyReference.cache

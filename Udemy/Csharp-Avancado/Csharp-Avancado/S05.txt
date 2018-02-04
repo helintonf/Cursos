@@ -1,0 +1,59 @@
+Deletages:
+	-uma especie de ponteiro, referencia para chamada a metodos.
+	-Util para criar informações abstraidas.
+	-Passar função como parametro.
+	-A classe não precisa conhecer a outra mais vai ter a possibilidade de executala
+	-Uso para atribuir um metodo usa pra executar o metodo.
+	-Concatenar funções
+	-a assinatura do metodo e  o tipo de retorno tem que ser compativeis
+	-igual ponteiro referencial um ponteiro na memoria onde estao os metodos.
+	-atribuir um metodo a uma variavel que aponta para ela no endereço da memoria.
+	-ponteiro de função.
+	-o importante é o medoto e não a classe.
+	-definir funções em tempo de execução.
+	-Sempre utilizar o Handler no final da declaração do delegate.
+	
+
+	-Exemplo:
+		-Similar a uma variavel.
+		string NomeDaVariavel = "ValorDavariavel";
+		delegate Referencia = Metodos();
+			-Variavel armazena "Chamar" valores.	
+			-Delegates armazena  "Chamar" referencia de metodos.
+		NomeVariavel += 10 //NomeVariavel = NomeVariavel + 10
+		NomeDelegate += Metodo2(); //Metodo01(); Metodo02();
+
+		--------------------------------------------------------Microsoft
+		Classe Botao
+		{
+			Propriedades(Icones, Texto, Tamanho, Localizacao)
+			Eventos(Clicar, 2Clicks).
+		}
+
+		CLickEventArgs: EventArgs{
+			PosicionamnetoClick(x,y);
+		}
+
+		Clicar(this *source, new ClickEventArgs(Cursor.Posicao.X, Curso.Posicao.Y) *eventArgs);
+
+		-----------------------------------------------------------------------
+
+		Botao btn = newBotao("Salvar");
+		btn.CLicar = MetodoClicarParaSalvar();
+
+		public void MetodoClicarParaSalvar(){
+		
+		}
+
+		-! interessante usar  em eventos do sistema para gatilhos em metodos que serão executados antes ou depois do s eventos que necessariamente vc não sabe mais de davem ser executados em diferentes contextox e ocasioões:
+			-Save() -BeforeSave() -AfterSave()
+
+
+Eventos:
+	-quase a mesma coisa que delegates.
+	-para ter um proteção quando for executar uma ação no componente.
+	-quem controla as ações são as classes.
+	-vc só controla quem se inscreve na classe.
+	-proteger as ações dos eventos.
+	-evento protege as ações.
+	-quem vai ser executado quando esse evento acontecer.

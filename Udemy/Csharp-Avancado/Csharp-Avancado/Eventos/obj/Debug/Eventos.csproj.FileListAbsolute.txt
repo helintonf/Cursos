@@ -1,0 +1,10 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\bin\Debug\Eventos.exe.config
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\bin\Debug\Eventos.exe
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\bin\Debug\Eventos.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.Properties.Resources.resources
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.csproj.GenerateResource.Cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.exe
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Eventos\obj\Debug\Eventos.Form1.resources

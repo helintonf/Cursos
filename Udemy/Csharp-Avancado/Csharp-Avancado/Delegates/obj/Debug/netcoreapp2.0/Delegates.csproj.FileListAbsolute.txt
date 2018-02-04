@@ -1,0 +1,11 @@
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\bin\Debug\netcoreapp2.0\Delegates.deps.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\bin\Debug\netcoreapp2.0\Delegates.runtimeconfig.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\bin\Debug\netcoreapp2.0\Delegates.runtimeconfig.dev.json
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\bin\Debug\netcoreapp2.0\Delegates.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\bin\Debug\netcoreapp2.0\Delegates.pdb
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\obj\Debug\netcoreapp2.0\Delegates.csprojResolveAssemblyReference.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\obj\Debug\netcoreapp2.0\Delegates.csproj.CoreCompileInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\obj\Debug\netcoreapp2.0\Delegates.AssemblyInfoInputs.cache
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\obj\Debug\netcoreapp2.0\Delegates.AssemblyInfo.cs
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\obj\Debug\netcoreapp2.0\Delegates.dll
+C:\home\github\Cursos\Udemy\Csharp-Avancado\Csharp-Avancado\Delegates\obj\Debug\netcoreapp2.0\Delegates.pdb
