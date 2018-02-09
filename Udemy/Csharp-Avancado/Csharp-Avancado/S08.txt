@@ -1,0 +1,20 @@
+Atributos:
+	-Possibilidade de criar Metadados:
+		-dados que esplicam e dão funcionabilidades a outros dados.
+		-um dado voltado para outro dado.
+	-Validação de dados.
+	-Informações dos metodos.
+	-esplicar algum dado.
+	-fazer ações.
+	[AttributeUsage()] - forma de falar como vai ser usado o novo atributo.
+
+Data Annotation:
+
+
+Reflection:
+	-Leitura de codigo.
+	-por meio de programação ler o seu proprio codigo.
+	-programação dentro da programação, = metadados.
+	-a programação podendo se programar.
+	-criar um codigo que se auto gerecie
+

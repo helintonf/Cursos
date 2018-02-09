@@ -9,6 +9,9 @@ Task:
 	-Todo metodo assincrono retorna uma Task.
 	await:
 		-Ilimina o possibilidade de receber uma Task.
+		-na hora de fazer a chamada usar o await.
+		-Suspende uma tarefa (task ou Task<T>) até que ela seja concluida.
+
 	
 	-WaitAny():
 		-Vai esperar que uma tarefa seja concluida.
@@ -19,3 +22,12 @@ Task:
 	-WhenAll:
 		-Faz as execução.
 		-não faz nenhuma pausa
+
+	quando metodo for void tem que retornar a Task,
+	quando tiver retorno tem que retornar Task<T>
+
+	TAP:
+
+	Web Page Teste.
+	dOCKER E RANCHER
+		https://www.infoq.com/br/presentations/programacao-assincrona-net

@@ -47,11 +47,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "S06-Thread", "S06-Thread", 
 		S06.txt = S06.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadParalelo", "ThreadParalelo\ThreadParalelo.csproj", "{07EB0A7F-03C7-4423-9748-F2D2EE988AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadParalelo", "ThreadParalelo\ThreadParalelo.csproj", "{07EB0A7F-03C7-4423-9748-F2D2EE988AED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadSafe", "ThreadSafe\ThreadSafe.csproj", "{1AF2DDF9-A7F5-46D3-9EF6-BC2CDD67356B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThreadSafe", "ThreadSafe\ThreadSafe.csproj", "{1AF2DDF9-A7F5-46D3-9EF6-BC2CDD67356B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoManual", "AutoManual\AutoManual.csproj", "{2E542A8B-8468-48B2-B0A6-1C239C1BE8DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoManual", "AutoManual\AutoManual.csproj", "{2E542A8B-8468-48B2-B0A6-1C239C1BE8DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "S07-Task", "S07-Task", "{D55EA9A6-88FE-44B4-9A9E-77B72BF3C3C0}"
 	ProjectSection(SolutionItems) = preProject
@@ -60,7 +60,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "S07-Task", "S07-Task", "{D5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskAsync", "TaskAsync\TaskAsync.csproj", "{F94A2247-CD34-4C90-BF63-538F4E34F7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskMethods", "TaskMethods\TaskMethods.csproj", "{30D76545-B6FC-4C56-9216-320135B79E23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskMethods", "TaskMethods\TaskMethods.csproj", "{30D76545-B6FC-4C56-9216-320135B79E23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "S08-Attributes-Reflection", "S08-Attributes-Reflection", "{13F99CCE-7C4C-42E7-ACD7-477C78CD5983}"
+	ProjectSection(SolutionItems) = preProject
+		S08.txt = S08.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Attributes", "Attributes\Attributes.csproj", "{210CE2EE-FEEC-4339-BEBB-C44082FDA1A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reflections", "Reflections\Reflections.csproj", "{57F96AC7-607F-498A-B196-F88033BF4A0B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,6 +141,14 @@ Global
 		{30D76545-B6FC-4C56-9216-320135B79E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D76545-B6FC-4C56-9216-320135B79E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D76545-B6FC-4C56-9216-320135B79E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{210CE2EE-FEEC-4339-BEBB-C44082FDA1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{210CE2EE-FEEC-4339-BEBB-C44082FDA1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{210CE2EE-FEEC-4339-BEBB-C44082FDA1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{210CE2EE-FEEC-4339-BEBB-C44082FDA1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F96AC7-607F-498A-B196-F88033BF4A0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F96AC7-607F-498A-B196-F88033BF4A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F96AC7-607F-498A-B196-F88033BF4A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F96AC7-607F-498A-B196-F88033BF4A0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -153,6 +170,8 @@ Global
 		{2E542A8B-8468-48B2-B0A6-1C239C1BE8DF} = {799FAD74-97FF-42EC-88DC-BA9867A93ACF}
 		{F94A2247-CD34-4C90-BF63-538F4E34F7BE} = {D55EA9A6-88FE-44B4-9A9E-77B72BF3C3C0}
 		{30D76545-B6FC-4C56-9216-320135B79E23} = {D55EA9A6-88FE-44B4-9A9E-77B72BF3C3C0}
+		{210CE2EE-FEEC-4339-BEBB-C44082FDA1A5} = {13F99CCE-7C4C-42E7-ACD7-477C78CD5983}
+		{57F96AC7-607F-498A-B196-F88033BF4A0B} = {13F99CCE-7C4C-42E7-ACD7-477C78CD5983}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0CA6A216-046C-4A6C-8D92-E8E5DE99F414}
