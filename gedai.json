@@ -1,0 +1,436 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "WEB GEDAI",
+    "description": "Gerenciador de documentos",
+    "termsOfService": "terms",
+    "contact": {
+      "name": "Qualidade de Software",
+      "url": "http://google.com",
+      "email": "helintonfi@gmail.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "tes.teste.io",
+  "basePath": "/v1",
+  "tags": [
+    {
+      "name": "Usuário",
+      "description": "Cadastro de Usuário"
+    },
+    {
+      "name": "Documento",
+      "description": "Cadastro de Usuário"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": [
+          "Usuário"
+        ],
+        "summary": "Listar Usuarios",
+        "description": "Retorna usuarios por filtro",
+        "operationId": "getUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "description": "filtro do usuario",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successo",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Filtro invalido"
+          },
+          "404": {
+            "description": "User não encontrado"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Usuário"
+        ],
+        "summary": "Adiciona um novo usuario",
+        "description": "Somente o moderador do site poderá cadastrar os usuários do sistema.",
+        "operationId": "addUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "user",
+            "description": "objeto do usuário a ser salvo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        }
+      }
+    },
+    "/users/{username}": {
+      "get": {
+        "tags": [
+          "Usuário"
+        ],
+        "summary": "Procurar usuario pelo nome de usuario",
+        "description": "Retorna um usuario",
+        "operationId": "getUserByUsername",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "description": "ID do usuario",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          },
+          "400": {
+            "description": "Nome de usuário invalido"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Usuário"
+        ],
+        "summary": "Atualizar um Usuario",
+        "description": "Atualizar um Usuario existente",
+        "operationId": "updateUser",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "description": "nome do usuario que precisa atualizar",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "user",
+            "description": "Usuario para atualizar",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/User"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid ID supplied"
+          },
+          "404": {
+            "description": "Pet not found"
+          },
+          "405": {
+            "description": "Validation exception"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Usuário"
+        ],
+        "summary": "Deletar usuário",
+        "description": "This can only be done by the logged in user.",
+        "operationId": "deleteUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "path",
+            "description": "The name that needs to be deleted",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalid username supplied"
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/document": {
+      "get": {
+        "tags": [
+          "Documento"
+        ],
+        "summary": "Listar documentos",
+        "description": "Retorna documentos por filtro",
+        "operationId": "getDocument",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "filter",
+            "in": "query",
+            "description": "filtro do documento",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successo",
+            "schema": {
+              "$ref": "#/definitions/Document"
+            }
+          },
+          "400": {
+            "description": "Filtro invalido"
+          },
+          "404": {
+            "description": "Documento não encontrado"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Documento"
+        ],
+        "summary": "Adiciona um novo documento",
+        "description": "Somente usuarios cadastrados poderá cadastrar os documentos.",
+        "operationId": "addDocument",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "document",
+            "description": "objeto do documento a ser salvo",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Document"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Dado Invalido"
+          }
+        }
+      }
+    },
+    "/document/{documentId}": {
+      "get": {
+        "tags": [
+          "Documento"
+        ],
+        "summary": "Procurar documento pelo ID",
+        "description": "Retorna um documento",
+        "operationId": "getDocumentById",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "documentId",
+            "in": "path",
+            "description": "ID do documento",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "successo",
+            "schema": {
+              "$ref": "#/definitions/Document"
+            }
+          },
+          "400": {
+            "description": "ID invalido"
+          },
+          "404": {
+            "description": "Documento não encontrado"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Documento"
+        ],
+        "summary": "Atualizar um Documento",
+        "description": "Atualizar um Documento existente",
+        "operationId": "updateDocument",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "documentId",
+            "in": "path",
+            "description": "documento que precisa atualizar",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "document",
+            "description": "Documento para atualizar",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/Document"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Invalido ID"
+          },
+          "404": {
+            "description": "Documento não encontrado"
+          },
+          "405": {
+            "description": "Erro de Validação"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Documento"
+        ],
+        "summary": "Deletar documento",
+        "description": "Somente um usuario logado.",
+        "operationId": "deleteDocument",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "documentId",
+            "in": "path",
+            "description": "o id do documento para ser deletado",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "ID Invalido"
+          },
+          "404": {
+            "description": "Documento não encontrado"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "User": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "username": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    },
+    "Document": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "title": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "file": {
+          "type": "string",
+          "format": "byte"
+        },
+        "dateCreated": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}
