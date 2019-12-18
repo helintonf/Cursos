@@ -669,15 +669,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj",
+      "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj",
       "projectName": "Lib",
-      "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj",
+      "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj",
       "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
-      "outputPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\obj\\",
+      "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -710,7 +707,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

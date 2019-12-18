@@ -685,15 +685,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\LINQ\\LINQ.csproj",
+      "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\LINQ\\LINQ.csproj",
       "projectName": "LINQ",
-      "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\LINQ\\LINQ.csproj",
+      "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\LINQ\\LINQ.csproj",
       "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
-      "outputPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\LINQ\\obj\\",
+      "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\LINQ\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -712,8 +709,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj": {
-              "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj"
+            "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj": {
+              "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj"
             }
           }
         }
@@ -728,8 +725,9 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

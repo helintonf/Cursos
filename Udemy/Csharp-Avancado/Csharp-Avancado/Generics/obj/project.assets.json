@@ -669,15 +669,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Generics\\Generics.csproj",
+      "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Generics\\Generics.csproj",
       "projectName": "Generics",
-      "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Generics\\Generics.csproj",
+      "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Generics\\Generics.csproj",
       "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
-      "outputPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Generics\\obj\\",
+      "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Generics\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -708,8 +705,9 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },

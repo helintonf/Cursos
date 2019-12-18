@@ -2645,10 +2645,11 @@
       ]
     },
     "System.ComponentModel.Primitives/4.3.0": {
-      "sha512": "j8GUkCpM8V4d4vhLIIoBLGey2Z5bCkMVNjEZseyAlm4n5arcsJOeI3zkUP+zvZgzsbLTYh4lYeP/ZD/gdIAPrw==",
+      "sha512": "KMVuoQ+8bMQ/Z59M3s64num5AD74X5YSqVc7ibwGkPTfmmkl2W8VuSxLRJtpw4KzQrSKUgR0BLbF0adPfcTSGQ==",
       "type": "package",
       "path": "system.componentmodel.primitives/4.3.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2682,10 +2683,11 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
+        ".nupkg.metadata",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4918,15 +4920,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\SerializarDeserializarJSON\\SerializarDeserializarJSON.csproj",
+      "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\SerializarDeserializarJSON\\SerializarDeserializarJSON.csproj",
       "projectName": "SerializarDeserializarJSON",
-      "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\SerializarDeserializarJSON\\SerializarDeserializarJSON.csproj",
+      "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\SerializarDeserializarJSON\\SerializarDeserializarJSON.csproj",
       "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
-      "outputPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\SerializarDeserializarJSON\\obj\\",
+      "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\SerializarDeserializarJSON\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4945,8 +4944,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj": {
-              "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj"
+            "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj": {
+              "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\Lib\\Lib.csproj"
             }
           }
         }
@@ -4960,18 +4959,19 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Json": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
-          },
           "Microsoft.AspNetCore.Mvc.Formatters.Json": {
             "target": "Package",
-            "version": "2.0.2"
+            "version": "[2.0.2, )"
+          },
+          "Microsoft.Extensions.Configuration.Json": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
+          "Microsoft.NETCore.App": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

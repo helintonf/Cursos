@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\ThreadParalelo\\ThreadParalelo.csproj": {}
+  },
+  "projects": {
+    "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\ThreadParalelo\\ThreadParalelo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\ThreadParalelo\\ThreadParalelo.csproj",
+        "projectName": "ThreadParalelo",
+        "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\ThreadParalelo\\ThreadParalelo.csproj",
+        "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
+        "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Avancado\\Csharp-Avancado\\ThreadParalelo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\helinton.fioramonte\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.0": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

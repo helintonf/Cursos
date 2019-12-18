@@ -669,15 +669,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\Biblioteca\\Biblioteca.csproj",
+      "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\Biblioteca\\Biblioteca.csproj",
       "projectName": "Biblioteca",
-      "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\Biblioteca\\Biblioteca.csproj",
+      "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\Biblioteca\\Biblioteca.csproj",
       "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
-      "outputPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\Biblioteca\\obj\\",
+      "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\Biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -710,15 +707,21 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

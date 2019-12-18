@@ -669,15 +669,12 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\InterfacePolimorfismo\\InterfacePolimorfismo.csproj",
+      "projectUniqueName": "C:\\Labs\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\InterfacePolimorfismo\\InterfacePolimorfismo.csproj",
       "projectName": "InterfacePolimorfismo",
-      "projectPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\InterfacePolimorfismo\\InterfacePolimorfismo.csproj",
+      "projectPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\InterfacePolimorfismo\\InterfacePolimorfismo.csproj",
       "packagesPath": "C:\\Users\\helinton.fioramonte\\.nuget\\packages\\",
-      "outputPath": "C:\\home\\github\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\InterfacePolimorfismo\\obj\\",
+      "outputPath": "C:\\Labs\\Cursos\\Udemy\\Csharp-Intermediario\\Cs-Intermediario\\InterfacePolimorfismo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -708,16 +705,23 @@
       "netcoreapp2.0": {
         "dependencies": {
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
